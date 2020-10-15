@@ -1,0 +1,47 @@
+// @ Author: Consensus Interactive
+// @ Author URI: ConsensusInteractive.com
+//	@ Description: Wordpress widget classes
+
+.widget-area {
+    font-family: $secondary-font-stack;
+
+    ul,
+    li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        padding: 0 20px;
+    }
+
+    h2 {
+        font-family: $secondary-font-stack;
+        font-weight: 300;
+        font-size: 20px;
+
+        @include breakpoint(x-lg) {
+            font-size: 24px;
+        }
+
+        @include breakpoint(md) {
+            font-size: 28px;
+        }
+
+        @include breakpoint(sm) {
+            font-size: 30px;
+        }
+    }
+
+    a {
+        font-size: 18px;
+        font-weight: 600;
+        text-decoration: none;
+        color: $black;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}

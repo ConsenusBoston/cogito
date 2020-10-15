@@ -1,0 +1,118 @@
+// @ Author: Bryan Barrera
+// @ Author URI: BryanBarrera.com
+// @ Description: animations
+
+// @ Animation
+// - Slightly rotates and changes color of speech bubble
+@keyframes slightRotation {
+	0% { transform: rotate(-15deg); }
+
+	50% { transform: rotate(5deg); }
+
+	100% { color: $yellow; transform: rotate(15deg); }
+}
+
+// @ Animatation
+// - height / line effect
+@keyframes animateTopBottom {
+  0% {
+    height: 5px;
+  }
+  25% {
+    height: 12.5px;
+  }
+  50% {
+    height: 45px;
+  }
+  75% {
+    height: 12.5px;
+  }
+  100% {
+   	height: 5px;
+  }
+}
+
+// @ Animatation
+// - width / line effect
+@keyframes animateLeftRight {
+  0% {
+    width: 5px;
+  }
+  50% {
+    width: 20px;
+  }
+  100% {
+   	width: 200px;
+  }
+}
+
+// @ Animatation
+// - width / line effect
+@keyframes newanimateLeftRight {
+  0% {
+    width: 5px;
+    left: 0;
+  }
+  50% {
+    width: 20px;
+    left: 50%;
+  }
+  100% {
+   	width: 200px;
+   	right: 0;
+  }
+}
+// @ Animatation
+// - width / line effect
+@keyframes fontScaling {
+  0% {
+    font-size: 16px;
+  }
+  100% {
+   	font-size: 20px;
+  }
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0);
+		transform: scale(1);
+	}
+
+	25% {
+		transform: rotate(120deg)
+	}
+
+	75% {
+		transform: rotate(152deg);
+		transform: scale(.7);
+		top: -70px;
+	}
+
+	100% {
+		transform: rotate(180deg);
+	}
+}
+
+@keyframes scaleSVG {
+	0% { 
+		transform: scale(50);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+// @ Animation
+// - background animation effect
+@keyframes slideBgTop {
+    0% {
+        transform: translateY(-100%)translateX(-50%);
+    }
+    50% {
+        transform: translateY(-50%)translateX(-50%) skewY(-20deg);
+    }
+    100% {
+        transform: translateY(0%)translateX(-50%);
+    }
+} 
