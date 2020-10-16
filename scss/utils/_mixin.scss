@@ -1,0 +1,134 @@
+// @ Author: Bryan Barrera
+// @ Author URI: BryanBarrera.com
+// @ Description: _mixin.scss file
+
+// Transition Mixin
+// example: @include transition(all .25s ease-in-out);
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}
+
+
+// @ App button
+@mixin app-button {
+  display: inline-block;
+  border-radius: 30px;
+  background: $primary-color;
+  color: $white;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+// @ Center Vertically
+@mixin center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+// @ Inline list
+@mixin inline-list {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+
+  li {
+   
+    list-style: none;
+    padding: 0;
+ 
+    @include breakpoint(large) {
+      float: left;
+      margin: 0 em(2);
+
+    }
+  }
+}
+
+@mixin stacked-list {
+  display: block;
+  padding: 0;
+  margin: 0 auto;
+  list-style: none;
+}
+
+$browser-context: 16;
+// @ px to em 
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+
+  @return $pixels / $context * 1em;
+}
+
+// Grid
+@for $i from 1 through 100 {
+  @if $i == 33 {
+    .column-#{$i} {
+      width: 33.333%;
+    } 
+  } @else {
+    .column-#{$i} {
+      width: (1 * $i) * 1%;
+    } 
+  }
+   
+}
+
+// Grid lg
+@for $i from 1 through 100 {
+  @include breakpoint(lg) {
+    @if $i == 33 {
+      .column-lg-#{$i} {
+        width: 33.333%;
+      } 
+    } @else {
+      .column-lg-#{$i} {
+        width: (1 * $i) * 1%;
+      } 
+    }
+  } 
+}
+
+// Grid md
+@for $i from 1 through 100 {
+  @include breakpoint(md) {
+    @if $i == 33 {
+      .column-md-#{$i} {
+        width: 33.333%;
+      } 
+    } @else {
+      .column-md-#{$i} {
+        width: (1 * $i) * 1%;
+      } 
+    }
+  }
+}
+
+// Grid sm
+@for $i from 1 through 100 {
+  @include breakpoint(sm) {
+    @if $i == 33 {
+      .column-sm-#{$i} {
+        width: 33.333%;
+      } 
+    } @else {
+      .column-sm-#{$i} {
+        width: (1 * $i) * 1%;
+      } 
+    }
+  }
+}

@@ -1,0 +1,68 @@
+//	@ Author: Consensus Interactive
+//	@ Author URI: ConsensusInteractive.com
+//	@ Description: Variable Scss file
+
+@import "functions";
+
+// Base colors
+$white: #ffffff;
+$black: #000000;
+$dark-grey: #a7a9ac;
+$dark-grey-2: #404040;
+$light-grey: #a7a9ab;
+$lightest-grey: #c7c7c7;
+$lightest-grey-2: #686868;
+$lightest-grey-3: #f3f6f8;
+$lightest-grey-4: #F1F1F1;
+$orange: #FB8200;
+
+// @ New Colors
+$accent-1: #2c5a7a;
+$accent-2: #040505;
+
+
+// Change these
+// @ Primary brand color
+$primary-color: #20ad95;
+
+// Primary Variables
+$body-bg-color: #ffffff !default; // @ white
+$secondary-color: #b22635 !default; // @ Red
+$secondary-alt-color: $black !default; // @ Heading color 
+$default-btn-color: $primary-color !default; // @ primary color
+
+
+
+// Brand color variables
+// @how to use these?
+// ex. background: brand-color(primary, base);
+// ^ call variable, color name, color variant
+$brand-colors: (primary: (base: $primary-color,
+    light: #0083c0,
+    dark: #2c5a7a),
+  secondary: (base: $secondary-color,
+    dark: #b22635),
+  gray: (base: #5b5b5b,
+    light: #F7F7F7,
+    dark: #111111));
+
+
+// Primary Styles
+$primary-font-size: 16px !default;
+
+// Primary Font Colors
+$primary-font-color: $black;
+
+// Primary Font Stacks
+$primary-font-stack: 'Khand',
+sans-serif !default;
+$secondary-font-stack: 'ProximaNova-Regular',
+// 'PT Sans',
+// 'Arial',
+// 'Helvetica',
+sans-serif !default;
+
+// Layout
+$site-width: 100em;
+$inner-container: 64.375em;
+$gutter: 15px;

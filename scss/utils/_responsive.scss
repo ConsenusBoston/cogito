@@ -1,0 +1,65 @@
+// @ Author: Bryan Barrera
+// @ Author URI: BryanBarrera.com
+// @ Description: _responsive.scss file
+
+// xs : 480px
+// sm : 767px
+// md : 991px
+// lg : 1199px
+// x-lg: 1400px
+
+@mixin breakpoint($breakpoint) {
+  @if $breakpoint=="xs" {
+    @media (min-width: 480px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint=="sm" {
+    @media (min-width: 767px) {
+      @content;
+    }
+  }
+  @else if $breakpoint=="sm-max" {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint=="md" {
+    @media (min-width: 991px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint=="md-max" {
+    @media (max-width: 991px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint=="lg" {
+    @media (min-width: 1199px) {
+      @content;
+    }
+  }
+
+  @else if $breakpoint=="x-lg" {
+    @media (min-width: 1599px) {
+      @content;
+    }
+  }
+
+
+  @else if $breakpoint {
+    @media (min-width: $breakpoint + px) {
+      @content;
+    }
+  }
+}
+
+$breakpoints: ('xs' : 480px,
+  'sm' : 767px,
+  'md' : 991px,
+  'lg' : 1199px,
+  'x-lg': 1400px);

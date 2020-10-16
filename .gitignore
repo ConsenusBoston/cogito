@@ -1,0 +1,62 @@
+# Don't track content of these folders
+~resources/*
+node_modules/
+
+favicon.ico
+_wpeprivate
+.wpe-devkit
+.wpe-pull-ignore
+.wpe-push-ignore
+.wpengine-conf
+wp-content/*.php
+
+wp-content/plugins/*
+!wp-content/plugins/ci-builder-modules/
+
+wp-content/upgrade*
+wp-content/uploads*
+wp-content/mu-plugins*
+*.php
+*.png
+*.htaccess
+*.installedExtras
+*.html
+*.txt
+
+!wp-content/plugins/ci-builder-modules/*
+
+wp-admin*
+wp-admin/*
+wp-includes*
+wp-includes/*
+wp-content/themes/genesis/*
+wp-content/themes/genesis-sample/*
+wp-content/themes/twentynineteen/*
+wp-content/themes/twentytwenty/*
+wp-content/themes/altitude-pro/*
+wp-content/themes/Avada/*
+wp-content/themes/bb-theme/*
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+*.db
+*.DS_Store
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip

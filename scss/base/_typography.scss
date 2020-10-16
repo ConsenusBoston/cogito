@@ -1,0 +1,188 @@
+// @ Author: Consensus Interactive
+// @ Author URI: ConsensusInteractive.com
+// @ Description: _typography.scss file
+
+// @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+// @font-face {
+//   font-family: 'ProximaNova-Regular';
+//   src: url('./fonts/ProximaNova-Regular.ttf') format('ttf'),
+//     url('./fonts/ProximaNova-Regular.woff') format('woff'),
+//     url('./fonts/ProximaNova-Regular.otf') format('otf'),
+//     url('./fonts/ProximaNova-Regular.svg') format('svg'),
+//     url('./fonts/ProximaNova-Regular.eot') format('eot');
+//   font-weight: normal;
+//   font-style: normal;
+
+// }
+
+// a {
+//   color: $primary-color;
+// }
+
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: $primary-font-stack;
+//   color: $primary-color;
+//   font-weight: 300;
+//   line-height: 1.15;
+//   margin: 0 0 15px 0;
+//   letter-spacing: -0.36px;
+// }
+
+
+// h1 {
+//   font-size: 116px;
+
+//   @include breakpoint(x-lg) {
+//     font-size: 100px;
+//   }
+
+// }
+
+// h2 {
+//   font-size: 48px;
+
+//   @include breakpoint(x-lg) {
+//     font-size: 40px;
+//   }
+
+//   @include breakpoint(md) {
+//     font-size: 36px;
+//   }
+
+//   @include breakpoint(sm) {
+//     font-size: 32px;
+//   }
+// }
+
+// h3 {
+//   font-size: 36px;
+
+//   @include breakpoint(x-lg) {
+//     font-size: 30px;
+//   }
+
+//   @include breakpoint(lg) {
+//     font-size: 26px;
+//   }
+
+//   @include breakpoint(md) {
+//     font-size: 20px;
+//     line-height: 1.4;
+//   }
+// }
+
+// h4 {
+//   font-size: 30px;
+
+//   @include breakpoint(x-lg) {
+//     font-size: 26px;
+//   }
+
+//   @include breakpoint(lg) {
+//     font-size: 24px;
+//   }
+
+//   @include breakpoint(xs) {
+//     font-size: 22px;
+//   }
+// }
+
+// h5 {
+//   font-size: 24px;
+// }
+
+// small,
+// .text_small {
+//   font-size: 0.833em;
+// }
+
+// p,
+// li {
+//   font-family: $secondary-font-stack;
+//   font-size: 18px;
+//   line-height: 36px;
+//   line-height: 1.8;
+//   color: brand-color(gray, base);
+
+//   @include breakpoint(x-lg) {
+//     font-size: 16px;
+//     line-height: 1.6;
+//   }
+
+//   @include breakpoint(sm) {
+//     font-size: 15px;
+//   }
+// }
+
+// p,
+// ul,
+// ol,
+// pre,
+// table,
+// blockquote {
+//   font-weight: 100;
+//   margin-top: 0em;
+//   margin-bottom: 1.5em;
+// }
+
+// ul ul,
+// ol ol,
+// ul ol,
+// ol ul {
+//   margin-top: 0em;
+//   margin-bottom: 0em;
+// }
+
+// ul,
+// ol {
+//   list-style-position: inside;
+//   padding-left: em(20);
+// }
+
+// ul li,
+// ol li {
+//   margin-bottom: em(5);
+// }
+
+// sub,
+// sup {
+//   line-height: 0;
+//   position: relative;
+//   vertical-align: baseline;
+// }
+
+// sup {
+//   top: -0.5em;
+// }
+
+// sub {
+//   bottom: -0.25em;
+// }
+
+// strong {
+//   font-weight: 600;
+// }
+
+// .heading-decorated {
+//   padding-bottom: 10px;
+//   border-bottom: 1px solid $lightest-grey;
+//   display: inline-block;
+//   margin-bottom: 20px;
+
+//   @include breakpoint(xx-large) {
+//     margin-bottom: 30px;
+//   }
+// }
+
+// blockquote {
+//   padding-left: 15px;
+//   border-left: 3px solid #e9e9e9;
+//   margin: 0;
+// }

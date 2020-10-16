@@ -1,0 +1,13 @@
+//	@ Author: Consensus Interactive
+//	@ Author URI: ConsensusInteractive.com
+//	@ Description: Function File
+
+// retrieve color from map ie. `brand-color(primary, base)`
+@function brand-color($color-name, $color-variant:null) {
+ 
+  @if ($color-variant != null) {
+    @return map-get(map-get($brand-colors, $color-name), $color-variant);
+  } @else {
+    @return map-get($brand-colors, $color-name);
+  }
+}
