@@ -1,1 +1,1 @@
-node-sass --include-path scss scss/style.scss wp-content/themes/vultur-child/main.css
+node-sass --include-path scss scss/style.scss wp-content/themes/ci-theme-child/main.css

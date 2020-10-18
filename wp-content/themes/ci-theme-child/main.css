@@ -1,0 +1,9 @@
+/*
+
+	@ Author: Consensus Interactive
+	@ Author URI: consensusinteractive.com
+	@ Description: Main Styles
+
+*/
+.fl-accordion .fl-accordion-button .fl-accordion-button-label:focus {
+  outline: none; }
