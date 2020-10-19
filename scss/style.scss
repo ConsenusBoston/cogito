@@ -15,7 +15,7 @@
 
 // @partials
 // @import "utils/responsive";
-// @import "utils/variables";
+@import "utils/variables";
 // @import "utils/mixin";
 // @import "base/base";
 // @import "base/typography";
@@ -24,7 +24,9 @@
 // @import "layout/layout";
 // @import "layout/navigation";
 // @import "layout/header";
-// @import "layout/footer";
+@import "layout/footer";
+
+@import "pages/page-resource";
 @import "components/_bb-accordion";
 
 

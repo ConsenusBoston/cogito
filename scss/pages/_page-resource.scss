@@ -1,0 +1,44 @@
+//	@ Author: Consensus Interactive
+//	@ Author URI: ConsensusInteractive.com
+//	@ Description: Resource Page styles
+
+
+.resource--posts {
+
+   // basics
+
+    h2 {
+         color: $primary-color;
+         font-family: $primary-font-stack;
+         font-size: 24px;
+         font-weight: 800;
+    }
+
+    p {
+         color: $primary-color;
+         font-family: $secondary-font-stack;
+         font-size: 16px;
+    }
+
+     // image
+     .fl-post-grid-image {
+         margin-bottom: 30px;
+     }
+
+    // Category/Topic
+
+    .fl-post-grid-terms {
+        a { 
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 25px;
+            background: #333;
+            color: $white;
+            font-family: $primary-font-stack;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+
+}// .resource--posts
