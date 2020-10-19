@@ -2,3 +2,31 @@
 // @ Author URI: ConsensusInteractive.com
 // @ Description: Header
 
+.fl-page-header-container {
+    .fl-page-header-logo {
+        width: 120px;
+        float: left !important;
+        margin: 0;
+        padding: 0;
+    }
+}// .fl-page-header-container
+
+.fl-page-nav {
+
+    a.nav-link {
+        color: $primary-color !important;
+    }
+
+    .get-started--btn {
+        color: $white !important;
+
+        .nav-link {
+            position: relative;
+            top: 5px;
+            padding: 7.5px 21.5px !important;
+            background-color: $primary-color !important;
+            color: $white !important;
+        }
+    }
+
+} // .fl-page-nav
