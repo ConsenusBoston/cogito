@@ -1,7 +1,11 @@
 .fl-accordion {
     .fl-accordion-button {
+        padding-left:  0;
         .fl-accordion-button-label:focus {
             outline: none;
         }
+    }
+    .fl-accordion-content {
+        padding-left: 0;
     }
 }

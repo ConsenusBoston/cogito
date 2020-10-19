@@ -5,5 +5,14 @@
 	@ Description: Main Styles
 
 */
-.fl-accordion .fl-accordion-button .fl-accordion-button-label:focus {
-  outline: none; }
+.fl-accordion .fl-accordion-button {
+  padding-left: 0; }
+  .fl-accordion .fl-accordion-button .fl-accordion-button-label:focus {
+    outline: none; }
+
+.fl-accordion .fl-accordion-content {
+  padding-left: 0; }
+
+.fl-module-photo.fl-photo-side-sticky img {
+  max-height: 615px;
+  object-fit: cover; }
