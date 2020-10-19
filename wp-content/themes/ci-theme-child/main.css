@@ -5,5 +5,44 @@
 	@ Description: Main Styles
 
 */
+.footer {
+  font-family: "Poppins",sans-serif; }
+  .footer a {
+    font-family: "Poppins", sans-serif;
+    font-weight: normal;
+    font-size: 14px; }
+  .footer h2.widgettitle {
+    color: #BDDCD9;
+    font-family: 'Poppins',sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 25px; }
+
+.resource--posts h2 {
+  color: #31606E;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 800; }
+
+.resource--posts p {
+  color: #31606E;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; }
+
+.resource--posts .fl-post-grid-image {
+  margin-bottom: 30px; }
+
+.resource--posts .fl-post-grid-terms a {
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 25px;
+  background: #333;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase; }
+
 .fl-accordion .fl-accordion-button .fl-accordion-button-label:focus {
   outline: none; }
