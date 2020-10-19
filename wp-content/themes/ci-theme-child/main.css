@@ -5,6 +5,24 @@
 	@ Description: Main Styles
 
 */
+.fl-page-header-container .fl-page-header-logo {
+  width: 120px;
+  float: left !important;
+  margin: 0;
+  padding: 0; }
+
+.fl-page-nav a.nav-link {
+  color: #31606E !important; }
+
+.fl-page-nav .get-started--btn {
+  color: #ffffff !important; }
+  .fl-page-nav .get-started--btn .nav-link {
+    position: relative;
+    top: 5px;
+    padding: 7.5px 21.5px !important;
+    background-color: #31606E !important;
+    color: #ffffff !important; }
+
 .footer {
   font-family: "Poppins",sans-serif; }
   .footer a {
@@ -18,6 +36,15 @@
     font-weight: 600;
     letter-spacing: 0;
     line-height: 25px; }
+
+.resource--featured-post .fl-post-feed-more {
+  color: #31606E;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.2;
+  border-bottom: 2px solid #31606E;
+  text-decoration: none; }
 
 .resource--posts h2 {
   color: #31606E;
@@ -43,6 +70,15 @@
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase; }
+
+.resource--posts .fl-post-grid-more {
+  color: #31606E;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 0.2;
+  border-bottom: 2px solid #31606E;
+  text-decoration: none; }
 
 .fl-accordion .fl-accordion-button .fl-accordion-button-label:focus {
   outline: none; }
