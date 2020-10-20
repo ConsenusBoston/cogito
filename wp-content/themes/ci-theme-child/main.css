@@ -10,6 +10,15 @@
     max-width: 1190px;
     width: 100%; } }
 
+.top--nav-container .fl-module-content {
+  margin: 0;
+  padding: 0; }
+
+.header--container {
+  height: 120px; }
+  .header--container .fl-photo-content {
+    width: 120px; }
+
 .fl-page-header-container .fl-page-header-logo {
   width: 120px;
   float: left !important;
@@ -51,21 +60,7 @@
   border-bottom: 2px solid #31606E;
   text-decoration: none; }
 
-.resource--posts h2 {
-  color: #31606E;
-  font-family: "Poppins", sans-serif;
-  font-size: 24px;
-  font-weight: 800; }
-
-.resource--posts p {
-  color: #31606E;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px; }
-
-.resource--posts .fl-post-grid-image {
-  margin-bottom: 30px; }
-
-.resource--posts .fl-post-grid-terms a {
+.resource--featured-post .fl-post-feed-terms a {
   display: inline-block;
   padding: 5px 15px;
   border-radius: 25px;
@@ -74,16 +69,44 @@
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: bold;
-  text-transform: uppercase; }
-
-.resource--posts .fl-post-grid-more {
-  color: #31606E;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 900;
-  letter-spacing: 0.2;
-  border-bottom: 2px solid #31606E;
+  text-transform: uppercase;
   text-decoration: none; }
+
+.resource--posts {
+  padding-bottom: 60px; }
+  .resource--posts h2 {
+    color: #31606E;
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    font-weight: 800; }
+  .resource--posts p {
+    color: #31606E;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px; }
+  .resource--posts .fl-post-grid-image {
+    margin-bottom: 30px; }
+  .resource--posts .fl-post-grid-meta-terms {
+    margin-bottom: 25px; }
+  .resource--posts .fl-post-grid-terms a {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 25px;
+    background: #333;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none; }
+  .resource--posts .fl-post-grid-more {
+    margin-top: 30px;
+    color: #5989A6 !important;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: 0.2;
+    border-bottom: 2px solid #5989A6;
+    text-decoration: none; }
 
 .fl-accordion .fl-accordion-button {
   padding-left: 0; }
