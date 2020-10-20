@@ -98,6 +98,47 @@
   object-fit: cover;
   width: 100%; }
 
+.fl-module-photo.header-full-width-img {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 585px;
+  max-height: 508px;
+  width: 100%;
+  height: 100%; }
+  .fl-module-photo.header-full-width-img .fl-module-content, .fl-module-photo.header-full-width-img .fl-photo, .fl-module-photo.header-full-width-img .fl-photo-content {
+    width: 100%;
+    height: 100%; }
+  .fl-module-photo.header-full-width-img .fl-photo-content {
+    width: 100%;
+    height: 100%; }
+    .fl-module-photo.header-full-width-img .fl-photo-content img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover; }
+
+.bb-the-latest-posts .fl-post-grid-terms {
+  margin-bottom: 15px; }
+  .bb-the-latest-posts .fl-post-grid-terms a {
+    font-family: "Poppins";
+    font-weight: 700;
+    color: #31606E;
+    font-size: 14px;
+    text-transform: uppercase; }
+
+.bb-the-latest-posts .fl-post-grid-title a {
+  transition: 0.25s ease-in; }
+  .bb-the-latest-posts .fl-post-grid-title a:hover {
+    color: #5989A6; }
+
+.bb-the-latest-posts .fl-post-grid-text .fl-post-grid-content .fl-post-grid-more {
+  color: #5989A6 !important;
+  font-weight: bold;
+  margin-top: 45px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #5989A6; }
+
 .page-template-page-blog .fl-page-content {
   background-color: #FDD9C8; }
 

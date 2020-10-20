@@ -1,0 +1,32 @@
+.bb-the-latest-posts {
+    .fl-post-grid-terms {
+        margin-bottom: 15px;
+        a {
+            font-family: "Poppins";
+            font-weight: 700;
+            color: $primary-color;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
+    .fl-post-grid-title {
+        a {
+            transition: 0.25s ease-in;
+            &:hover {
+                color: $primary-color-light
+            }
+        }
+    }
+    .fl-post-grid-text {
+        .fl-post-grid-content {
+            .fl-post-grid-more {
+                color: $primary-color-light !important;
+                font-weight: bold;
+                margin-top: 45px;
+                margin-bottom: 40px;
+                border-bottom: 2px solid $primary-color-light;
+            }
+        }
+    }
+    
+}
