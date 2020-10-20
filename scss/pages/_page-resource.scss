@@ -4,6 +4,18 @@
 
 
 .resource--featured-post {
+
+    .fl-post-feed-header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+    }
+
+    h2.fl-post-feed-title {
+        order: 1;
+    }
+
+
     .fl-post-feed-more {
         color: $primary-color;
         font-family: $secondary-font-stack;
@@ -15,11 +27,13 @@
     }
 
     .fl-post-feed-terms {
+        margin-bottom: 15px;
+        
         a {
             display: inline-block;
             padding: 5px 15px;
             border-radius: 25px;
-            background: #333;
+            background: $palepink;
             color: $white;
             font-family: $primary-font-stack;
             font-size: 16px;
