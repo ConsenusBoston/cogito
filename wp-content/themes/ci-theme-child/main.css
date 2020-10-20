@@ -5,37 +5,44 @@
 	@ Description: Main Styles
 
 */
-@media screen and (min-width: 1100px) {
+@media (min-width: largepx) {
   .fl-full-width .fl-page-content .container {
     max-width: 1190px;
     width: 100%; } }
+
+#fl-main-content {
+  margin-top: -132px; }
+
+.fl-theme-builder-header-sticky.fl-theme-builder-header-shrink {
+  background-color: #ffffff; }
+  .fl-theme-builder-header-sticky.fl-theme-builder-header-shrink .top--nav-container {
+    display: none; }
 
 .top--nav-container .fl-module-content {
   margin: 0;
   padding: 0; }
 
 .header--container {
-  height: 120px; }
+  height: 60px; }
   .header--container .fl-photo-content {
     width: 120px; }
+  .header--container li.menu-item {
+    margin-right: 15px; }
+  .header--container .get-started--btn {
+    position: relative;
+    margin-right: 0 !important; }
+    .header--container .get-started--btn a {
+      top: 5px;
+      background-color: #31606E !important;
+      padding: 10.5px 26px !important;
+      margin: 0;
+      color: #ffffff !important; }
 
 .fl-page-header-container .fl-page-header-logo {
   width: 120px;
   float: left !important;
   margin: 0;
   padding: 0; }
-
-.fl-page-nav a.nav-link {
-  color: #31606E !important; }
-
-.fl-page-nav .get-started--btn {
-  color: #ffffff !important; }
-  .fl-page-nav .get-started--btn .nav-link {
-    position: relative;
-    top: 5px;
-    padding: 7.5px 21.5px !important;
-    background-color: #31606E !important;
-    color: #ffffff !important; }
 
 .footer {
   font-family: "Poppins",sans-serif; }
@@ -51,6 +58,14 @@
     letter-spacing: 0;
     line-height: 25px; }
 
+.resource--featured-post .fl-post-feed-header {
+  display: flex;
+  flex-direction: column;
+  padding-top: 70px; }
+
+.resource--featured-post h2.fl-post-feed-title {
+  order: 1; }
+
 .resource--featured-post .fl-post-feed-more {
   color: #31606E;
   font-family: "Roboto", sans-serif;
@@ -60,17 +75,19 @@
   border-bottom: 2px solid #31606E;
   text-decoration: none; }
 
-.resource--featured-post .fl-post-feed-terms a {
-  display: inline-block;
-  padding: 5px 15px;
-  border-radius: 25px;
-  background: #333;
-  color: #ffffff;
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: bold;
-  text-transform: uppercase;
-  text-decoration: none; }
+.resource--featured-post .fl-post-feed-terms {
+  margin-bottom: 15px; }
+  .resource--featured-post .fl-post-feed-terms a {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 25px;
+    background: #C084A3;
+    color: #ffffff;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none; }
 
 .resource--posts {
   padding-bottom: 60px; }
@@ -125,7 +142,7 @@
   position: absolute;
   right: 0;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(-37%);
   max-width: 585px;
   max-height: 508px;
   width: 100%;
