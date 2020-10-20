@@ -13,10 +13,25 @@
         border-bottom: 2px solid $primary-color;
         text-decoration: none;
     }
+
+    .fl-post-feed-terms {
+        a {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 25px;
+            background: #333;
+            color: $white;
+            font-family: $primary-font-stack;
+            font-size: 16px;
+            font-weight: bold;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
 }
 
 .resource--posts {
-
+   padding-bottom: 60px;
    // basics
 
     h2 {
@@ -38,6 +53,9 @@
      }
 
     // Category/Topic
+    .fl-post-grid-meta-terms {
+        margin-bottom: 25px;
+    }
 
     .fl-post-grid-terms {
         a { 
@@ -50,16 +68,18 @@
             font-size: 16px;
             font-weight: bold;
             text-transform: uppercase;
+            text-decoration: none;
         }
     }
 
     .fl-post-grid-more {
-        color: $primary-color;
+        margin-top: 30px;
+        color: $primary-color-light !important;
         font-family: $secondary-font-stack;
         font-size: 16px;
         font-weight: 900;
         letter-spacing: 0.2;
-        border-bottom: 2px solid $primary-color;
+        border-bottom: 2px solid $primary-color-light;
         text-decoration: none;
     }
 
