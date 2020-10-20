@@ -2,6 +2,8 @@
 ~resources/*
 node_modules/
 
+package-lock.json
+
 favicon.ico
 _wpeprivate
 .wpe-devkit
@@ -9,7 +11,10 @@ _wpeprivate
 .wpe-push-ignore
 .wpengine-conf
 wp-content/*.php
-wp-content/plugins*
+
+wp-content/plugins/*
+!wp-content/plugins/ci-builder-modules/
+
 wp-content/upgrade*
 wp-content/uploads*
 wp-content/mu-plugins*
@@ -19,6 +24,12 @@ wp-content/mu-plugins*
 *.installedExtras
 *.html
 *.txt
+
+!wp-content/plugins/ci-builder-modules/*
+!wp-content/themes/ci-theme-child/fl-builder/modules/*/*.php
+!wp-content/themes/ci-theme-child/*.php
+!wp-content/themes/ci-theme-child/fl-builder/modules/*/*/*.php
+
 wp-admin*
 wp-admin/*
 wp-includes*

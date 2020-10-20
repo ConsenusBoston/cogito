@@ -2,46 +2,137 @@
 // @ Author URI: ConsensusInteractive.com
 //	@ Description: Wordpress widget classes
 
-.widget-area {
-    font-family: $secondary-font-stack;
+// .widget-area {
+//     font-family: $secondary-font-stack;
 
-    ul,
-    li {
-        list-style: none;
-        margin: 0;
-        padding: 0;
+//     ul,
+//     li {
+//         list-style: none;
+//         margin: 0;
+//         padding: 0;
+//     }
+
+//     li {s
+//         padding: 0 20px;
+//     }
+
+//     h2 {
+//         font-family: $secondary-font-stack;
+//         font-weight: 300;
+//         font-size: 20px;
+
+//         @include breakpoint(x-lg) {
+//             font-size: 24px;
+//         }
+
+//         @include breakpoint(md) {
+//             font-size: 28px;
+//         }
+
+//         @include breakpoint(sm) {
+//             font-size: 30px;
+//         }
+//     }
+
+//     a {
+//         font-size: 18px;
+//         font-weight: 600;
+//         text-decoration: none;
+//         color: $black;
+
+//         &:hover {
+//             color: $primary-color;
+//         }
+//     }
+// }
+
+// Single POst Widget
+.fl-post__description__body--sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 992px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+.single-post-sidebar-widget {
+    margin-bottom: 15px;
+    &#text-5 {
+        background-color: #E7F1F3;
+        .textwidget {
+            padding: 25px 15px;
+            @media screen and (min-width: 768px) {
+                padding: 75px 50px;
+            }
+        }
+    }
+    &#text-6 {
+        border: 1px solid $primary-color;
+        .textwidget {
+            padding: 0 15px 25px 15px;
+            @media screen and (min-width: 768px) {
+                padding: 0 20px 75px 20px;
+            }
+            p {
+                text-align: center;
+            }
+        }
     }
 
-    li {
-        padding: 0 20px;
-    }
-
-    h2 {
-        font-family: $secondary-font-stack;
-        font-weight: 300;
-        font-size: 20px;
-
-        @include breakpoint(x-lg) {
-            font-size: 24px;
-        }
-
-        @include breakpoint(md) {
-            font-size: 28px;
-        }
-
-        @include breakpoint(sm) {
-            font-size: 30px;
+    max-width: 435px;
+    width: 100%;
+    .widgettitle {
+        font-size: 24px;
+        padding-top: 25px;
+        margin-bottom: 30px;
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            padding-top: 42px;
         }
     }
-
-    a {
-        font-size: 18px;
-        font-weight: 600;
-        text-decoration: none;
-        color: $black;
-
-        &:hover {
-            color: $primary-color;
+    .textwidget {
+        p {
+            font-family: "Roboto";
+            font-weight: 400;
+            font-size: 18px;
+            margin-bottom: 0;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 35px;
+            @media screen and (min-width: 768px ){
+                flex-direction: row;
+            }
+            input {
+                border-radius: 0;
+                max-width: 220px;
+                width: 100%;
+                height: 45px;
+                margin-bottom: 0;
+            }
+        }
+        a, button {
+            font-family: "Poppins";
+            font-weight: 700;
+            font-size: 16px;
+            padding: 11px 26px;
+            background-color: $primary-color;
+            color: $white;
+            display: inline-block;
+            margin-top: 30px;
+            text-decoration: none;
+            border-radius: 0;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+        button {
+            margin-top: 0;
         }
     }
 }

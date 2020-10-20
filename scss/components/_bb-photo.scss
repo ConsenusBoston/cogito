@@ -1,0 +1,9 @@
+.fl-module-photo {
+    &.fl-photo-side-sticky {
+        img {
+            max-height: 615px;
+            object-fit: cover;
+            width: 100%;
+        }
+    }
+}

@@ -22,14 +22,16 @@
 // @import "base/forms";
 // @import "base/buttons";
 // @import "layout/layout";
-// @import "layout/navigation";
+@import "layout/_container";
 @import "layout/header";
 @import "layout/footer";
 
 @import "pages/page-resource";
 @import "components/_bb-accordion";
+@import "components/_bb-photo";
 
-
-// @import "pages/wp-widgets";
+@import "pages/wp-blog";
+@import "pages/wp-blog-details";
+@import "pages/wp-widgets";
 
 // @import "utils/helpers";
