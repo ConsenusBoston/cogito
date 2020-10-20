@@ -20,3 +20,15 @@ function custom_excerpt_length( $length ) {
   return 18;
 }
 add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+
+add_action( 'widgets_init', 'register_my_widgets' );
+function register_my_widgets(){
+	register_sidebar( array(
+		'name'          => sprintf(__('Single Post Sidebar'), $i ),
+		'id'            => "single-post-sidebar",
+		'description'   => 'Here you can put text widget',
+		'class'         => '',
+		'before_widget' => '<div id="%1$s" class="widget single-post-sidebar-widget">',
+		'after_widget'  => "</div>\n",
+	) );
+}

@@ -349,6 +349,11 @@ ul.post-categories {
   .fl-post__description__date time {
     font-size: 16px; }
 
+.fl-post__description__social-media {
+  margin-bottom: 50px; }
+  .fl-post__description__social-media a:not(:last-child) {
+    margin-right: 8px; }
+
 .fl-post__description__featured {
   border: 1px solid #979797;
   margin-bottom: 30px; }
@@ -394,3 +399,77 @@ ul.post-categories {
     max-width: 100%; }
   .fl-post__description__body h1, .fl-post__description__body h2, .fl-post__description__body h3, .fl-post__description__body h4, .fl-post__description__body h5, .fl-post__description__body h6 {
     margin-bottom: 45px; }
+
+.fl-post__description__body--sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  @media screen and (min-width: 992px) {
+    .fl-post__description__body--sidebar {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between; } }
+
+.single-post-sidebar-widget {
+  margin-bottom: 15px;
+  max-width: 435px;
+  width: 100%; }
+  .single-post-sidebar-widget#text-5 {
+    background-color: #E7F1F3; }
+    .single-post-sidebar-widget#text-5 .textwidget {
+      padding: 25px 15px; }
+      @media screen and (min-width: 768px) {
+        .single-post-sidebar-widget#text-5 .textwidget {
+          padding: 75px 50px; } }
+  .single-post-sidebar-widget#text-6 {
+    border: 1px solid #31606E; }
+    .single-post-sidebar-widget#text-6 .textwidget {
+      padding: 0 15px 25px 15px; }
+      @media screen and (min-width: 768px) {
+        .single-post-sidebar-widget#text-6 .textwidget {
+          padding: 0 20px 75px 20px; } }
+      .single-post-sidebar-widget#text-6 .textwidget p {
+        text-align: center; }
+  .single-post-sidebar-widget .widgettitle {
+    font-size: 24px;
+    padding-top: 25px;
+    margin-bottom: 30px;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .single-post-sidebar-widget .widgettitle {
+        padding-top: 42px; } }
+  .single-post-sidebar-widget .textwidget p {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 0; }
+  .single-post-sidebar-widget .textwidget form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 35px; }
+    @media screen and (min-width: 768px) {
+      .single-post-sidebar-widget .textwidget form {
+        flex-direction: row; } }
+    .single-post-sidebar-widget .textwidget form input {
+      border-radius: 0;
+      max-width: 220px;
+      width: 100%;
+      height: 45px;
+      margin-bottom: 0; }
+  .single-post-sidebar-widget .textwidget a, .single-post-sidebar-widget .textwidget button {
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 16px;
+    padding: 11px 26px;
+    background-color: #31606E;
+    color: #ffffff;
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    border-radius: 0; }
+    .single-post-sidebar-widget .textwidget a:hover, .single-post-sidebar-widget .textwidget button:hover {
+      text-decoration: none; }
+  .single-post-sidebar-widget .textwidget button {
+    margin-top: 0; }
