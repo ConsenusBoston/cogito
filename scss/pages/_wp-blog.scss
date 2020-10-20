@@ -128,7 +128,6 @@ ul.post-categories {
                 font-weight: 700;
                 color: $primary-text-clr;
                 font-family: "Poppins";
-                line-height: 39px;
                 &:hover {
                     text-decoration: none;
                 }
@@ -145,6 +144,9 @@ ul.post-categories {
                 font-size: 16px;
                 line-height: 23px;
                 margin-bottom: 55px;
+                @media screen and (min-width: 992px) {
+                    margin-bottom: 20px;
+                }
             }
             small {
                 font-size: 14px;

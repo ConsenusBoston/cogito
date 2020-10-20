@@ -15,3 +15,8 @@ function add_theme_scripts()
   wp_enqueue_style('main', get_stylesheet_directory_uri() . '/main.css');
 }
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
+
+function custom_excerpt_length( $length ) {
+  return 18;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
