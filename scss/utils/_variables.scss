@@ -14,25 +14,19 @@ $lightest-grey: #c7c7c7;
 $lightest-grey-2: #686868;
 $lightest-grey-3: #f3f6f8;
 $lightest-grey-4: #F1F1F1;
-$orange: #FB8200;
 
 $lightest-grey-5: #979797;
 $primary-text-clr: #31606E;
 $primary-text-clr-light: #47879C;
-
-
-// @ New Colors
-$accent-1: #2c5a7a;
-$accent-2: #040505;
-
-
 // Change these
 // @ Primary brand color
-$primary-color: #20ad95;
+$primary-color: #31606E;
 
 // Primary Variables
 $body-bg-color: #ffffff !default; // @ white
 $secondary-color: #b22635 !default; // @ Red
+$teal: #BDDCD9;
+$lighterteal: #E7F1F3;
 $secondary-alt-color: $black !default; // @ Heading color 
 $default-btn-color: $primary-color !default; // @ primary color
 
@@ -59,12 +53,9 @@ $primary-font-size: 16px !default;
 $primary-font-color: $black;
 
 // Primary Font Stacks
-$primary-font-stack: 'Khand',
+$primary-font-stack: 'Poppins',
 sans-serif !default;
-$secondary-font-stack: 'ProximaNova-Regular',
-// 'PT Sans',
-// 'Arial',
-// 'Helvetica',
+$secondary-font-stack: 'Roboto',
 sans-serif !default;
 
 // Layout

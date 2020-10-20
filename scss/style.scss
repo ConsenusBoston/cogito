@@ -23,12 +23,14 @@
 // @import "base/buttons";
 // @import "layout/layout";
 @import "layout/_container";
-// @import "layout/header";
-// @import "layout/footer";
+@import "layout/header";
+@import "layout/footer";
+
+@import "pages/page-resource";
 @import "components/_bb-accordion";
 @import "components/_bb-photo";
 
-
 @import "pages/wp-blog";
+@import "pages/wp-blog-details";
 
 // @import "utils/helpers";

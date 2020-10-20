@@ -27,6 +27,7 @@ wp-content/mu-plugins*
 
 !wp-content/plugins/ci-builder-modules/*
 !wp-content/themes/ci-theme-child/fl-builder/modules/*/*.php
+!wp-content/themes/ci-theme-child/*.php
 !wp-content/themes/ci-theme-child/fl-builder/modules/*/*/*.php
 
 wp-admin*
