@@ -13,7 +13,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-top: 50px;
+    padding-top: 170px;
     &__name {
         font-size: 20px;
         margin-bottom: 0;
@@ -38,6 +38,7 @@ ul.post-categories {
         color: $primary-text-clr-light;
         display: flex;
         align-items: center;
+        text-align: center;
         &:not(:last-child) {
             position: relative;
             &:after {
@@ -90,7 +91,39 @@ ul.post-categories {
 }
 
 .blog-content {
-    padding-bottom: 150px;
+    padding-bottom: 50px;
+    @include breakpoint("sm") {
+        padding-bottom: 150px;
+    }
+    .blog-content--sm-scroll {
+        margin-right: -20px ;
+        margin-left: -20px ;
+    }
+    @media screen and (max-width: 575px) {
+        .blog-content--sm-scroll {
+            .blog-content--col {
+                max-width: 85%;
+            }
+        }
+    }
+    @include breakpoint("sm-max") {
+        .blog-content--sm-scroll {
+            .blog-content--col {
+                max-width: 85%;
+            }
+        }
+    }
+    @include breakpoint("sm-max") {
+        .blog-content--sm-scroll {
+            flex-wrap: nowrap !important;
+            overflow-y: auto;
+        }
+    }
+
+    &.fl-content {
+        margin: 0;
+    }
+
     &__card {
         // border: 1px solid #979797;
         margin-top: 50px;
@@ -143,9 +176,9 @@ ul.post-categories {
                 font-family: 'Roboto';
                 font-size: 16px;
                 line-height: 23px;
-                margin-bottom: 55px;
+                margin-bottom: 20px;
                 @media screen and (min-width: 992px) {
-                    margin-bottom: 20px;
+                    margin-bottom: 55px;
                 }
             }
             small {
@@ -218,6 +251,7 @@ ul.post-categories {
 
 .fl-sticky {
     .blog-content {
+       
         &__card {
             &__description {
                 width: 100%;

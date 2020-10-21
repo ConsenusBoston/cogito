@@ -108,7 +108,7 @@ $posts_counter = 0;
 
 <div class="<?php FLLayout::container_class(); ?>">
 	<main class="fl-content blog-content">
-		<div class="<?php FLLayout::row_class(); ?>" <?php FLTheme::print_schema( ' itemscope="itemscope" itemtype="https://schema.org/Blog"' ); ?>>
+		<div class="blog-content--sm-scroll <?php FLLayout::row_class(); ?>" <?php FLTheme::print_schema( ' itemscope="itemscope" itemtype="https://schema.org/Blog"' ); ?>>
 			
 			<?php if ( $posts_query->have_posts() ) { ?>
 			
@@ -121,7 +121,7 @@ $posts_counter = 0;
 					<?php if (!is_sticky($post->ID)): ?>
 						<!-- Three Columns Posts -->
 						<?php if ($posts_counter < 7): ?>
-							<div class="col-md-6 col-xl-4">
+							<div class="col-12 col-xl-4 blog-content--col">
 								<div class="blog-content__card">
 									<div class="blog-content__card__thumbnail">
 										<?php if (has_post_thumbnail()) : ?>
@@ -154,7 +154,7 @@ $posts_counter = 0;
 						<?php elseif ($posts_counter === 7): ?>
 
 							<!-- Full Width Post -->
-							<div class="col-lg-12">
+							<div class="col-12 col-lg-12 blog-content--col">
 								<div class="blog-content__card blog-content__card--full-width">
 									<div class="blog-content__card__thumbnail">
 										<?php if (has_post_thumbnail()) : ?>
@@ -199,5 +199,4 @@ $posts_counter = 0;
 		</div>
 	</main>
 </div>
-<?php echo do_shortcode('[fl_builder_insert_layout id="77"]'); ?>
 <?php get_footer(); ?>

@@ -27,5 +27,4 @@
 
 	</div>
 </div>
-<?php echo do_shortcode('[fl_builder_insert_layout id="77"]'); ?>
 <?php get_footer(); ?>
