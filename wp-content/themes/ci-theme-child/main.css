@@ -243,9 +243,9 @@
     width: 100%;
     overflow-y: scroll; }
     .bb-the-latest-posts .fl-post-grid .fl-post-column {
-      width: 280px;
-      padding-left: 15px;
-      padding-right: 15px;
+      width: 300px;
+      padding-left: 10px;
+      padding-right: 10px;
       flex-shrink: 0; } }
 
 .cta-left-text-block .fl-col-content, .cta-right-text-block .fl-col-content {
