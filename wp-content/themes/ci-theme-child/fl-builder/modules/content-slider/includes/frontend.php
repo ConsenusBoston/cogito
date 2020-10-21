@@ -58,5 +58,18 @@
 				</a>
 			</div>
 		<?php endif; ?>
+
 		<div class="fl-clear"></div>
 </div>
+
+<?php if ( $settings->thumbs && count( $settings->slides ) > 0 ) : ?>
+	<div class="fl-content-slider-thumbs">
+		<?php foreach($settings->slides as $key=>$slide_item): ?>
+			<?php if ( $slide_item->fg_photo_src): ?>
+				<a href="#" class="fl-content-slider-thumbs__thumb fl-content-slider-thumbs__thumb-<?php echo($key)?>" data-index="<?php echo $key?>">
+					<img src="<?php echo esc_url( $slide_item->fg_photo_src ); ?>" alt="<?php echo esc_attr( $slide_item->title );?>">
+				</a>
+			<?php endif; ?>
+		<?php endforeach;?>
+	</div>
+<?php endif; ?>

@@ -80,6 +80,14 @@
 
 		<?php endif; ?>
 
+		<?php if ( $settings->thumbs ) : ?>
+			$('.fl-content-slider-thumbs').on( 'click', '.fl-content-slider-thumbs__thumb', function( e ){
+				e.preventDefault();
+				var slideIndx = e.currentTarget.getAttribute('data-index')
+				slider.goToSlide(+slideIndx);
+			} );
+		<?php endif; ?>	
+
 	});
 
 })(jQuery);

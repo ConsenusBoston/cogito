@@ -54,4 +54,26 @@
         padding: 0;
     }
 }// .fl-page-header-container
+
+.home--featured-hero {
+    .fl-button-contact-us {
+        position: absolute;
+        bottom: 8.5%;
+        right: 10%;
+        z-index: 20;
+    }
+    .fl-button-group-buttons {
+        .fl-button-group-button {
+            @include breakpoint("md-max") {
+                &:not(:last-child) {
+                    margin-bottom: 20px;
+                }
+                width: 100%;
+                .fl-button-wrap {
+                    width: 100%;
+                }
+            }  
+        }
+    }
+}
  

@@ -1,0 +1,12 @@
+.cta-left-text-block {
+   
+}
+.cta-right-text-block {
+    @include breakpoint("sm-max") {
+        .fl-col-group {
+            .fl-col:first-child {
+                order: 1 !important;
+            }
+        }
+    }
+}

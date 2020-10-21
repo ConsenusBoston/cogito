@@ -393,6 +393,15 @@ FLBuilder::register_module('FLContentSliderModule', array(
 							'1' => __( 'Yes', 'fl-builder' ),
 						),
 					),
+					'thumbs'       => array(
+						'type'    => 'select',
+						'label'   => __( 'Show Thumbs', 'fl-builder' ),
+						'default' => '0',
+						'options' => array(
+							'0' => __( 'No', 'fl-builder' ),
+							'1' => __( 'Yes', 'fl-builder' ),
+						),
+					),
 				),
 			),
 		),
