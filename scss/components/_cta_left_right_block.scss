@@ -1,5 +1,7 @@
-.cta-left-text-block {
-   
+.cta-left-text-block, .cta-right-text-block {
+   .fl-col-content {
+        min-height: 0 !important;
+   }
 }
 .cta-right-text-block {
     @include breakpoint("sm-max") {
