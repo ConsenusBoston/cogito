@@ -71,6 +71,13 @@
     font-weight: 600;
     letter-spacing: 0;
     line-height: 25px; }
+  .footer .footer--copyright ul, .footer .footer--copyright li {
+    margin: 0;
+    padding: 0; }
+  .footer .footer--copyright li {
+    list-style: none;
+    float: left;
+    margin-right: 40px; }
 
 .resource--featured-post .fl-post-feed-header {
   display: flex;
@@ -254,6 +261,36 @@
 @media (max-width: 767px) {
   .cta-right-text-block .fl-col-group .fl-col:first-child {
     order: 1 !important; } }
+
+[data-name="leadership_team"] {
+  overflow-y: hidden;
+  /* Hide scrollbar for Chrome, Safari and Opera */ }
+  [data-name="leadership_team"]::-webkit-scrollbar {
+    display: none; }
+
+.leadership--container {
+  display: flex;
+  flex-direction: row; }
+  .leadership--container .member {
+    float: left;
+    width: 540px;
+    margin: 0 1.5%; }
+  .leadership--container .member--details a,
+  .leadership--container .member--details a:hover {
+    text-decoration: none; }
+  .leadership--container .member--image {
+    min-height: 581px;
+    min-width: 530px;
+    margin-bottom: 33px; }
+  .leadership--container .member--name {
+    color: #47879C;
+    text-align: center; }
+    .leadership--container .member--name h3 {
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 26px; }
 
 .page-template-page-blog .fl-page-content {
   background-color: #FDD9C8; }

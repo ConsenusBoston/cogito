@@ -1,0 +1,49 @@
+//	@ Author: Consensus Interactive
+//	@ Author URI: ConsensusInteractive.com
+//	@ Description: Leadership Team carousel/list styles
+
+[data-name="leadership_team"] {
+    overflow-y: hidden;
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.leadership--container {
+    display: flex;
+    flex-direction: row;
+
+    .member {
+        float: left;
+        width: 540px;
+        margin: 0 1.5%;
+    }
+
+    .member--details a,
+    .member--details a:hover {
+        text-decoration: none;;
+    }
+
+    .member--image {
+       min-height: 581px;
+       min-width: 530px;
+       margin-bottom: 33px;
+    }
+
+   .member--name {
+       color: $primary-text-clr-light;
+       text-align: center;
+
+       h3 {
+            font-family: $secondary-font-stack;
+            font-weight: normal;
+            font-size: 20px;
+            letter-spacing: 0;
+            line-height: 26px;
+       }
+   }
+
+
+}// .leadership--container
