@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function () {
     })
 
     jQuery('.leadership-details').on('show.bs.modal', function (e) {
-        jQuery('body').css('overflow-y', "auto");
+        jQuery('body').css({ 'overflow-y': "auto"});
+        jQuery('body').addClass('px-0')
 
         var currentModal = jQuery(this);
         var nextModal = currentModal.closest("div[id^='MyModal']").nextAll("div[id^='MyModal']").first();

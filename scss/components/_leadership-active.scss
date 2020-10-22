@@ -1,5 +1,4 @@
 .leadership--container {
-    position: relative;
     &--details-active {
         &:before {
             content: "";
@@ -19,6 +18,8 @@
     overflow-y: hidden !important;
     .modal-dialog {
         margin: 0 auto;
+        z-index: 10;
+        max-width: 100%;
         @include breakpoint("sm") {
             max-width: 90%;
         }
@@ -64,8 +65,18 @@
             }
         }
         &__thumbnail {
-            width: 45.5%;
-            height: 580px;
+            width: 100%;
+            height: 250px;
+            margin-bottom: 20px;
+            @include breakpoint("md"){
+                margin-bottom: 0;
+                height: 300px;
+                width: 35%;
+            }
+            @include breakpoint("lg"){
+                width: 45.5%;
+                height: 580px;
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -73,8 +84,16 @@
             }
         }
         &__description {
-            width: 45.5%;
-            padding: 0 0px 0px 60px;
+            width: 100%;
+            padding: 0 0;
+            @include breakpoint("sm"){
+                width: 65%;
+                padding: 0 0px 0px 15px;
+            }
+            @include breakpoint("lg"){
+                padding: 0 0px 0px 60px;
+                width: 45.5%;
+            }
             h6 {
                 font-family: "Roboto";
                 font-weight: normal;
@@ -85,14 +104,26 @@
                 font-family: Poppins;
                 font-style: normal;
                 font-weight: bold;
-                font-size: 50px;
-                margin-bottom: 50px;
+                font-size: 24px;
+                @include breakpoint("sm"){
+                    font-size: 50px;
+                    margin-bottom: 50px;
+                }
+                @include breakpoint("lg"){
+                    font-size: 50px;
+                }
             }
             &__content {
                 font-family: "Roboto";
-                font-size: 20px;
-                * {
+                font-size: 16px;
+                @include breakpoint("sm"){
                     font-size: 20px;
+                }
+                * {
+                    font-size: 16px;
+                    @include breakpoint("sm"){
+                        font-size: 20px;
+                    }
                 }
             }
         }
