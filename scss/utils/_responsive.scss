@@ -27,7 +27,7 @@
   }
 
   @else if $breakpoint=="md" {
-    @media (min-width: 991px) {
+    @media (min-width: 992px) {
       @content;
     }
   }
@@ -39,7 +39,7 @@
   }
 
   @else if $breakpoint=="lg" {
-    @media (min-width: 1199px) {
+    @media (min-width: 1200px) {
       @content;
     }
   }

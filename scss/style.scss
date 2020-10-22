@@ -16,7 +16,7 @@
 // @partials
 @import "utils/responsive";
 @import "utils/variables";
-// @import "utils/mixin";
+@import "utils/mixin";
 // @import "base/base";
 // @import "base/typography";
 // @import "base/forms";
@@ -34,6 +34,7 @@
 @import "components/_bb-posts";
 @import "components/_cta_left_right_block";
 @import "components/team-list";
+@import "components/_search-modal";
 
 @import "pages/wp-blog";
 @import "pages/wp-blog-details";

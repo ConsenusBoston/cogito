@@ -13,6 +13,7 @@ add_action( 'wp_enqueue_scripts', 'FLChildTheme::enqueue_scripts', 1000 );
 function add_theme_scripts()
 {
   wp_enqueue_style('main', get_stylesheet_directory_uri() . '/main.css');
+  wp_enqueue_script('app', get_stylesheet_directory_uri() . '/scripts/app.js');
 }
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 

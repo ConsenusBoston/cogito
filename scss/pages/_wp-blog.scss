@@ -26,6 +26,16 @@
             background-color: transparent;
             border: 0;
             padding: 0;
+            &:focus {
+                outline: none;
+                background-color: transparent;
+                border:0;
+            }
+            &:hover {
+                outline: none;
+                background-color: transparent;
+                border:0;
+            }
         }
     }
 }
