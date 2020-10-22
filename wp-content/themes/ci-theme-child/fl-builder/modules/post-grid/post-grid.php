@@ -321,7 +321,7 @@ class FLPostGridModule extends FLBuilderModule {
 	 * @since 1.10.8
 	 * @return string|null
 	 */
-	public function get_post_terms() {
+	public function get_post_terms($single_taxonomy = false) {
 		$post_type       = get_post_type();
 		$taxonomies      = get_object_taxonomies( $post_type, 'objects' );
 		$terms_list      = array();
@@ -331,14 +331,21 @@ class FLPostGridModule extends FLBuilderModule {
 			return;
 		}
 
+		
 		foreach ( $taxonomies as $name => $tax ) {
+			
 			if ( ! $tax->hierarchical ) {
 				continue;
 			}
-
+			
 			$term_list = get_the_term_list( get_the_ID(), $name, '', $terms_separator, '' );
+			
 			if ( ! empty( $term_list ) ) {
-				$terms_list[] = $term_list;
+				if ($single_taxonomy) {
+					$terms_list[] = explode(",", $term_list)[0];
+				} else {
+					$terms_list[] = $term_list;
+				}
 			}
 		}
 
@@ -892,9 +899,18 @@ FLBuilder::register_module('FLPostGridModule', array(
 						),
 						'toggle'  => array(
 							'1' => array(
-								'fields' => array( 'terms_separator', 'terms_list_label' ),
+								'fields' => array( 'terms_separator', 'terms_list_label', 'show_single_term' ),
 							),
 						),
+					),
+					'show_single_term' => array(
+						'type'    => 'select',
+						'label'   => __( 'Show Single Term', 'fl-builder' ),
+						'default' => '0',
+						'options' => array(
+							'1' => __( 'Yes', 'fl-builder' ),
+							'0' => __( 'No', 'fl-builder' ),
+					),
 					),
 					'terms_list_label' => array(
 						'type'    => 'text',

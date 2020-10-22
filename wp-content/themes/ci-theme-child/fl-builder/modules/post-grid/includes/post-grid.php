@@ -13,7 +13,13 @@
 			<div class="fl-post-grid-meta-terms">
 				<div class="fl-post-grid-terms">
 					<span class="fl-terms-label"><?php echo $settings->terms_list_label; ?></span>
-					<?php echo $module->get_post_terms(); ?>
+					
+					<?php if ($settings->show_single_term) : 
+							echo $module->get_post_terms(true); 
+						else :
+							echo $module->get_post_terms();
+						endif;
+						?>
 				</div>
 			</div>
 		<?php endif; ?>
