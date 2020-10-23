@@ -84,13 +84,14 @@
 			<?php if ( $settings->show_content ) : ?>
 				<?php $module->render_excerpt(); ?>
 			<?php endif; ?>
-			<?php if ( $settings->show_more_link ) : ?>
+			<!-- View More Link was here -->
+		</div>
+		<?php if ( $settings->show_more_link ) : ?>
 			<a class="fl-post-grid-more" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
 			<?php echo $settings->more_link_text; ?>
 			<i class="<?php echo $settings->more_link_icon; ?>"></i>
 			</a>
-			<?php endif; ?>
-		</div>
+		<?php endif; ?>
 		<?php endif; ?>
 
 		<?php do_action( 'fl_builder_post_grid_after_content', $settings, $module ); ?>

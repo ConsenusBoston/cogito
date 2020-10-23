@@ -1747,6 +1747,10 @@
       width: 100%;
       object-fit: cover; }
 
+.bb-the-latest-posts .fl-module-post-grid, .bb-the-latest-posts .fl-module-content,
+.bb-the-latest-posts .fl-post-grid, .bb-the-latest-posts .fl-post-column, .bb-the-latest-posts .fl-post-grid-post, .bb-the-latest-posts .fl-post-grid-text {
+  height: 100% !important; }
+
 .bb-the-latest-posts .fl-post-grid-terms {
   margin-bottom: 15px; }
   .bb-the-latest-posts .fl-post-grid-terms a {
@@ -1761,25 +1765,38 @@
   .bb-the-latest-posts .fl-post-grid-title a:hover {
     color: #5989A6; }
 
-.bb-the-latest-posts .fl-post-grid-text .fl-post-grid-content .fl-post-grid-more {
-  color: #5989A6 !important;
-  font-weight: bold;
-  margin-top: 45px;
-  margin-bottom: 40px;
-  border-bottom: 2px solid #5989A6; }
+.bb-the-latest-posts .fl-post-column {
+  width: 100% !important; }
+
+.bb-the-latest-posts .fl-post-grid-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; }
+  .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-content {
+    padding-bottom: 50px; }
+  .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more {
+    color: #5989A6 !important;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #5989A6; }
 
 @media (max-width: 767px) {
-  .bb-the-latest-posts .fl-post-grid {
+  .bb-the-latest-posts .fl-col-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap; }
+  .bb-the-latest-posts .fl-row-content-wrap {
     margin-left: 0;
     margin-right: 0;
     flex-direction: row;
     display: flex;
     width: 100%;
     overflow-y: scroll; }
-    .bb-the-latest-posts .fl-post-grid .fl-post-column {
-      width: 300px;
-      padding-left: 10px;
-      padding-right: 10px;
+    .bb-the-latest-posts .fl-row-content-wrap .fl-col {
+      margin: 0 10px !important; }
+    .bb-the-latest-posts .fl-row-content-wrap .fl-post-column, .bb-the-latest-posts .fl-row-content-wrap .fl-col {
+      width: 300px !important;
       flex-shrink: 0; } }
 
 .cta-left-text-block .fl-col-content, .cta-right-text-block .fl-col-content {
