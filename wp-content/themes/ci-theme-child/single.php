@@ -16,5 +16,4 @@
 
 	</div>
 </div>
-<?php get_template_part( 'templates/template-searchModal' );?>
 <?php get_footer(); ?>

@@ -191,5 +191,4 @@ $posts_counter = 0;
 		</div>
 	</main>
 </div>
-<?php get_template_part( 'templates/template-searchModal' );?>
 <?php get_footer(); ?>
