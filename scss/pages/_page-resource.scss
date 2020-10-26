@@ -44,6 +44,33 @@
     }
 }
 
+.resource--list-post .fl-post-column:nth-child(4n + 1) {
+    .fl-post-grid-terms {
+        a {
+            background: #277F57;
+        }
+    }
+}
+
+.resource--list-post .fl-post-column:nth-child(2n) {
+    .fl-post-grid-terms {
+        a {
+            background: #F26B6C; 
+        }
+    }
+}
+
+.resource--list-post .fl-post-column:nth-child(3n) {
+    .fl-post-grid-terms {
+        a {
+            background: #C084A3; 
+        }
+    }
+}
+
+
+
+
 .resource--posts {
    padding-bottom: 60px;
    // basics
@@ -70,7 +97,8 @@
     .fl-post-grid-meta-terms {
         margin-bottom: 25px;
     }
-
+    
+   
     .fl-post-grid-terms {
         a { 
             display: inline-block;

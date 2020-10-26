@@ -4,7 +4,8 @@
 
 
 .footer {
-     font-family: "Poppins",sans-serif;
+    font-family: "Poppins", sans-serif;
+
     a {
         font-family: "Poppins", sans-serif;
         font-weight: normal;
@@ -13,15 +14,23 @@
 
     h2.widgettitle {
         color: $teal;
-        font-family: 'Poppins',sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size: 16px;
         font-weight: 600;
         letter-spacing: 0;
         line-height: 25px;
     }
 
+    .fl-button-group-buttons {
+        .fl-button-group-button {
+            margin-bottom: 15px;
+        }
+    }
+
     .footer--copyright {
-        ul, li {
+
+        ul,
+        li {
             margin: 0;
             padding: 0;
         }
@@ -29,7 +38,12 @@
         li {
             list-style: none;
             float: left;
-            margin-right: 40px;
+            margin-right: 15px;
+            margin-bottom: 5px;
+
+            @include breakpoint(large) {
+                margin-right: 40px;
+            }
         }
     }
 }

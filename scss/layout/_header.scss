@@ -3,12 +3,15 @@
 // @ Description: Header
 
 .fl-theme-builder-header-sticky.fl-theme-builder-header-shrink {
+    padding: 30px 0 20px;
     background-color: $white;
+    box-shadow: 0 0 10px rgba($black, .4);
 
     .top--nav-container {
         display: none;
     }
 } // . fl-theme-builder-header-shrink
+
 
 .top--nav-container {
     .fl-module-content {
@@ -31,6 +34,8 @@
     }
 
     // Get Started nav Button
+
+    .mega--menu li:last-child,
     .get-started--btn {
         position: relative;
         margin-right: 0 !important;
@@ -77,3 +82,18 @@
     }
 }
  
+
+// @ Mega menu styles
+
+.mega--menu {
+    .mega-menu-saved-row-container {
+        padding-top: 29px;
+    }
+
+    // Custom, I Want To.. Saved Row for Mega Menu
+    .fl-builder-content-479,
+    .fl-builder-content-511 {
+        padding-left: 300px;
+    }
+
+}// .mega--menu
