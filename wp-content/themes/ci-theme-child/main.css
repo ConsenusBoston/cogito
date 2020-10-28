@@ -2328,7 +2328,6 @@ ul.post-categories {
         border-bottom-right-radius: 5px;
         width: 100%;
         flex-grow: 0;
-        flex-shrink: 0;
         height: 100%;
         display: flex;
         flex-direction: column;
