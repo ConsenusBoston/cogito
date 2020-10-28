@@ -17,13 +17,12 @@
     <?php if (!empty($post_categories)): ?>
         <ul class="post-categories list-unstyled">
             <?php foreach($post_categories as $category): ?>
-                <li><?php echo $category->name?></li>
+                <li><a href="<?php echo get_category_link($category->term_id)?>"><?php echo $category->name?></a></li>
             <?php endforeach; ?>
         </ul>
     <?php endif ?>
 
    <!-- AddToAny BEGIN -->
-   
     <script async src="https://static.addtoany.com/menu/page.js"></script>
     <!-- AddToAny END -->
 

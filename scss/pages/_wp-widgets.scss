@@ -53,7 +53,7 @@
     align-items: center;
     @media screen and (min-width: 992px) {
         flex-direction: row;
-        align-items: center;
+        align-items: stretch;
         justify-content: space-between;
     }
 }
@@ -61,10 +61,12 @@
     margin-bottom: 15px;
     &#text-5 {
         background-color: #E7F1F3;
+        display: flex;
+        align-items: center;
         .textwidget {
             padding: 25px 15px;
             @media screen and (min-width: 768px) {
-                padding: 75px 50px;
+                padding: 25px 50px;
             }
         }
     }
@@ -72,10 +74,15 @@
         border: 1px solid $primary-color;
         .textwidget {
             padding: 0 15px 25px 15px;
+            button {
+                max-width: 145px;
+                width: 100%;
+            }
             @media screen and (min-width: 768px) {
                 padding: 0 20px 75px 20px;
             }
             p {
+                font-size: 16px;
                 text-align: center;
             }
         }
@@ -84,9 +91,11 @@
     max-width: 435px;
     width: 100%;
     .widgettitle {
-        font-size: 24px;
+        font-family: "Poppins";
+        font-size: 20px;
+        font-weight: 700;
         padding-top: 25px;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
         text-align: center;
         @media screen and (min-width: 768px) {
             padding-top: 42px;
@@ -95,8 +104,9 @@
     .textwidget {
         p {
             font-family: "Roboto";
-            font-weight: 400;
-            font-size: 18px;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 31px;
             margin-bottom: 0;
         }
         form {
@@ -120,11 +130,12 @@
             font-family: "Poppins";
             font-weight: 700;
             font-size: 16px;
-            padding: 11px 26px;
+            height: 45px;
+            padding: 7px 26px;
             background-color: $primary-color;
             color: $white;
             display: inline-block;
-            margin-top: 30px;
+            margin-top: 25px;
             text-decoration: none;
             border-radius: 0;
             &:hover {

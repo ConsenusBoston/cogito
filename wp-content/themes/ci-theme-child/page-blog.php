@@ -38,51 +38,52 @@ $posts_counter = 0;
 					$author_email = get_the_author_meta('user_email');
 					$author_avatar = get_avatar_url($author_email);
 					?>
-
-					<div class="fl-sticky col-lg-12">
-						<div class="blog-content__card blog-content__card--full-width">
-							
-							<div class="blog-content__card__description">
-								<?php if (!empty($post_categories)): ?>
-									<ul class="post-categories list-unstyled">
-										<?php foreach($post_categories as $category): ?>
-											<li><?php echo $category->name?></li>
-										<?php endforeach; ?>
-									</ul>
-								<?php endif ?>
-								<a href="<?php echo get_the_permalink(); ?>" class="single-post-link" >
-									<?php the_title(); ?>
-								</a>
-
-								<?php if (get_the_content()): ?>
-									<?php the_excerpt(); ?>
-								<?php endif; ?>
+					<div class="row">
+						<div class="fl-sticky col-lg-12">
+							<div class="blog-content__card blog-content__card--full-width">
 								
-								<div class="blog-content__card__description__additional">
-									<div class="post-author">
-										<div class="post-author__img">
-										<?php if ($author_avatar): ?>
-											<img src="<?php echo $author_avatar?>" alt="<?php echo $author_first ." ". $author_last ?>">
-										<?php endif; ?>
+								<div class="blog-content__card__description">
+									<?php if (!empty($post_categories)): ?>
+										<ul class="post-categories list-unstyled">
+											<?php foreach($post_categories as $category): ?>
+												<li><a href="<?php echo get_category_link($category->term_id)?>"><?php echo $category->name?></a></li>
+											<?php endforeach; ?>
+										</ul>
+									<?php endif ?>
+									<a href="<?php echo get_the_permalink(); ?>" class="single-post-link" >
+										<?php the_title(); ?>
+									</a>
+
+									<?php if (get_the_content()): ?>
+										<?php the_excerpt(); ?>
+									<?php endif; ?>
+									
+									<div class="blog-content__card__description__additional">
+										<div class="post-author">
+											<div class="post-author__img">
+											<?php if ($author_avatar): ?>
+												<img src="<?php echo $author_avatar?>" alt="<?php echo $author_first ." ". $author_last ?>">
+											<?php endif; ?>
+											</div>
+											<div class="post-author__name">
+												<?php echo $author_first ." ". $author_last ?>
+											</div>
 										</div>
-										<div class="post-author__name">
-											<?php echo $author_first ." ". $author_last ?>
-										</div>
+									
+										<small class="post-comments-count">
+											<svg xmlns="http://www.w3.org/2000/svg" height="17" viewBox="0 0 24 24" width="17">
+												<path d="M0 0h24v24H0V0z" fill="none"/><path fill="#31606E" d="M20 17.17L18.83 16H4V4h16v13.17zM20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2z"/>
+											</svg>
+											<span><?php echo get_comments_number(); ?></span>
+										</small>
 									</div>
-								
-									<small class="post-comments-count">
-										<svg xmlns="http://www.w3.org/2000/svg" height="17" viewBox="0 0 24 24" width="17">
-											<path d="M0 0h24v24H0V0z" fill="none"/><path fill="#31606E" d="M20 17.17L18.83 16H4V4h16v13.17zM20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2z"/>
-										</svg>
-										<span><?php echo get_comments_number(); ?></span>
-									</small>
 								</div>
-							</div>
 
-							<div class="blog-content__card__thumbnail">
-								<?php if (has_post_thumbnail()) : ?>
-									<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
-								<?php endif; ?>
+								<div class="blog-content__card__thumbnail">
+									<?php if (has_post_thumbnail()) : ?>
+										<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+									<?php endif; ?>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -124,7 +125,7 @@ $posts_counter = 0;
 										<?php if (!empty($post_categories)): ?>
 											<ul class="post-categories list-unstyled">
 												<?php foreach($post_categories as $category): ?>
-													<li><?php echo $category->name?></li>
+													<li><a href="<?php echo get_category_link($category->term_id)?>"><?php echo $category->name?></a></li>
 												<?php endforeach; ?>
 											</ul>
 										<?php endif ?>
@@ -157,7 +158,7 @@ $posts_counter = 0;
 										<?php if (!empty($post_categories)): ?>
 											<ul class="post-categories list-unstyled">
 												<?php foreach($post_categories as $category): ?>
-													<li><?php echo $category->name?></li>
+													<li><a href="<?php echo get_category_link($category->term_id)?>"><?php echo $category->name?></a></li>
 												<?php endforeach; ?>
 											</ul>
 										<?php endif ?>
@@ -179,9 +180,80 @@ $posts_counter = 0;
 									</div>
 								</div>
 							</div>
+
+						<?php elseif ($posts_counter > 7 && $posts_counter <= 10): ?>
+							<div class="col-12 col-xl-4 blog-content--col">
+								<div class="blog-content__card">
+									<div class="blog-content__card__thumbnail">
+										<?php if (has_post_thumbnail()) : ?>
+											<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+										<?php endif; ?>
+									</div>
+									<div class="blog-content__card__description">
+										<?php if (!empty($post_categories)): ?>
+											<ul class="post-categories list-unstyled">
+												<?php foreach($post_categories as $category): ?>
+													<li><a href="<?php echo get_category_link($category->term_id)?>"><?php echo $category->name?></a></li>
+												<?php endforeach; ?>
+											</ul>
+										<?php endif ?>
+										<a href="<?php echo get_the_permalink(); ?>" class="single-post-link" >
+											<?php the_title(); ?>
+										</a>
+										<?php if (get_the_content()): ?>
+											<?php the_excerpt(); ?>
+										<?php endif; ?>
+										<small class="post-comments-count">
+											<svg xmlns="http://www.w3.org/2000/svg" height="17" viewBox="0 0 24 24" width="17">
+												<path d="M0 0h24v24H0V0z" fill="none"/><path fill="#31606E" d="M20 17.17L18.83 16H4V4h16v13.17zM20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2z"/>
+											</svg>
+											<span><?php echo get_comments_number(); ?></span>
+										</small>
+									</div>
+								</div>
+							</div>
+						<?php elseif ($posts_counter === 11): ?>
+
+							<!-- Full Width Post -->
+							<div class="col-12 col-lg-12 blog-content--col">
+								<div class="blog-content__card blog-content__card--full-width">
+									<div class="blog-content__card__thumbnail">
+										<?php if (has_post_thumbnail()) : ?>
+											<img src="<?php the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+										<?php endif; ?>
+									</div>
+									<div class="blog-content__card__description">
+										<?php if (!empty($post_categories)): ?>
+											<ul class="post-categories list-unstyled">
+												<?php foreach($post_categories as $category): ?>
+													<li><a href="<?php echo get_category_link($category->term_id)?>"><?php echo $category->name?></a></li>
+												<?php endforeach; ?>
+											</ul>
+										<?php endif ?>
+
+										<a href="<?php echo get_the_permalink(); ?>" class="single-post-link" >
+											<?php the_title(); ?>
+										</a>
+
+										<?php if (get_the_content()): ?>
+											<?php the_excerpt(); ?>
+										<?php endif; ?>
+										
+										<small class="post-comments-count">
+											<svg xmlns="http://www.w3.org/2000/svg" height="17" viewBox="0 0 24 24" width="17">
+												<path d="M0 0h24v24H0V0z" fill="none"/><path fill="#31606E" d="M20 17.17L18.83 16H4V4h16v13.17zM20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2z"/>
+											</svg>
+											<span><?php echo get_comments_number(); ?></span>
+										</small>
+									</div>
+								</div>
+							</div>
+
 						<?php endif; ?>
+
+
 					<?php endif; ?>
-					<?php $posts_counter === 7 && ($posts_counter = 0); ?>
+					<?php $posts_counter === 11 && ($posts_counter = 0); ?>
 
 				<?php wp_reset_query();?>
 				<?php }; ?>

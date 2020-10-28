@@ -1,22 +1,27 @@
+.fl-content-single-blog-post {
+    margin-top: 0 !important;
+    padding-top: 50px;
+    padding-bottom: 75px;
+}
+
 .fl-post {
     &__description {
         &__title {
             font-size: 20px;
-            
             margin-bottom: 20px;
             @media screen and (min-width: 768px) {
                 line-height: 39px;
                 font-size: 32px;
             }
             @media screen and (min-width: 992px) {
-                max-width: 700px;
+                max-width: 800px;
             }
         }
         &__subhead {
             font-family: "Roboto";
             font-size: 14px;
-            font-weight: 600;
-            margin-bottom: 50px;
+            font-weight: 400;
+            margin-bottom: 35px;
             @media screen and (min-width: 992px) {
                 max-width: 700px;
             }
@@ -49,7 +54,9 @@
             display: flex;
             flex-direction: column;
             time {
+                font-family: "Roboto";
                 font-size: 16px;
+                line-height: 21px;
             }
         }
         &__social-media {
@@ -62,7 +69,7 @@
             border: 1px solid $lightest-grey-5;
             margin-bottom: 30px;
             @media screen and (min-width: 768px) {
-                margin-bottom: 90px;
+                margin-bottom: 85px;
             }
             img {
                 object-fit: cover;
@@ -96,9 +103,9 @@
                 font-family: "Roboto";
             }
             p {
-                font-size: 16px;
-                line-height: 1.8;
-                font-weight: 100;
+                font-size: 18px;
+                line-height: 29px;
+                font-weight: 300;
                 margin-bottom: 45px;
             }
             blockquote {
@@ -109,6 +116,14 @@
             }
             h1,h2,h3,h4,h5,h6 {
                 margin-bottom: 45px;
+            }
+            a {
+                color: $primary-text-clr-light;
+                transition: 0.25s ease-in-out;
+                &:hover {
+                    color: $primary-text-clr;
+                    text-decoration: none;
+                }
             }
         }
     }
