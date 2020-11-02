@@ -33,3 +33,16 @@ function register_my_widgets(){
 		'after_widget'  => "</div>\n",
 	) );
 }
+
+function custom_classes($classes)
+{
+
+	if (is_page('resources')) {
+		global $page;
+		$name = 'resource-page';
+		$classes[] = $name;
+	}
+	return $classes;
+}
+
+add_filter('body_class', 'custom_classes');

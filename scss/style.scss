@@ -19,13 +19,13 @@
 @import "utils/mixin";
 // @import "base/base";
 // @import "base/typography";
-// @import "base/forms";
+@import "base/forms";
 // @import "base/buttons";
 // @import "layout/layout";
 @import "layout/_container";
 @import "layout/header";
 @import "layout/footer";
-
+@import "pages/page-home";
 @import "pages/page-resource";
 
 @import "components/_bb-accordion";
@@ -37,6 +37,7 @@
 @import "components/team-list";
 @import "components/_search-modal";
 @import "components/_leadership-active";
+@import "components/bb-three-text-blocks.scss";
 
 @import "pages/wp-blog";
 @import "pages/wp-blog-details";

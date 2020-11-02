@@ -27,6 +27,43 @@
         }
     }
 
+
+    .footer--signup {
+        .fl-form-field {
+            padding-right: 0;
+            width: 66.66%;
+            float: left;
+
+            input[type="email"] {
+                padding: 15px 24px !important;
+
+                @include breakpoint(lg) {
+                    padding: 14.5px 24px !important;
+                }
+            }
+
+            input[type="email"]::placeholder {
+                color: $primary-color;
+                font-size: 16px;
+            }
+        }
+
+        .fl-form-button {
+            width: 64px;
+            float: left;
+
+            .fl-button {
+                border: none !important;
+            }
+
+            i {
+                color: $primary-color;
+            }
+        }
+    }
+
+    // .footer--signup
+
     .footer--copyright {
 
         ul,
