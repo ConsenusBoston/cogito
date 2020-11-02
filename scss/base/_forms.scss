@@ -1,3 +1,64 @@
 // @ Author: Consensus Interactive
 // @ Author URI: ConsensusInteractive.com
 // @ Description: forms.scss file
+
+
+.nf-form-cont {
+
+    .nf-field-container {
+        margin-bottom: 15px !important;
+    }
+
+    .label-above .nf-field-label {
+        margin-bottom: 5px !important;
+    }
+
+    label {
+        font-size: 12px !important;
+        font-family: $secondary-font-stack;
+        font-weight: 300 !important;
+    }
+
+    input:not([type=button]),
+    textarea {
+        background-color: $white !important;
+        border-radius: 3px !important;
+        border: 1px solid rgba($black, .25) !important;
+        height: 45px !important;
+    }
+
+
+    .list-select-wrap .nf-field-element>div {
+        background-color: $white !important;
+        border-radius: 3px !important;
+        border: 1px solid rgba($black, .25) !important;
+        height: 45px !important;
+
+        &:after {
+             content: "\f078" !important;
+             font-family: "Font Awesome 5 Pro" !important;
+             top: -3px;
+        }
+    }
+
+    .submit-wrap {
+        text-align: right;
+    }
+    
+    button,
+    input[type=button],
+    input[type=submit] {
+        font-size: 16px !important;
+        color: $white !important;
+        background-color: $primary-color !important;
+        border-radius: 0 !important;
+        padding: 0 30px !important;
+        font-weight: 500;
+        height: 37px !important;
+    }
+
+    // Errors 
+    .nf-error.field-wrap .nf-field-element:after {
+        height: 44px !important;
+    }
+}

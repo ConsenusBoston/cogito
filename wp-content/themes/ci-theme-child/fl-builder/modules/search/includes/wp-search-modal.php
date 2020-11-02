@@ -36,7 +36,7 @@
                         </div>
                     </div>
                     <?php endif; ?>
-                </div>
+               
                 <?php if ( 'ajax' == $settings->result ) : ?>
                     <div class="fl-search-results-content fl-search-results-content--modal"></div>
                 <?php endif; ?>

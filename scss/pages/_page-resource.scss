@@ -42,9 +42,16 @@
             text-decoration: none;
         }
     }
-}
 
-.resource--list-post .fl-post-column:nth-child(4n + 1) {
+    .fl-post-feed-image-beside {
+
+        max-width: 100%;
+
+    }// .fl-post-feed-image-beside
+}// .resource--featured-post
+
+.resource--list-post .fl-post-column:nth-child(1),
+.resource--list-post .fl-post-column:nth-child(4n) {
     .fl-post-grid-terms {
         a {
             background: #277F57;
@@ -52,7 +59,8 @@
     }
 }
 
-.resource--list-post .fl-post-column:nth-child(2n) {
+.resource--list-post .fl-post-column:nth-child(5n),
+.resource--list-post .fl-post-column:nth-child(2){
     .fl-post-grid-terms {
         a {
             background: #F26B6C; 

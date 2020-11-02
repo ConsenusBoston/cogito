@@ -2,6 +2,8 @@
 // @ Author URI: ConsensusInteractive.com
 // @ Description: Header
 
+
+// @ DESKTOP header styles
 .fl-theme-builder-header-sticky.fl-theme-builder-header-shrink {
     padding: 30px 0 20px;
     background-color: $white;
@@ -10,7 +12,13 @@
     .top--nav-container {
         display: none;
     }
-} // . fl-theme-builder-header-shrink
+
+    .fl-node-5f9747e701704>.fl-col-content {
+        margin-top: 60px;
+    }
+}
+
+// . fl-theme-builder-header-shrink
 
 
 .top--nav-container {
@@ -18,7 +26,31 @@
         margin: 0;
         padding: 0;
     }
-}// .top--nav-container
+}
+
+// .top--nav-container
+
+// Main Header class
+.fl-builder-content-274 {
+    width: 100%;
+    position: fixed;
+    background-color: $white;
+    padding-bottom: 10px;
+    z-index: 1000;
+
+    @include breakpoint(md) {
+        position: relative;
+        background-color: transparent;
+    }
+
+    @media (min-width: 767px) {
+        padding-top: 21px;
+        padding-bottom: 33px;
+    }
+}
+
+// 
+
 
 .header--container {
     height: 60px;
@@ -40,16 +72,22 @@
         position: relative;
         margin-right: 0 !important;
         // padding: 5px 21.5px !important;
-       
+
         a {
             top: 5px;
             background-color: $primary-color !important;
-            padding: 10.5px 26px !important;
+            padding: 7px 26px !important;
             margin: 0;
             color: $white !important;
         }
+
+        @media (max-width: 790px) {
+            display: none;
+        }
     }
-}// .header--container
+}
+
+// .header--container
 
 .fl-page-header-container {
     .fl-page-header-logo {
@@ -58,42 +96,325 @@
         margin: 0;
         padding: 0;
     }
-}// .fl-page-header-container
+}
 
-.home--featured-hero {
-    .fl-button-contact-us {
-        position: absolute;
-        bottom: 8.5%;
-        right: 10%;
-        z-index: 20;
-    }
-    .fl-button-group-buttons {
-        .fl-button-group-button {
-            @include breakpoint("md-max") {
-                &:not(:last-child) {
-                    margin-bottom: 20px;
-                }
-                width: 100%;
-                .fl-button-wrap {
-                    width: 100%;
-                }
-            }  
+// .fl-page-header-container
+
+#menu-top {
+
+    li.menu-item-has-children {
+        height: 20px;
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .sub-menu {
+            min-width: 162px;
+            padding: 20px 10px 20px 10px;
+            top: 20px;
+            left: -50px;
+        }
+
+        a {
+            font-family: $secondary-font-stack;
+            font-size: 12px;
+            padding: 0;
+            margin: 0;
+            text-align: center;
         }
     }
+
+    li:hover>div>a {
+        font-weight: 600;
+    }
 }
- 
+
 
 // @ Mega menu styles
-
 .mega--menu {
     .mega-menu-saved-row-container {
-        padding-top: 29px;
+        padding-top: 41px;
+    }
+
+    .fl-module-content {
+        margin: 0;
+    }
+
+    .fl-module-rich-text {
+        margin-bottom: 30px;
+    }
+
+
+    li {
+        padding-right: 10px;
+
+        &:last-child {
+            padding-right: 5px !important;
+        }
+
+        @media (min-width: 960px) {
+            padding-right: 20px;
+        }
+
+        @include breakpoint(lg) {
+            padding-right: 40px;
+        }
+    }
+
+    .brex-mega-menu>li>a.mega-menu-saved-row-a {
+        position: relative;
+
+        &:hover {
+            &:after {
+                content: '';
+                border-bottom: 3px solid $primary-color;
+                width: 100%;
+                display: block;
+                position: absolute;
+                bottom: -41px;
+                left: 0;
+                z-index: 1000;
+            }
+        }
+    }
+
+    // .brex-mega-menu
+
+
+    .fl-row {
+        >.fl-row-content-wrap {
+            padding-left: 120px;
+            padding-top: 50px;
+        }
     }
 
     // Custom, I Want To.. Saved Row for Mega Menu
     .fl-builder-content-479,
     .fl-builder-content-511 {
-        padding-left: 300px;
+
+        @media (min-width: 1024px) {
+            padding-left: 200px;
+        }
     }
 
-}// .mega--menu
+    // i want too dropdown
+    .fl-builder-content-479 {
+
+        .fl-row-bg-color {
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        a {
+            font-size: 14px;
+            text-decoration: none;
+
+            strong {
+                font-size: 16px;
+                font-weight: 500 !important;
+            }
+
+            &:hover {
+                color: $primary-text-clr-light !important;
+
+                strong {
+                    color: $primary-text-clr-light !important;
+                }
+            }
+        }
+
+        strong {
+            font-family: $secondary-font-stack;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+    // I want to.. Drop down
+
+    .fl-builder-content-511 {
+        .fl-row-bg-color {
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+        }
+
+        .fl-module-content .fl-rich-text p {
+            margin-bottom: 30px;
+        }
+    }
+
+    // .fl-builder-content-511 - solutions dropdown
+
+
+}
+
+// .mega--menu
+
+
+// @ Mobile Menu
+.brex-mobile-menu-container-node .brex-mobile-menu-container .menu-item-has-children>a::after {
+    background-image: url('assets/images/arrow.svg');
+    background-repeat: no-repeat;
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    position: absolute;
+    right: 0;
+    content: '' !important;
+}
+
+.brex-mobile-menu-container-node .brex-mobile-menu-container .menu-item-has-children.expanded>a::after {
+    background-image: url('assets/images/up-arrow.svg');
+}
+
+// Hamburger Menu Icon
+.brex-mobile-menu-icon {
+    i {
+        width: 40px;
+        height: 40px;
+    }
+
+    i:before {
+        font-size: 40px;
+        width: 40px;
+        height: 40px;
+    }
+}
+
+
+// MOBILE Styles for Mobile version
+.brex-mobile-menu-container {
+    padding-top: 75px !important;
+
+    i {
+        width: 40px;
+        height: 40px;
+
+        &:before {
+            font-size: 40px;
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    .brex-mobile-menu-inner {
+        padding: 0 !important;
+
+        a {
+            position: relative;
+            display: block;
+            color: $primary-color !important;
+        }
+
+        li {
+            padding: 5px 20px 5px 20px !important;
+            margin-bottom: 12px;
+        }
+
+
+        >li {
+
+            .sub-menu {
+                display: none;
+
+                li {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+
+        >li.expanded {
+            .sub-menu {
+                display: block;
+                padding-top: 10px;
+            }
+
+            li.menu-item-has-children .sub-menu {
+                display: none;
+            }
+
+            li.menu-item-has-children.expanded .sub-menu {
+                display: block;
+            }
+        }
+
+    }
+
+    .tour-product--btn {
+        position: relative;
+        margin-right: 0 !important;
+
+        a {
+            text-align: center;
+            display: block;
+            background-color: $white;
+            padding: 13px 15px !important;
+            margin: 0;
+            border: 2px solid $primary-color !important;
+        }
+
+
+    }
+
+    // .tour-product--btn
+
+    .get-started--btn {
+        position: relative;
+        margin-right: 0 !important;
+
+        a {
+            text-align: center;
+            display: block;
+            background-color: $primary-color !important;
+            padding: 15px !important;
+            margin: 0;
+            color: $white !important;
+        }
+    }
+
+    // .get-started--btn
+}
+
+
+
+// OVERRIDES
+@media (max-width: 900px) {
+
+
+    .top--nav-container,
+    .brex-mega-menu-desktop {
+        display: none !important;
+    }
+
+    .fl-node-5f973414bb63b .brex-mobile-menu-icon,
+    .fl-node-5f973414bb63b .brex-mobile-menu-container {
+        display: block !important;
+    }
+
+    .brex-mobile-menu-container-node .brex-mobile-menu-container.brex-mobile-menu-top {
+        transform: translateY(-100%) !important;
+    }
+}
+
+.brex-mobile-menu-container-node {
+    z-index: 1000;
+
+    .close-icon {
+        background-image: url('assets/images/close.svg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 30px;
+        height: 30px;
+        display: block;
+
+        i {
+            display: none;
+        }
+    }
+
+    .brex-mobile-menu-container.brex-mobile-menu-top.expanded {
+        transform: translateY(0) !important;
+    }
+
+}

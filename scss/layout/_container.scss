@@ -16,6 +16,11 @@
     }
 }
 
-#fl-main-content {
-    margin-top: -132px;
+
+ #fl-main-content {
+    // margin-top: -62px;
+
+    @include breakpoint(md) {
+            margin-top: -154px;
+    }
 }
