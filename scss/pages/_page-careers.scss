@@ -1,0 +1,50 @@
+//	@ Author: Consensus Interactive
+//	@ Author URI: ConsensusInteractive.com
+//	@ Description: Careers Page
+
+.careers--open-jobs {
+
+    .lever-job-title {
+        color: $primary-text-clr-light !important;
+        text-decoration: none !important;
+    }
+
+    .email-signup {
+        .fl-form-field {
+            padding-right: 0;
+            width: 75%;
+            float: left;
+
+            input[type="email"] {
+                // padding: 15px 24px !important;
+
+                @include breakpoint(lg) {
+                    padding: 19px 24px !important;
+                }
+            }
+
+            input[type="email"]::placeholder {
+                color: $primary-color;
+                font-size: 16px;
+            }
+        }
+
+        .fl-form-button {
+            width: 64px;
+            float: left;
+
+            .fl-button {
+                border: none !important;
+            }
+
+            i {
+                color: $primary-color !important;
+            }
+        }
+    }
+
+    // .footer--signup
+
+}
+
+// .careers--open-jobs
