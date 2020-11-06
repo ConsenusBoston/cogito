@@ -1558,10 +1558,6 @@
 .fl-builder-edit #fl-main-content {
   padding: 240px 0; }
 
-@media (min-width: 992px) {
-  #fl-main-content {
-    margin-top: -154px; } }
-
 .fl-theme-builder-header-sticky.fl-theme-builder-header-shrink {
   padding: 30px 0 20px;
   background-color: #ffffff;
@@ -1636,6 +1632,55 @@
 
 #menu-top li:hover > div > a {
   font-weight: 600; }
+
+@media (max-width: 900px) {
+  .fl-builder-content-2478 {
+    background-color: #ffffff;
+    padding-bottom: 10px; } }
+
+.fl-builder-content-2478:not(.fl-theme-builder-header-shrink) .brex-mega-menu > li > a {
+  color: #ffffff !important; }
+
+@media (min-width: 992px) {
+  .fl-builder-content-2478:not(.fl-theme-builder-header-shrink) .white--logo {
+    display: block; }
+  .fl-builder-content-2478:not(.fl-theme-builder-header-shrink) .regular--logo {
+    display: none; } }
+
+.fl-builder-content-2478:not(.fl-theme-builder-header-shrink) .mega--menu li:last-child,
+.fl-builder-content-2478:not(.fl-theme-builder-header-shrink) .get-started--btn {
+  position: relative;
+  margin-right: 0 !important; }
+  .fl-builder-content-2478:not(.fl-theme-builder-header-shrink) .mega--menu li:last-child a,
+  .fl-builder-content-2478:not(.fl-theme-builder-header-shrink) .get-started--btn a {
+    top: 5px;
+    background-color: transparent !important;
+    padding: 7px 26px !important;
+    margin: 0;
+    color: #ffffff !important;
+    border: 2px solid #ffffff; }
+  @media (max-width: 790px) {
+    .fl-builder-content-2478:not(.fl-theme-builder-header-shrink) .mega--menu li:last-child,
+    .fl-builder-content-2478:not(.fl-theme-builder-header-shrink) .get-started--btn {
+      display: none; } }
+
+.fl-builder-content-2478.fl-theme-builder-header-shrink .white--logo {
+  display: none; }
+
+.fl-builder-content-2478.fl-theme-builder-header-shrink .regular--logo {
+  display: block; }
+
+.fl-builder-content-2478 .white--logo {
+  display: none; }
+
+.fl-builder-content-2478 .regular--logo {
+  display: block; }
+
+@media (min-width: 900px) and (max-width: 1024px) {
+  .fl-builder-content-2478 .white--logo {
+    display: block; }
+  .fl-builder-content-2478 .regular--logo {
+    display: none; } }
 
 .mega--menu .mega-menu-saved-row-container {
   padding-top: 41px; }
@@ -1834,7 +1879,7 @@
     .footer .footer--signup .fl-form-button .fl-button {
       border: none !important; }
     .footer .footer--signup .fl-form-button i {
-      color: #31606E; }
+      color: #31606E !important; }
   .footer .footer--copyright ul,
   .footer .footer--copyright li {
     margin: 0;
@@ -1942,6 +1987,29 @@
     letter-spacing: 0.2;
     border-bottom: 2px solid #5989A6;
     text-decoration: none; }
+
+.careers--open-jobs .lever-job-title {
+  color: #47879C !important;
+  text-decoration: none !important; }
+
+.careers--open-jobs .email-signup .fl-form-field {
+  padding-right: 0;
+  width: 75%;
+  float: left; }
+  @media (min-width: 1200px) {
+    .careers--open-jobs .email-signup .fl-form-field input[type="email"] {
+      padding: 19px 24px !important; } }
+  .careers--open-jobs .email-signup .fl-form-field input[type="email"]::placeholder {
+    color: #31606E;
+    font-size: 16px; }
+
+.careers--open-jobs .email-signup .fl-form-button {
+  width: 64px;
+  float: left; }
+  .careers--open-jobs .email-signup .fl-form-button .fl-button {
+    border: none !important; }
+  .careers--open-jobs .email-signup .fl-form-button i {
+    color: #31606E !important; }
 
 .fl-accordion .fl-accordion-button {
   padding-left: 0; }

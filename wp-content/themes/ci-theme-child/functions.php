@@ -25,7 +25,7 @@ add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
 add_action( 'widgets_init', 'register_my_widgets' );
 function register_my_widgets(){
 	register_sidebar( array(
-		'name'          => sprintf(__('Single Post Sidebar'), $i ),
+		'name'          => sprintf(__('Single Post Sidebar') ),
 		'id'            => "single-post-sidebar",
 		'description'   => 'Here you can put text widget',
 		'class'         => '',

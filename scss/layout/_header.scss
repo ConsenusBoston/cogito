@@ -49,7 +49,7 @@
     }
 }
 
-// 
+// .fl-builder-content-274
 
 
 .header--container {
@@ -130,6 +130,87 @@
     }
 }
 
+
+.fl-builder-content-2478 {
+
+    @media (max-width: 900px) {
+        background-color: $white;
+        padding-bottom: 10px;
+    }
+
+    &:not(.fl-theme-builder-header-shrink) {
+
+        // @ Default styles
+        .brex-mega-menu>li>a {
+            color: $white !important;
+        }
+
+        @include breakpoint(md) {
+            .white--logo {
+                display: block;
+            }
+
+            .regular--logo {
+                display: none;
+            }
+        }
+
+        .mega--menu li:last-child,
+        .get-started--btn {
+            position: relative;
+            margin-right: 0 !important;
+
+            a {
+                top: 5px;
+                background-color: transparent !important;
+                padding: 7px 26px !important;
+                margin: 0;
+                color: $white !important;
+                border: 2px solid $white;
+            }
+
+            @media (max-width: 790px) {
+                display: none;
+            }
+        }
+    }
+
+
+    &.fl-theme-builder-header-shrink {
+        .white--logo {
+            display: none;
+        }
+
+        .regular--logo {
+            display: block;
+        }
+    }
+
+    // .fl-theme-builder-header-shrink
+
+
+    .white--logo {
+        display: none;
+    }
+
+    .regular--logo {
+        display: block;
+    }
+
+
+    @media (min-width: 900px) and (max-width: 1024px) {
+        .white--logo {
+            display: block;
+        }
+
+        .regular--logo {
+            display: none;
+        }
+    }
+
+}
+
+// .fl-builder-content-2478
 
 // @ Mega menu styles
 .mega--menu {
