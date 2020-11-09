@@ -38,14 +38,14 @@ $posts_counter = 0;
 					$author_email = get_the_author_meta('user_email');
 					$author_avatar = get_avatar_url($author_email);
 					?>
-					<div class="row">
+	
 						<div class="fl-sticky col-lg-12">
 							<div class="blog-content__card blog-content__card--full-width">
 								
 								<div class="blog-content__card__description">
 									<?php if (!empty($post_categories)): ?>
 										<ul class="post-categories list-unstyled">
-											<?php foreach($post_categories as $category): ?>
+											<?php foreach(array_slice($post_categories, 0, 2) as $category): ?>
 												<li><a href="<?php echo get_category_link($category->term_id)?>"><?php echo $category->name?></a></li>
 											<?php endforeach; ?>
 										</ul>
@@ -86,7 +86,7 @@ $posts_counter = 0;
 								</div>
 							</div>
 						</div>
-					</div>
+		
 
 				<?php }; ?>
 				<?php wp_reset_query();?>
@@ -124,7 +124,7 @@ $posts_counter = 0;
 									<div class="blog-content__card__description">
 										<?php if (!empty($post_categories)): ?>
 											<ul class="post-categories list-unstyled">
-												<?php foreach($post_categories as $category): ?>
+												<?php foreach(array_slice($post_categories, 0, 2) as $category): ?>
 													<li><a href="<?php echo get_category_link($category->term_id)?>"><?php echo $category->name?></a></li>
 												<?php endforeach; ?>
 											</ul>
@@ -157,7 +157,7 @@ $posts_counter = 0;
 									<div class="blog-content__card__description">
 										<?php if (!empty($post_categories)): ?>
 											<ul class="post-categories list-unstyled">
-												<?php foreach($post_categories as $category): ?>
+												<?php foreach(array_slice($post_categories, 0, 2) as $category): ?>
 													<li><a href="<?php echo get_category_link($category->term_id)?>"><?php echo $category->name?></a></li>
 												<?php endforeach; ?>
 											</ul>
@@ -192,7 +192,7 @@ $posts_counter = 0;
 									<div class="blog-content__card__description">
 										<?php if (!empty($post_categories)): ?>
 											<ul class="post-categories list-unstyled">
-												<?php foreach($post_categories as $category): ?>
+												<?php foreach(array_slice($post_categories, 0, 2) as $category): ?>
 													<li><a href="<?php echo get_category_link($category->term_id)?>"><?php echo $category->name?></a></li>
 												<?php endforeach; ?>
 											</ul>
@@ -225,7 +225,7 @@ $posts_counter = 0;
 									<div class="blog-content__card__description">
 										<?php if (!empty($post_categories)): ?>
 											<ul class="post-categories list-unstyled">
-												<?php foreach($post_categories as $category): ?>
+												<?php foreach(array_slice($post_categories, 0, 2) as $category): ?>
 													<li><a href="<?php echo get_category_link($category->term_id)?>"><?php echo $category->name?></a></li>
 												<?php endforeach; ?>
 											</ul>

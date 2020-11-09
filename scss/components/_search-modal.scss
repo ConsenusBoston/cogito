@@ -49,22 +49,6 @@
                             height: 90px;
                         }
                     }
-                    &:after {
-                        content: "";
-                        position: absolute;
-                        top: 0;
-                        background-color: #979797;
-                        width: 3px;
-                        height: 35px;
-                        right: -12.5px; 
-                        @include breakpoint("sm") {
-                            height: 45px;
-                        }
-                        @include breakpoint("md") {
-                            right: -22.5px; 
-                            height: 94px;
-                        }
-                    }
                 }
                 input {
                     font-family: "Poppins",sans-serif;

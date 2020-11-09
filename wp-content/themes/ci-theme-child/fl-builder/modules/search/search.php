@@ -65,7 +65,7 @@ class FLSearchModule extends FLBuilderModule {
 		$s = preg_replace( '/\s+/', ' ', $s );
 
 		$args->keyword     = $s;
-		$args->post_type   = 'any';
+		$args->post_type   = 'post'; // change to "any" if you want to search by all
 		$args->post_status = 'publish';
 
 		// Remove paged & offset parameters

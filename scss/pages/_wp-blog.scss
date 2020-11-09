@@ -6,7 +6,18 @@
         background-color: #fff;
         padding-bottom: 50px;
     }
+    header {
+        &.fl-theme-builder-header-sticky {
+            .mega--menu li:last-child {
+                padding-right: 0 !important;
+            }
+            .fl-module-photo .fl-module-content {
+                margin-left: 0;
+            }   
+        }
+    }
 }
+
 
 .blog-head {
     display: flex;
@@ -274,7 +285,6 @@ ul.post-categories {
                 flex-grow: 0;
                 flex-shrink: 0;
                 
-
                 border: 0;
                 border-top: 1px solid $lightest-grey-5;
                 border-left: 1px solid $lightest-grey-5;

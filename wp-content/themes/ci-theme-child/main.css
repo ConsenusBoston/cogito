@@ -2023,12 +2023,15 @@
   margin: 0 !important;
   padding: 0 !important; }
 
+#searchModal form input[type="search" i]::-webkit-search-cancel-button {
+  display: none !important; }
+
 .fl-search-results-content--modal {
   background: #F9FAFA;
   border: 0;
   border-radius: 0;
   left: 0;
-  width: 100%;
+  width: 100% !important;
   top: 99%;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.214161); }
   .fl-search-results-content--modal .fl-search-post-item {
@@ -2268,21 +2271,6 @@
         #searchModal .modal-body form button img {
           width: 91px;
           height: 90px; } }
-    #searchModal .modal-body form button:after {
-      content: "";
-      position: absolute;
-      top: 0;
-      background-color: #979797;
-      width: 3px;
-      height: 35px;
-      right: -12.5px; }
-      @media (min-width: 768px) {
-        #searchModal .modal-body form button:after {
-          height: 45px; } }
-      @media (min-width: 992px) {
-        #searchModal .modal-body form button:after {
-          right: -22.5px;
-          height: 94px; } }
   #searchModal .modal-body form input {
     font-family: "Poppins",sans-serif;
     font-weight: 700;
@@ -2485,6 +2473,12 @@
 .page-template-page-blog .fl-archive {
   background-color: #fff;
   padding-bottom: 50px; }
+
+.page-template-page-blog header.fl-theme-builder-header-sticky .mega--menu li:last-child {
+  padding-right: 0 !important; }
+
+.page-template-page-blog header.fl-theme-builder-header-sticky .fl-module-photo .fl-module-content {
+  margin-left: 0; }
 
 .blog-head {
   display: flex;
@@ -2751,6 +2745,12 @@ ul.post-categories {
   margin-top: 0 !important;
   padding-top: 50px;
   padding-bottom: 75px; }
+
+body.single-post header.fl-theme-builder-header-sticky .mega--menu li:last-child, body.single-resource header.fl-theme-builder-header-sticky .mega--menu li:last-child {
+  padding-right: 0 !important; }
+
+body.single-post header.fl-theme-builder-header-sticky .fl-module-photo .fl-module-content, body.single-resource header.fl-theme-builder-header-sticky .fl-module-photo .fl-module-content {
+  margin-left: 0; }
 
 .fl-post__description__title {
   font-size: 20px;
