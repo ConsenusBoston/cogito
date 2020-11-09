@@ -8,7 +8,7 @@ get_header();
 
 $query_args = array(
 	'post_type' => 'post',
-	'posts_per_page' => -1,
+	'posts_per_page' => 7,
 );
 $stickies = get_option( 'sticky_posts' );
 $query_args_sticky = array(
@@ -98,10 +98,10 @@ $posts_counter = 0;
 
 	</div>
 </div>
-
+<!-- blog-content--sm-scroll -->
 <div class="<?php FLLayout::container_class(); ?>">
 	<main class="fl-content blog-content">
-		<div class="blog-content--sm-scroll <?php FLLayout::row_class(); ?>" <?php FLTheme::print_schema( ' itemscope="itemscope" itemtype="https://schema.org/Blog"' ); ?>>
+		<div class=" <?php FLLayout::row_class(); ?>" <?php FLTheme::print_schema( ' itemscope="itemscope" itemtype="https://schema.org/Blog"' ); ?>>
 			
 			<?php if ( $posts_query->have_posts() ) { ?>
 			
@@ -261,6 +261,10 @@ $posts_counter = 0;
 				<?php get_template_part( 'content', 'no-results' ); ?>
 			<?php }; ?>
 		</div>
+
+		<?php echo do_shortcode('[ajax_load_more post_type="post" loading_style="white" posts_per_page="7" pause="true" scroll="false" button_label="Load more"]'); ?>
+
 	</main>
+
 </div>
 <?php get_footer(); ?>
