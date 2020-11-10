@@ -2,6 +2,13 @@
 // @ Author URI: ConsensusInteractive.com
 // @ Description: Header
 
+// This addresses the white on white backgrounds on the blog posts
+.single-post .fl-theme-builder-header-sticky,
+.archive .fl-theme-builder-header-sticky,
+.category .fl-theme-builder-header-sticky {
+    background-color: $white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
 
 // @ DESKTOP header styles
 .fl-theme-builder-header-sticky.fl-theme-builder-header-shrink {
@@ -265,7 +272,7 @@
 
     .fl-row {
         >.fl-row-content-wrap {
-            padding-left: 120px;
+            // padding-left: 120px;
             padding-top: 50px;
         }
     }
@@ -279,7 +286,7 @@
         }
     }
 
-    // i want too dropdown
+    // @ i want too dropdown
     .fl-builder-content-479 {
 
         .fl-row-bg-color {
@@ -313,6 +320,7 @@
 
     // I want to.. Drop down
 
+    // @ Solutions Dropdown
     .fl-builder-content-511 {
         .fl-row-bg-color {
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
@@ -320,6 +328,14 @@
 
         .fl-module-content .fl-rich-text p {
             margin-bottom: 30px;
+        }
+
+        .fl-node-5f97481fce16d {
+            h4 {
+                font-weight: 600;
+                text-decoration: underline;
+            }
+
         }
     }
 

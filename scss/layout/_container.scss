@@ -24,3 +24,12 @@
 //             margin-top: -154px;
 //     }
 // }
+
+.single #fl-main-content,
+.archive #fl-main-content {
+    // margin-top: -62px;
+
+    @include breakpoint(md) {
+        padding-top: 200px;
+    }
+}

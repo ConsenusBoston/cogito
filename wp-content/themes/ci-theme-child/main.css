@@ -1558,6 +1558,17 @@
 .fl-builder-edit #fl-main-content {
   padding: 240px 0; }
 
+@media (min-width: 992px) {
+  .single #fl-main-content,
+  .archive #fl-main-content {
+    padding-top: 200px; } }
+
+.single-post .fl-theme-builder-header-sticky,
+.archive .fl-theme-builder-header-sticky,
+.category .fl-theme-builder-header-sticky {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+
 .fl-theme-builder-header-sticky.fl-theme-builder-header-shrink {
   padding: 30px 0 20px;
   background-color: #ffffff;
@@ -1715,7 +1726,6 @@
     z-index: 1000; }
 
 .mega--menu .fl-row > .fl-row-content-wrap {
-  padding-left: 120px;
   padding-top: 50px; }
 
 @media (min-width: 1024px) {
@@ -1747,6 +1757,10 @@
 
 .mega--menu .fl-builder-content-511 .fl-module-content .fl-rich-text p {
   margin-bottom: 30px; }
+
+.mega--menu .fl-builder-content-511 .fl-node-5f97481fce16d h4 {
+  font-weight: 600;
+  text-decoration: underline; }
 
 .brex-mobile-menu-container-node .brex-mobile-menu-container .menu-item-has-children > a::after {
   background-image: url("assets/images/arrow.svg");
