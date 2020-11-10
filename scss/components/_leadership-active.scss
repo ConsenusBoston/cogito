@@ -36,6 +36,9 @@
     .modal-header {
         border: 0;
         button {
+            position: relative;
+            top: 80px;
+            z-index: 2;
             @include transparentBtn;
             @include breakpoint("sm-max") {
                 svg {

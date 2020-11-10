@@ -2019,6 +2019,12 @@
 .fl-accordion .fl-accordion-content {
   padding-left: 0; }
 
+.fl-accordion i {
+  transition: transform .5s ease 0s; }
+
+.fl-accordion .fl-accordion-item-active i {
+  transform: rotate(44deg); }
+
 .fl-builder-content-440 {
   margin: 0 !important;
   padding: 0 !important; }
@@ -2148,7 +2154,20 @@
     font-weight: bold;
     margin-top: auto;
     margin-bottom: 20px;
-    border-bottom: 2px solid #5989A6; }
+    border-bottom: 2px solid transparent;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
+    .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more:focus, .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more:hover {
+      border-bottom: 2px solid #5989A6; }
+      .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more:focus i, .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more:hover i {
+        opacity: 1;
+        margin-left: 10px; }
+    .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more i {
+      opacity: 0;
+      margin-left: 0; }
 
 @media (max-width: 767px) {
   .bb-the-latest-posts .fl-col-group {
@@ -2323,6 +2342,9 @@
   .leadership-details .modal-header {
     border: 0; }
     .leadership-details .modal-header button {
+      position: relative;
+      top: 80px;
+      z-index: 2;
       background-color: transparent;
       border: 0;
       padding: 0; }

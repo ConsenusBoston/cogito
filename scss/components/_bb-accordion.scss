@@ -8,4 +8,12 @@
     .fl-accordion-content {
         padding-left: 0;
     }
+
+    i {
+        transition: transform .5s ease 0s;
+    }
+
+    .fl-accordion-item-active i {
+        transform: rotate(44deg);
+    }
 }
