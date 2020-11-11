@@ -2142,6 +2142,11 @@
 
 .bb-the-latest-posts .fl-post-grid-terms {
   margin-bottom: 15px; }
+  .bb-the-latest-posts .fl-post-grid-terms span.fl-terms-label + div {
+    display: flex;
+    align-items: center; }
+    .bb-the-latest-posts .fl-post-grid-terms span.fl-terms-label + div .fl-post-grid-terms-acf-thumbnail {
+      margin-right: 9px; }
   .bb-the-latest-posts .fl-post-grid-terms a {
     font-family: "Poppins";
     font-weight: 700;
@@ -2200,6 +2205,17 @@
     .bb-the-latest-posts .fl-row-content-wrap .fl-post-column, .bb-the-latest-posts .fl-row-content-wrap .fl-col {
       width: 300px !important;
       flex-shrink: 0; } }
+
+.fl-post-grid-terms-acf-thumbnail img, .fl-post-grid-terms-acf-thumbnail span.fl-post-grid-terms-acf-thumbnail__empty {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #D8D8D8;
+  object-fit: cover;
+  display: block; }
+
+.fl-post-grid-terms-acf-thumbnail span.fl-post-grid-terms-acf-thumbnail__empty {
+  background-color: #D8D8D8; }
 
 .cta-left-text-block .fl-col-content, .cta-right-text-block .fl-col-content {
   min-height: 0 !important; }
@@ -2683,9 +2699,9 @@ ul.post-categories {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px; } }
     .blog-content__card__thumbnail {
-      border-top: 1px solid #979797;
-      border-left: 1px solid #979797;
-      border-right: 1px solid #979797;
+      border-top: 1px solid #D8D8D8;
+      border-left: 1px solid #D8D8D8;
+      border-right: 1px solid #D8D8D8;
       height: 200px;
       background-color: #D8D8D8;
       flex-shrink: 0; }
@@ -2746,9 +2762,9 @@ ul.post-categories {
         flex-grow: 0;
         flex-shrink: 0;
         border: 0;
-        border-top: 1px solid #979797;
-        border-left: 1px solid #979797;
-        border-right: 1px solid #979797;
+        border-top: 1px solid #D8D8D8;
+        border-left: 1px solid #D8D8D8;
+        border-right: 1px solid #D8D8D8;
         height: 200px; }
         @media screen and (min-width: 992px) {
           .blog-content__card--full-width .blog-content__card__thumbnail {
@@ -2800,7 +2816,7 @@ ul.post-categories {
 
 .fl-sticky .blog-content__card__thumbnail {
   order: 1;
-  border: 1px solid #979797 !important;
+  border: 1px solid #D8D8D8 !important;
   border-radius: 0; }
   @media screen and (min-width: 992px) {
     .fl-sticky .blog-content__card__thumbnail {
@@ -2873,7 +2889,7 @@ body.single-post header.fl-theme-builder-header-sticky .fl-module-photo .fl-modu
     margin-right: 8px; }
 
 .fl-post__description__featured {
-  border: 1px solid #979797;
+  border: 1px solid #D8D8D8;
   margin-bottom: 30px; }
   @media screen and (min-width: 768px) {
     .fl-post__description__featured {

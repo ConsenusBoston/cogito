@@ -5,6 +5,13 @@
     }
     .fl-post-grid-terms {
         margin-bottom: 15px;
+        span.fl-terms-label + div {
+            display: flex;
+            align-items: center;
+            .fl-post-grid-terms-acf-thumbnail {
+                margin-right: 9px;
+            }
+        }
         a {
             font-family: "Poppins";
             font-weight: 700;
@@ -81,5 +88,18 @@
             }
         }
     }
-    
+}
+
+.fl-post-grid-terms-acf-thumbnail {
+    img, span.fl-post-grid-terms-acf-thumbnail__empty {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 1px solid $lightest-grey-5;
+        object-fit: cover;
+        display: block;
+    }
+    span.fl-post-grid-terms-acf-thumbnail__empty {
+        background-color: $lightest-grey-5;
+    }
 }

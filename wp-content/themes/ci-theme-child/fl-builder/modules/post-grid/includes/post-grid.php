@@ -8,18 +8,26 @@
 
 	<div class="fl-post-grid-text">
 
-
 		<?php if ( $settings->show_terms && $module->get_post_terms() ) : ?>
 			<div class="fl-post-grid-meta-terms">
 				<div class="fl-post-grid-terms">
 					<span class="fl-terms-label"><?php echo $settings->terms_list_label; ?></span>
+
+					<div>
+						<?php if ($settings->show_acf_thumbnail): ?>
+							<div class="fl-post-grid-terms-acf-thumbnail">
+								<?php echo $module->post_custom_field_thumbnail(get_the_ID()) ?>
+							</div>
+						<?php endif; ?>
+
+						<?php if ($settings->show_single_term) : 
+								echo $module->get_post_terms(true); 
+							else :
+								echo $module->get_post_terms();
+							endif;
+							?>
+					</div>
 					
-					<?php if ($settings->show_single_term) : 
-							echo $module->get_post_terms(true); 
-						else :
-							echo $module->get_post_terms();
-						endif;
-						?>
 				</div>
 			</div>
 		<?php endif; ?>

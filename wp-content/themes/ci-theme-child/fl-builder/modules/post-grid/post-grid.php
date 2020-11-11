@@ -354,6 +354,19 @@ class FLPostGridModule extends FLBuilderModule {
 		}
 	}
 
+	public function post_custom_field_thumbnail ($id) {
+		$acf_field = get_field('small_thumbnail', $id);
+		$url = $acf_field['url'];
+		$alt = $acf_field['alt'];
+
+		if ($acf_field) {
+			$post_custom_field_img = '<img src="'. esc_url($url).'" class="fl-sep-term" alt="'. esc_attr($alt).'"/>';
+			return $post_custom_field_img;
+		} else {
+			return '<span class="fl-post-grid-terms-acf-thumbnail__empty"></span>';
+		}
+	}
+
 	/**
 	 * prints schema if enabled.
 	 * @since 2.2.2
@@ -819,6 +832,15 @@ FLBuilder::register_module('FLPostGridModule', array(
 					'show_author'        => array(
 						'type'    => 'select',
 						'label'   => __( 'Author', 'fl-builder' ),
+						'default' => '1',
+						'options' => array(
+							'1' => __( 'Show', 'fl-builder' ),
+							'0' => __( 'Hide', 'fl-builder' ),
+						),
+					),
+					'show_acf_thumbnail'        => array(
+						'type'    => 'select',
+						'label'   => __( 'ACF Post Thumbnail', 'fl-builder' ),
 						'default' => '1',
 						'options' => array(
 							'1' => __( 'Show', 'fl-builder' ),
