@@ -12,6 +12,9 @@ _wpeprivate
 .wpengine-conf
 wp-content/*.php
 
+webtoffee_iew_log
+webtoffee_import
+
 wp-content/plugins/*
 !wp-content/plugins/ci-builder-modules/
 
