@@ -46,3 +46,22 @@ function custom_classes($classes)
 }
 
 add_filter('body_class', 'custom_classes');
+
+
+// Reorders News Post Facet
+add_filter('facetwp_facet_orderby', function ($orderby, $facet) {
+	if ('in_the_news' == $facet['name']) {
+		$orderby = 'FIELD(f.facet_display_value, "awards", "in-the-news", "press-releases")';
+	}
+	return $orderby;
+},10, 2 );
+
+// Preselects Facet on News Page
+add_filter('facetwp_preload_url_vars', function ($url_vars) {
+	if ('in-the-news' == FWP()->helper->get_uri()) {
+		if (empty($url_vars['in_the_news'])) {
+			$url_vars['in_the_news'] = ['in-the-news'];
+		}
+	}
+	return $url_vars;
+});

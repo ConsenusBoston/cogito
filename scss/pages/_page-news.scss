@@ -1,0 +1,44 @@
+//	@ Author: Consensus Interactive
+//	@ Author URI: ConsensusInteractive.com
+//	@ Description: News Page styles
+
+.facetwp-facet-in_the_news {
+    .facetwp-counter {
+        display: none;
+    }
+
+    .facetwp-radio {
+        font-family: $primary-font-stack;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 25px;
+        margin: 0 25px 0 0;
+        padding: 0 0 5px 0;
+        float: left;
+        background-image: none;
+
+        &.checked {
+            font-weight: 600;
+            background-image: none;
+            border-bottom: 2px solid $primary-color;
+        }
+    }
+    
+}
+
+
+.news--container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.news--post {
+    width: 31.33%;
+
+    h1 {
+         font-size: 24px;
+         font-weight: 800;
+    }
+}

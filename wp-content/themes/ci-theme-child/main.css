@@ -2025,6 +2025,35 @@
   .careers--open-jobs .email-signup .fl-form-button i {
     color: #31606E !important; }
 
+.facetwp-facet-in_the_news .facetwp-counter {
+  display: none; }
+
+.facetwp-facet-in_the_news .facetwp-radio {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 25px;
+  margin: 0 25px 0 0;
+  padding: 0 0 5px 0;
+  float: left;
+  background-image: none; }
+  .facetwp-facet-in_the_news .facetwp-radio.checked {
+    font-weight: 600;
+    background-image: none;
+    border-bottom: 2px solid #31606E; }
+
+.news--container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.news--post {
+  width: 31.33%; }
+  .news--post h1 {
+    font-size: 24px;
+    font-weight: 800; }
+
 .fl-accordion .fl-accordion-button {
   padding-left: 0; }
   .fl-accordion .fl-accordion-button .fl-accordion-button-label:focus {
