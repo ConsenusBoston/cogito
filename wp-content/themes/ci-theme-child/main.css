@@ -2071,6 +2071,165 @@
     font-size: 24px;
     font-weight: 800; }
 
+.event--container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+
+.event--post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 80px;
+  position: relative;
+  min-height: 273px; }
+  @media (min-width: 768px) {
+    .event--post {
+      flex-direction: row;
+      padding-bottom: 35px; } }
+  @media (min-width: 1200px) {
+    .event--post {
+      width: calc(50% - 24px); } }
+  .event--post:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3F3F3F; }
+  .event--post .event--post-image {
+    width: 100%;
+    align-self: stretch;
+    display: flex;
+    position: relative;
+    height: 250px;
+    background-position: center; }
+    @media (min-width: 768px) {
+      .event--post .event--post-image {
+        height: auto;
+        width: 50%; } }
+    .event--post .event--post-image a {
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 26px;
+      background-color: #31606E;
+      color: #fff;
+      padding: 7px 30px;
+      display: block;
+      width: 100%;
+      align-self: flex-end; }
+      .event--post .event--post-image a:hover {
+        text-decoration: none; }
+  .event--post .event--post-speakers {
+    position: absolute;
+    bottom: 18px;
+    right: 13px;
+    display: flex;
+    flex-direction: row; }
+    .event--post .event--post-speakers .speaker {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 2px solid white; }
+      .event--post .event--post-speakers .speaker img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 50%; }
+  .event--post .event--post-details {
+    width: 100%;
+    padding: 15px 15px;
+    position: relative; }
+    @media (min-width: 768px) {
+      .event--post .event--post-details {
+        width: 50%;
+        padding: 0px 15px; } }
+    .event--post .event--post-details .event--post-category {
+      margin-bottom: 10px; }
+      .event--post .event--post-details .event--post-category span {
+        font-family: "Roboto", sans-serif;
+        color: #47879C;
+        font-size: 14px;
+        line-height: 19px; }
+    .event--post .event--post-details .event--post-title {
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 30px; }
+      .event--post .event--post-details .event--post-title h1 {
+        line-height: 10px;
+        margin-bottom: 0; }
+        .event--post .event--post-details .event--post-title h1 a {
+          font-weight: 900;
+          font-size: 20px;
+          line-height: 34px;
+          color: #31606E;
+          margin-bottom: 0; }
+          @media (min-width: 768px) {
+            .event--post .event--post-details .event--post-title h1 a {
+              font-size: 26px; } }
+    .event--post .event--post-details .event--post-excerpt {
+      font-family: "Roboto", sans-serif;
+      font-weight: 400;
+      margin-bottom: 20px; }
+      .event--post .event--post-details .event--post-excerpt p {
+        font-size: 18px;
+        margin-bottom: 0; }
+    .event--post .event--post-details .event--post-date {
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 27px;
+      color: #31606E; }
+  .event--post.is-featured-post {
+    min-height: 320px;
+    width: 100%;
+    padding-bottom: 0; }
+    .event--post.is-featured-post:after {
+      display: none; }
+    .event--post.is-featured-post .event--post-speakers {
+      bottom: 8px;
+      right: 26px; }
+      .event--post.is-featured-post .event--post-speakers .speaker {
+        width: 45px;
+        height: 45px; }
+        @media (min-width: 768px) {
+          .event--post.is-featured-post .event--post-speakers .speaker {
+            width: 70px;
+            height: 70px; } }
+    .event--post.is-featured-post .event--post-image a {
+      font-size: 18px;
+      padding: 10px 30px; }
+    .event--post.is-featured-post .event--post-details {
+      padding: 15px 15px; }
+      @media (min-width: 768px) {
+        .event--post.is-featured-post .event--post-details {
+          width: 50%;
+          padding: 0px 30px 30px 30px; } }
+      .event--post.is-featured-post .event--post-details:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #3F3F3F; }
+        @media (min-width: 768px) {
+          .event--post.is-featured-post .event--post-details:after {
+            left: 30px;
+            right: 30px;
+            width: calc(100% - 60px); } }
+    .event--post.is-featured-post .event--post-title h1 {
+      line-height: 10px; }
+      .event--post.is-featured-post .event--post-title h1 a {
+        font-size: 20px; }
+        @media (min-width: 768px) {
+          .event--post.is-featured-post .event--post-title h1 a {
+            font-size: 30px;
+            line-height: 38px; } }
+
 .fl-accordion .fl-accordion-button {
   padding-left: 0; }
   .fl-accordion .fl-accordion-button .fl-accordion-button-label:focus {

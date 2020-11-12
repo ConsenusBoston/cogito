@@ -362,8 +362,6 @@ class FLPostGridModule extends FLBuilderModule {
 		if ($acf_field) {
 			$post_custom_field_img = '<img src="'. esc_url($url).'" class="fl-sep-term" alt="'. esc_attr($alt).'"/>';
 			return $post_custom_field_img;
-		} else {
-			return '<span class="fl-post-grid-terms-acf-thumbnail__empty"></span>';
 		}
 	}
 
@@ -841,7 +839,7 @@ FLBuilder::register_module('FLPostGridModule', array(
 					'show_acf_thumbnail'        => array(
 						'type'    => 'select',
 						'label'   => __( 'ACF Post Thumbnail', 'fl-builder' ),
-						'default' => '1',
+						'default' => '0',
 						'options' => array(
 							'1' => __( 'Show', 'fl-builder' ),
 							'0' => __( 'Hide', 'fl-builder' ),
