@@ -2025,22 +2025,39 @@
   .careers--open-jobs .email-signup .fl-form-button i {
     color: #31606E !important; }
 
-.facetwp-facet-in_the_news .facetwp-counter {
-  display: none; }
+.facetwp-facet-news_categories {
+  overflow: hidden; }
+  .facetwp-facet-news_categories .facetwp-counter {
+    display: none; }
+  .facetwp-facet-news_categories .facetwp-radio {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 25px;
+    margin: 0 25px 0 0;
+    padding: 0 0 5px 0;
+    float: left;
+    background-image: none; }
+    .facetwp-facet-news_categories .facetwp-radio.checked {
+      font-weight: 600;
+      background-image: none;
+      border-bottom: 2px solid #31606E; }
 
-.facetwp-facet-in_the_news .facetwp-radio {
+.news--filter-date .facetwp-facet-title {
+  font-size: 16px;
+  font-weight: 300;
+  float: left;
+  margin-top: 2px;
+  margin-right: 5px; }
+
+.news--filter-date .facetwp-dropdown {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 300;
-  line-height: 25px;
-  margin: 0 25px 0 0;
-  padding: 0 0 5px 0;
-  float: left;
-  background-image: none; }
-  .facetwp-facet-in_the_news .facetwp-radio.checked {
-    font-weight: 600;
-    background-image: none;
-    border-bottom: 2px solid #31606E; }
+  color: #31606E;
+  background: none;
+  border: none;
+  outline: none; }
 
 .news--container {
   display: flex;

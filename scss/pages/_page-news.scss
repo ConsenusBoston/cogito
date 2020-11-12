@@ -2,7 +2,9 @@
 //	@ Author URI: ConsensusInteractive.com
 //	@ Description: News Page styles
 
-.facetwp-facet-in_the_news {
+.facetwp-facet-news_categories {
+    overflow: hidden;
+
     .facetwp-counter {
         display: none;
     }
@@ -24,7 +26,31 @@
         }
     }
     
+}// .news_categories
+
+.news--filter-date {
+
+    .facetwp-facet-title {
+        font-size: 16px;
+        font-weight: 300;
+        float: left;
+        margin-top: 2px;
+        margin-right: 5px;
+    }
+
+    .facetwp-dropdown {
+        font-family: $primary-font-stack;
+        font-size: 16px;
+        font-weight: 300;
+        color: $primary-color;
+        background: none;
+        border: none;
+        outline: none;
+    }
+
 }
+
+// .news--filter-date
 
 
 .news--container {

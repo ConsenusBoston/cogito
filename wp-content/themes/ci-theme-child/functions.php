@@ -59,9 +59,23 @@ add_filter('facetwp_facet_orderby', function ($orderby, $facet) {
 // Preselects Facet on News Page
 add_filter('facetwp_preload_url_vars', function ($url_vars) {
 	if ('in-the-news' == FWP()->helper->get_uri()) {
-		if (empty($url_vars['in_the_news'])) {
-			$url_vars['in_the_news'] = ['in-the-news'];
+		if (empty($url_vars['news_categories'])) {
+			$url_vars['news_categories'] = ['in-the-news'];
+			$url_vars['news_post_date'] = ['2020'];
 		}
 	}
 	return $url_vars;
 });
+ 
+
+/**
+ * This updates the filter to format the date to be yearly to match design
+ */
+add_filter( 'facetwp_index_row', function( $params, $class ) {
+	if ('news_post_date' == $params['facet_name'] ) { 
+		$raw_value = $params['facet_value'];
+		$params['facet_value'] = date( 'Y', strtotime( $raw_value ) );
+		$params['facet_display_value'] = $params['facet_value'];
+	}
+	return $params;
+}, 10, 2 );
