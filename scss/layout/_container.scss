@@ -25,7 +25,10 @@
 //     }
 // }
 
-.single #fl-main-content,
+#fl-main-content .fl-rich-text {
+    @include hyperlink-styles();
+}
+// .single #fl-main-content,
 .archive #fl-main-content {
     // margin-top: -62px;
 

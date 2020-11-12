@@ -3,6 +3,7 @@
 // @ Description: Header
 
 // This addresses the white on white backgrounds on the blog posts
+.page-template-page-blog .fl-theme-builder-header-sticky,
 .single-post .fl-theme-builder-header-sticky,
 .archive .fl-theme-builder-header-sticky,
 .category .fl-theme-builder-header-sticky {
@@ -222,7 +223,7 @@
 // @ Mega menu styles
 .mega--menu {
     .mega-menu-saved-row-container {
-        padding-top: 41px;
+        padding-top: 27px;
     }
 
     .fl-module-content {
@@ -242,11 +243,11 @@
         }
 
         @media (min-width: 960px) {
-            padding-right: 20px;
+            padding-right: 25px;
         }
 
         @include breakpoint(lg) {
-            padding-right: 40px;
+            padding-right: 50px;
         }
     }
 
@@ -260,7 +261,7 @@
                 width: 100%;
                 display: block;
                 position: absolute;
-                bottom: -41px;
+                bottom: -30px;
                 left: 0;
                 z-index: 1000;
             }
@@ -270,24 +271,16 @@
     // .brex-mega-menu
 
 
-    .fl-row {
-        >.fl-row-content-wrap {
-            // padding-left: 120px;
-            padding-top: 50px;
-        }
-    }
-
-    // Custom, I Want To.. Saved Row for Mega Menu
-    .fl-builder-content-479,
-    .fl-builder-content-511 {
-
-        @media (min-width: 1024px) {
-            padding-left: 200px;
-        }
-    }
 
     // @ i want too dropdown
     .fl-builder-content-479 {
+        @media (min-width: 1024px) {
+            padding-left: 60px;
+        }
+        .fl-row-content-wrap {
+            padding-top: 50px;
+            padding-left: 50px;
+        }
 
         .fl-row-bg-color {
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
@@ -322,6 +315,15 @@
 
     // @ Solutions Dropdown
     .fl-builder-content-511 {
+        @media (min-width: 1024px) {
+            padding-left: 200px;
+        }
+
+        .fl-row-content-wrap {
+            padding-top: 50px;
+            padding-left: 50px;
+        }
+
         .fl-row-bg-color {
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
         }

@@ -1,0 +1,131 @@
+//	@ Author: Consensus Interactive
+//	@ Author URI: ConsensusInteractive.com
+//	@ Description: Event Page styles
+
+.event-single-post-detail {
+    .fl-post {
+
+        &__duration-share {
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #979797;
+            overflow: hidden;
+            clear: both;
+        }
+
+        &__duration {
+            float: left;
+        }
+
+        &__social-media {
+            float: right;
+
+            >a {
+                margin-right: 5px;
+            }
+
+            >a:last-child {
+                margin-right: 0 !important;
+            }
+
+            svg {
+                width: 17px;
+                height: 17px;
+            }
+        }
+
+
+        &__description {
+            font-family: $secondary-font-stack;
+            font-size: 18px;
+            line-height: 29px;
+            
+            @include hyperlink-styles();
+        }
+
+        &__description-body {
+            margin-bottom: 50px;
+        }
+
+        &__speakers {
+            clear: both;
+            overflow: hidden;
+            margin-bottom: 88px;
+
+
+            h3 {
+                font-family: $secondary-font-stack;
+                font-size: 18px;
+                line-height: 24px;
+                margin-bottom: 22px;
+            }
+
+            .fl-post__speaker {
+                width: 100%;
+                overflow: hidden;
+                margin: 0 auto 15px auto;
+
+                @include breakpoint(md) {
+                     float: left;
+                     width: 50%;
+                     margin: 0;
+                }
+            }
+
+            .fl-post__speaker-image {
+                margin-right: 10px;
+                float: left;
+                border-radius: 70px;
+                width: 71px;
+                height: 71px;
+                overflow: hidden;
+            }
+
+            .fl-post__speaker-name,
+            .fl-post__speaker-description {
+                display: block;
+                font-family: $secondary-font-stack;
+                font-size: 14px;
+                line-height: 19px;
+            }
+
+            .fl-post__speaker-name {
+                padding-top: 10px;
+                font-weight: 600;
+            }
+        }
+
+        // .__speakers
+
+        &__categories {
+            font-family: $secondary-font-stack;
+            font-size: 14px;
+            line-height: 19px;
+            padding-bottom: 15px;
+            margin-bottom: 75px;
+
+
+            span {
+                display: inline-block;
+                margin-right: 15px;
+                color: $primary-text-clr-light;
+                border-bottom: 1px solid $primary-color;
+            }
+        }
+
+    }
+
+    // .fl-post
+}
+
+// .event-single-post-detail
+
+.event-detail--cta-box {
+    border-top: 10px solid $primary-color;
+    background-color: #E7F1F3;
+    color: $primary-color;
+
+    li {
+        margin-bottom: 5px;
+    }
+}

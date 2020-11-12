@@ -1,3 +1,7 @@
+//	@ Author: Consensus Interactive
+//	@ Author URI: ConsensusInteractive.com
+//	@ Description: Blog Detail Page styles
+
 // .fl-content-single-blog-post {
 //     margin-top: 0 !important;
 //     padding-top: 50px;
@@ -190,7 +194,7 @@
     .fl-module-fl-post-content {
         .fl-module-content {
             * {
-                font-family: "Roboto";
+                font-family: $secondary-font-stack;
             }
             p {
                 font-size: 18px;
@@ -207,14 +211,7 @@
             h1,h2,h3,h4,h5,h6 {
                 margin-bottom: 45px;
             }
-            a {
-                color: $primary-text-clr-light;
-                transition: 0.25s ease-in-out;
-                &:hover {
-                    color: $primary-text-clr;
-                    text-decoration: none;
-                }
-            }
+           @include hyperlink-styles();
         }
     }
     .fl-module-fl-post-info {

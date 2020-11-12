@@ -1,3 +1,20 @@
 // @ Author: Consensus Interactive
 // @ Author URI: ConsensusInteractive.com
 // @ Description: Buttons
+
+.button {
+    display: inline-block;
+    background-color: $primary-color;
+    color: $white;
+    font-family: $primary-font-stack;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 15px 30px;
+    min-height: 52px;
+    border: none !important;
+    
+    &:hover {
+        text-decoration: none;
+        border: none !important;
+    }
+}
