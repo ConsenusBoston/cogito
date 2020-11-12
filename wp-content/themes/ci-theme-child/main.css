@@ -2071,6 +2071,24 @@
     font-size: 24px;
     font-weight: 800; }
 
+.additional-webinars--column {
+  margin-bottom: 80px; }
+
+.additional-webinars .event--post {
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 0;
+  height: 100%;
+  padding-bottom: 0; }
+  .additional-webinars .event--post .event--post-image {
+    width: 100%;
+    height: 230px;
+    margin-bottom: 20px; }
+  .additional-webinars .event--post .event--post-details {
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0; }
+
 .event--container {
   display: flex;
   flex-direction: row;
