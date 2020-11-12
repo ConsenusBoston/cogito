@@ -24,7 +24,21 @@
 }
 
 .event {
+    &-content {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+
+        h2 {
+            font-size: 30px;
+            line-height: 38px;
+            margin-bottom: 60px;
+        }
+    }
     &--container {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -216,5 +230,17 @@
                 }
             }
         }
+    }
+}
+
+// Facet Filters
+.facetwp-facet-event_additional_webinars_pager {
+    font-family: $primary-font-stack;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+
+    .active {
+        font-weight: 800;
     }
 }

@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <div class="container">
-    <div class="row">
-        <div class="fl-content fl-content-event-blog-post col-lg-12">
+    <div class="row justify-content-md-center">
+        <div class="fl-content event-single-post-detail col-lg-7">
             <?php
             if (have_posts()) :
                 while (have_posts()) :
