@@ -48,3 +48,162 @@
 }
 
 // .careers--open-jobs
+#lever-no-results {
+    color: $primary-color;
+    font-family: $primary-font-stack;
+    font-weight: 700;
+    font-size: 24px;
+}
+.lever-jobs-filter-departments {
+    // width: 100%;
+    opacity: 0;
+}
+.lever-jobs-filter-locations {
+    // width: 100%;
+    opacity: 0;
+}
+// Lever Jobs
+#new-list {
+    ul.list {
+        list-style: none;
+        padding-left: 0;
+        .lever-job {
+            margin-bottom: 19px;
+            a, span {
+                font-family: $secondary-font-stack;
+                font-weight: bold;
+                font-size: 16px;
+                color: $primary-text-clr-light;
+            }
+            a {
+                transition: 0.25s ease-in-out;
+                border: 0 !important;
+                &:hover {
+                    color: $primary-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+#lever-jobs-filter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include breakpoint(md-max) {
+        flex-direction: column;
+        align-items: flex-start;
+        .select2.select2-container {
+            flex-wrap: wrap;
+            margin-bottom: 25px;
+        }
+    }
+    .select2.select2-container {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    .select2-selection__arrow {
+        b {
+            border: solid $primary-color;
+            border-width: 0 2px 2px 0;
+            display: inline-block;
+            padding: 3px;
+            margin-left: 0;
+            margin-top: -5px;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+    }
+    .select2-selection, .select2-selection.select2-selection--single {
+        border: 0;
+        background-color: transparent;
+        .select2-selection__placeholder, .select2-selection__rendered {
+            font-family: $secondary-font-stack;
+            font-weight: normal;
+            font-size: 22px;
+            color: $primary-color;
+            padding-left: 0;
+        }
+        &:focus {
+            outline: none !important;
+            border: 0 !important;
+            box-shadow: none !important;
+        }
+        &:active {
+            outline: none !important;
+            border: 0 !important;
+            box-shadow: none !important;
+        }
+    }
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    font-family: $secondary-font-stack !important;
+    font-weight: 500 !important;
+    background-color: transparent !important;
+    color: #31606E !important;
+}
+
+#lever-clear-filters {
+    font-size: 18px;
+    border: 2px solid $primary-text-clr !important;
+    max-width: 180px;
+    height: 55px;
+    width: 100%;
+    font-family: "Poppins";
+    font-weight: bold;
+    color: $primary-text-clr;
+    border-radius: 0;
+    padding: 10px;
+    &:hover {
+        border-color: $primary-text-clr;
+        color: $primary-text-clr;
+        box-shadow: none;
+        cursor: pointer;
+    }
+}
+
+#lever-jobs-container {
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .lever-department {
+        margin-bottom: 50px;
+        &-title {
+            font-family: $primary-font-stack;
+            font-weight: bold;
+            font-size: 24px;
+            color: $primary-color;
+            margin-bottom: 30px;
+        }
+        .lever-team {
+            margin-bottom: 0;
+            li {
+                margin-bottom: 19px;
+            }
+            .lever-job {
+                a, span {
+                    font-family: $secondary-font-stack;
+                    font-weight: bold;
+                    font-size: 16px;
+                    color: $primary-text-clr-light;
+                }
+                a {
+                    transition: 0.25s ease-in-out;
+                    border: 0 !important;
+                    &:hover {
+                        color: $primary-color;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.select2-dropdown.select2-dropdown--below {
+    border: 0;
+    border-radius: 0;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+    padding: 10px 0 10px 10px;
+}

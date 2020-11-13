@@ -2056,6 +2056,133 @@ a {
   .careers--open-jobs .email-signup .fl-form-button i {
     color: #31606E !important; }
 
+#lever-no-results {
+  color: #31606E;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 24px; }
+
+.lever-jobs-filter-departments {
+  opacity: 0; }
+
+.lever-jobs-filter-locations {
+  opacity: 0; }
+
+#new-list ul.list {
+  list-style: none;
+  padding-left: 0; }
+  #new-list ul.list .lever-job {
+    margin-bottom: 19px; }
+    #new-list ul.list .lever-job a, #new-list ul.list .lever-job span {
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      color: #47879C; }
+    #new-list ul.list .lever-job a {
+      transition: 0.25s ease-in-out;
+      border: 0 !important; }
+      #new-list ul.list .lever-job a:hover {
+        color: #31606E;
+        text-decoration: none; }
+
+#lever-jobs-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  @media (max-width: 991px) {
+    #lever-jobs-filter {
+      flex-direction: column;
+      align-items: flex-start; }
+      #lever-jobs-filter .select2.select2-container {
+        flex-wrap: wrap;
+        margin-bottom: 25px; } }
+  #lever-jobs-filter .select2.select2-container {
+    max-width: 100%;
+    overflow: hidden; }
+  #lever-jobs-filter .select2-selection__arrow b {
+    border: solid #31606E;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-left: 0;
+    margin-top: -5px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg); }
+  #lever-jobs-filter .select2-selection, #lever-jobs-filter .select2-selection.select2-selection--single {
+    border: 0;
+    background-color: transparent; }
+    #lever-jobs-filter .select2-selection .select2-selection__placeholder, #lever-jobs-filter .select2-selection .select2-selection__rendered, #lever-jobs-filter .select2-selection.select2-selection--single .select2-selection__placeholder, #lever-jobs-filter .select2-selection.select2-selection--single .select2-selection__rendered {
+      font-family: "Roboto", sans-serif;
+      font-weight: normal;
+      font-size: 22px;
+      color: #31606E;
+      padding-left: 0; }
+    #lever-jobs-filter .select2-selection:focus, #lever-jobs-filter .select2-selection.select2-selection--single:focus {
+      outline: none !important;
+      border: 0 !important;
+      box-shadow: none !important; }
+    #lever-jobs-filter .select2-selection:active, #lever-jobs-filter .select2-selection.select2-selection--single:active {
+      outline: none !important;
+      border: 0 !important;
+      box-shadow: none !important; }
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  font-family: "Roboto", sans-serif !important;
+  font-weight: 500 !important;
+  background-color: transparent !important;
+  color: #31606E !important; }
+
+#lever-clear-filters {
+  font-size: 18px;
+  border: 2px solid #31606E !important;
+  max-width: 180px;
+  height: 55px;
+  width: 100%;
+  font-family: "Poppins";
+  font-weight: bold;
+  color: #31606E;
+  border-radius: 0;
+  padding: 10px; }
+  #lever-clear-filters:hover {
+    border-color: #31606E;
+    color: #31606E;
+    box-shadow: none;
+    cursor: pointer; }
+
+#lever-jobs-container ul {
+  list-style: none;
+  padding-left: 0; }
+
+#lever-jobs-container .lever-department {
+  margin-bottom: 50px; }
+  #lever-jobs-container .lever-department-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #31606E;
+    margin-bottom: 30px; }
+  #lever-jobs-container .lever-department .lever-team {
+    margin-bottom: 0; }
+    #lever-jobs-container .lever-department .lever-team li {
+      margin-bottom: 19px; }
+    #lever-jobs-container .lever-department .lever-team .lever-job a, #lever-jobs-container .lever-department .lever-team .lever-job span {
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      font-size: 16px;
+      color: #47879C; }
+    #lever-jobs-container .lever-department .lever-team .lever-job a {
+      transition: 0.25s ease-in-out;
+      border: 0 !important; }
+      #lever-jobs-container .lever-department .lever-team .lever-job a:hover {
+        color: #31606E;
+        text-decoration: none; }
+
+.select2-dropdown.select2-dropdown--below {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  padding: 10px 0 10px 10px; }
+
 .facetwp-facet-news_categories {
   overflow: hidden; }
   .facetwp-facet-news_categories .facetwp-counter {

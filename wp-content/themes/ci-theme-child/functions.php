@@ -14,6 +14,13 @@ function add_theme_scripts()
 {
   wp_enqueue_style('main', get_stylesheet_directory_uri() . '/main.css');
   wp_enqueue_script('app', get_stylesheet_directory_uri() . '/scripts/app.js');
+  if (is_page(3200) || is_page(363)) {
+	wp_enqueue_style('select2-style', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css');
+	wp_enqueue_script('select2-js', 'https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js', [], "", true);
+	wp_enqueue_script('lever', get_stylesheet_directory_uri() . '/scripts/lever-job-embed.js', [], "", true);
+	wp_enqueue_script('listjs', get_stylesheet_directory_uri() . '/scripts/list.js', ["lever"], "", true);
+	wp_enqueue_script('lever-custom', get_stylesheet_directory_uri() . '/scripts/lever-job-custom.js', ["lever", "listjs"], "", true);
+  }
 }
 add_action('wp_enqueue_scripts', 'add_theme_scripts');
 
