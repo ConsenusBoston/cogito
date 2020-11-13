@@ -14,7 +14,7 @@
 					<span class="fl-terms-label"><?php echo $settings->terms_list_label; ?></span>
 
 					<div>
-						<?php if ($settings->show_acf_thumbnail): ?>
+						<?php if ($settings->show_acf_thumbnail && $module->post_custom_field_thumbnail(get_the_ID())): ?>
 							<div class="fl-post-grid-terms-acf-thumbnail">
 								<?php echo $module->post_custom_field_thumbnail(get_the_ID()) ?>
 							</div>

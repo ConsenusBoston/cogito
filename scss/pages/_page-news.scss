@@ -58,6 +58,10 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    .news--post-image {
+        min-height: 272px;
+    }
 }
 
 .news--post {

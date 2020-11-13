@@ -44,6 +44,12 @@
     }
   }
 
+  @else if $breakpoint=="lg-max" {
+    @media (max-width: 1199px) {
+      @content;
+    }
+  }
+
   @else if $breakpoint=="x-lg" {
     @media (min-width: 1599px) {
       @content;

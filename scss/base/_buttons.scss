@@ -2,6 +2,12 @@
 // @ Author URI: ConsensusInteractive.com
 // @ Description: Buttons
 
+.button-group {
+    .button:first-child {
+        margin-right: 20px;
+    }
+}
+
 .button {
     display: inline-block;
     background-color: $primary-color;
@@ -11,10 +17,30 @@
     font-weight: 700;
     padding: 15px 30px;
     min-height: 52px;
-    border: none !important;
+    border: 2px solid $primary-color !important;
     
     &:hover {
         text-decoration: none;
-        border: none !important;
+        // border: 2px solid $primary-color !important;
     }
+}
+
+.white--button,
+.button--white,
+.button-white,
+.white-button {
+     display: inline-block;
+     background-color: $white !important;
+     color: $primary-color !important;
+     font-family: $primary-font-stack;
+     font-size: 16px;
+     font-weight: 700;
+     padding: 15px 30px;
+     min-height: 52px;
+     border: 2px solid $primary-color !important;
+
+     &:hover {
+         text-decoration: none;
+        //  border: none !important;
+     }
 }

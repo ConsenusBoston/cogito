@@ -1,0 +1,49 @@
+//	@ Author: Consensus Interactive
+//	@ Author URI: ConsensusInteractive.com
+//	@ Description: Resource Detail Page styles
+
+.resource-single-post-detail {
+    padding-top: 50px;
+
+    .fl-post {
+
+        &__categories {
+            font-family: $secondary-font-stack;
+            font-size: 16px;
+            line-height: 19px;
+            margin-bottom: 10px;
+
+            span {
+                display: inline-block;
+                margin-right: 15px;
+                color: $primary-text-clr-light;
+            }
+        }
+
+        &__description-body {
+            font-size: 18px;
+            margin-bottom: 50px;
+        }
+
+        .fl-post__title { 
+            margin-bottom: 40px;
+
+            h1 {
+                margin-bottom: 0;
+                padding: 0;
+
+                @include breakpoint(lg) {
+                    font-size: 44px;
+                    line-height: 66px;
+                }
+            }
+        }
+
+
+
+    }
+
+    // .fl-post
+}
+
+// .resource-single-post-detail
