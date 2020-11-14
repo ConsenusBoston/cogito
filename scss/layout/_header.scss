@@ -110,6 +110,10 @@
 
 #menu-top {
 
+    a {
+        font-weight: 300;
+    }
+
     li.menu-item-has-children {
         height: 20px;
 
@@ -125,7 +129,8 @@
         }
 
         a {
-            font-family: $secondary-font-stack;
+            // font-family: $secondary-font-stack;
+            font-weight: 300;
             font-size: 12px;
             padding: 0;
             margin: 0;
@@ -133,7 +138,8 @@
         }
     }
 
-    li:hover>div>a {
+    li:hover>div>a,
+    li:hover>a {
         font-weight: 600;
     }
 }
@@ -223,7 +229,7 @@
 // @ Mega menu styles
 .mega--menu {
     .mega-menu-saved-row-container {
-        padding-top: 27px;
+        padding-top: 5px;
     }
 
     .fl-module-content {
@@ -232,6 +238,11 @@
 
     .fl-module-rich-text {
         margin-bottom: 30px;
+    }
+
+
+    ul.brex-mega-menu {
+        height: 55px;
     }
 
 
@@ -253,15 +264,18 @@
 
     .brex-mega-menu>li>a.mega-menu-saved-row-a {
         position: relative;
+        height: 80px;
+        align-items: center;
+        display: flex;
 
         &:hover {
             &:after {
                 content: '';
-                border-bottom: 3px solid $primary-color;
+                border-bottom: 2px solid $primary-color;
                 width: 100%;
                 display: block;
                 position: absolute;
-                bottom: -30px;
+                bottom: -7px;
                 left: 0;
                 z-index: 1000;
             }
@@ -277,13 +291,22 @@
         @media (min-width: 1024px) {
             padding-left: 60px;
         }
+
         .fl-row-content-wrap {
-            padding-top: 50px;
+            padding-top: 38px;
             padding-left: 50px;
         }
 
         .fl-row-bg-color {
             box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+        }
+
+
+        .fl-rich-text {
+            p {
+                line-height: 21px;
+                margin-bottom: 10px;
+            }
         }
 
         a {

@@ -1669,6 +1669,9 @@ a {
   margin: 0;
   padding: 0; }
 
+#menu-top a {
+  font-weight: 300; }
+
 #menu-top li.menu-item-has-children {
   height: 20px; }
   #menu-top li.menu-item-has-children li {
@@ -1679,13 +1682,14 @@ a {
     top: 20px;
     left: -50px; }
   #menu-top li.menu-item-has-children a {
-    font-family: "Roboto", sans-serif;
+    font-weight: 300;
     font-size: 12px;
     padding: 0;
     margin: 0;
     text-align: center; }
 
-#menu-top li:hover > div > a {
+#menu-top li:hover > div > a,
+#menu-top li:hover > a {
   font-weight: 600; }
 
 @media (max-width: 900px) {
@@ -1738,13 +1742,16 @@ a {
     display: none; } }
 
 .mega--menu .mega-menu-saved-row-container {
-  padding-top: 27px; }
+  padding-top: 5px; }
 
 .mega--menu .fl-module-content {
   margin: 0; }
 
 .mega--menu .fl-module-rich-text {
   margin-bottom: 30px; }
+
+.mega--menu ul.brex-mega-menu {
+  height: 55px; }
 
 .mega--menu li {
   padding-right: 10px; }
@@ -1758,14 +1765,17 @@ a {
       padding-right: 50px; } }
 
 .mega--menu .brex-mega-menu > li > a.mega-menu-saved-row-a {
-  position: relative; }
+  position: relative;
+  height: 80px;
+  align-items: center;
+  display: flex; }
   .mega--menu .brex-mega-menu > li > a.mega-menu-saved-row-a:hover:after {
     content: '';
-    border-bottom: 3px solid #31606E;
+    border-bottom: 2px solid #31606E;
     width: 100%;
     display: block;
     position: absolute;
-    bottom: -30px;
+    bottom: -7px;
     left: 0;
     z-index: 1000; }
 
@@ -1774,11 +1784,15 @@ a {
     padding-left: 60px; } }
 
 .mega--menu .fl-builder-content-479 .fl-row-content-wrap {
-  padding-top: 50px;
+  padding-top: 38px;
   padding-left: 50px; }
 
 .mega--menu .fl-builder-content-479 .fl-row-bg-color {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
+
+.mega--menu .fl-builder-content-479 .fl-rich-text p {
+  line-height: 21px;
+  margin-bottom: 10px; }
 
 .mega--menu .fl-builder-content-479 a {
   font-size: 14px;
@@ -2245,6 +2259,17 @@ a {
   justify-content: space-between; }
   .news--container .news--post-image {
     min-height: 272px; }
+  .news--container .is-featured-post {
+    width: 100%;
+    margin-bottom: 150px; }
+    .news--container .is-featured-post .news--post-image {
+      float: left;
+      width: 100%;
+      max-width: 670px;
+      margin-right: 50px; }
+    .news--container .is-featured-post .news--post-details {
+      float: left;
+      width: 33%; }
 
 .news--post {
   width: 31.33%; }
