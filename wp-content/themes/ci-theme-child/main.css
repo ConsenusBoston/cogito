@@ -1614,7 +1614,7 @@ a {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
 
 .fl-theme-builder-header-sticky.fl-theme-builder-header-shrink {
-  padding: 30px 0 20px;
+  padding: 30px 0 13px;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
   .fl-theme-builder-header-sticky.fl-theme-builder-header-shrink .top--nav-container {
@@ -2001,8 +2001,21 @@ a {
   font-size: 16px;
   font-weight: 900;
   letter-spacing: 0.2;
-  border-bottom: 2px solid #31606E;
-  text-decoration: none; }
+  border-bottom: 2px solid transparent;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+  .resource--featured-post .fl-post-feed-more i {
+    display: none;
+    opacity: 0; }
+  .resource--featured-post .fl-post-feed-more:hover {
+    border-bottom: 2px solid #5989A6; }
+    .resource--featured-post .fl-post-feed-more:hover i {
+      display: inline-block;
+      opacity: 1; }
 
 .resource--featured-post .fl-post-feed-terms {
   margin-bottom: 15px; }
@@ -2044,7 +2057,8 @@ a {
     font-family: "Roboto", sans-serif;
     font-size: 16px; }
   .resource--posts .fl-post-grid-image {
-    margin-bottom: 30px; }
+    margin-bottom: 30px;
+    min-height: 253px; }
   .resource--posts .fl-post-grid-meta-terms {
     margin-bottom: 25px; }
   .resource--posts .fl-post-grid-terms a {
@@ -2065,8 +2079,21 @@ a {
     font-size: 16px;
     font-weight: 900;
     letter-spacing: 0.2;
-    border-bottom: 2px solid #5989A6;
-    text-decoration: none; }
+    border-bottom: 2px solid transparent;
+    text-decoration: none;
+    -webkit-transition: all 0.25s ease-in-out;
+    -moz-transition: all 0.25s ease-in-out;
+    -ms-transition: all 0.25s ease-in-out;
+    -o-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out; }
+    .resource--posts .fl-post-grid-more i {
+      display: none;
+      opacity: 0; }
+    .resource--posts .fl-post-grid-more:hover {
+      border-bottom: 2px solid #5989A6; }
+      .resource--posts .fl-post-grid-more:hover i {
+        display: inline-block;
+        opacity: 1; }
 
 .careers--open-jobs .lever-job-title {
   color: #47879C !important;
