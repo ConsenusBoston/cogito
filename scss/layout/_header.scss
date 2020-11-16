@@ -336,6 +336,20 @@
 
     // I want to.. Drop down
 
+    .fl-node-5f9747e701704 {
+        position: relative;
+
+        &:after {
+            position: absolute;
+            top: 12px;
+            right: 40px;
+            width: 1px;
+            height: 230px;
+            content: '';
+            background-color: #979797;
+        }
+    }
+
     // @ Solutions Dropdown
     .fl-builder-content-511 {
         @media (min-width: 1024px) {
@@ -344,7 +358,7 @@
 
         .fl-row-content-wrap {
             padding-top: 50px;
-            padding-left: 50px;
+            padding-left: 145px;
         }
 
         .fl-row-bg-color {
@@ -355,7 +369,8 @@
             margin-bottom: 30px;
         }
 
-        .fl-node-5f97481fce16d {
+        .fl-node-5f97481fce16d,
+        .fl-node-5f9747ec7db0c {
             h4 {
                 font-weight: 600;
                 text-decoration: underline;
