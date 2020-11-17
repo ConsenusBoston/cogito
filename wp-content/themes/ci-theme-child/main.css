@@ -3436,12 +3436,15 @@ ul.post-categories {
   object-fit: cover; }
 
 .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content {
-  margin-left: 5px;
-  display: flex;
-  flex-direction: row; }
+  margin-left: 5px; }
+  @media (min-width: 992px) {
+    .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content {
+      display: flex;
+      flex-direction: row; } }
   .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content .fl-author-bio-name {
     padding-right: 5px; }
-  .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content .fl-author-bio-name, .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content .fl-author-bio-text {
+  .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content .fl-author-bio-name,
+  .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content .fl-author-bio-text {
     font-family: "Roboto";
     font-size: 16px;
     font-weight: normal;
@@ -3472,7 +3475,12 @@ ul.post-categories {
 .blog-single-post-detail .fl-module-fl-post-content .fl-module-content img {
   max-width: 100%; }
 
-.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h1, .blog-single-post-detail .fl-module-fl-post-content .fl-module-content h2, .blog-single-post-detail .fl-module-fl-post-content .fl-module-content h3, .blog-single-post-detail .fl-module-fl-post-content .fl-module-content h4, .blog-single-post-detail .fl-module-fl-post-content .fl-module-content h5, .blog-single-post-detail .fl-module-fl-post-content .fl-module-content h6 {
+.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h1,
+.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h2,
+.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h3,
+.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h4,
+.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h5,
+.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h6 {
   margin-bottom: 45px; }
 
 .blog-single-post-detail .fl-module-fl-post-content .fl-module-content a {
