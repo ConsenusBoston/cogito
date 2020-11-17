@@ -151,6 +151,7 @@
         .fl-module-content {
             align-items: center;
         }
+
         .fl-author-bio-thumb {
             img {
                 width: 35px;
@@ -159,14 +160,20 @@
                 object-fit: cover;
             }
         }
+
         .fl-author-bio-content {
             margin-left: 5px;
-            display: flex;
-            flex-direction: row;
+            @include breakpoint(md) {
+                display: flex;
+                flex-direction: row;
+            }
+
             .fl-author-bio-name {
                 padding-right: 5px;
             }
-            .fl-author-bio-name, .fl-author-bio-text {
+
+            .fl-author-bio-name,
+            .fl-author-bio-text {
                 font-family: "Roboto";
                 font-size: 16px;
                 font-weight: normal;
@@ -175,19 +182,23 @@
             }
         }
     }
+
     .fl-module-fl-post-info {
         .fl-module-content {
             // margin-bottom: 0;
         }
+
         span.fl-post-info-date {
             font-family: "Roboto";
             line-height: 21px;
         }
     }
+
     .fl-post__description__social-media {
         a:not(:last-child) {
             margin-right: 8px;
         }
+
         margin-bottom: 50px;
     }
 
@@ -196,27 +207,38 @@
             * {
                 font-family: $secondary-font-stack;
             }
+
             p {
                 font-size: 18px;
                 line-height: 29px;
                 font-weight: 300;
                 margin-bottom: 45px;
             }
+
             blockquote {
                 padding: 0 30px;
             }
+
             img {
                 max-width: 100%;
             }
-            h1,h2,h3,h4,h5,h6 {
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
                 margin-bottom: 45px;
             }
-           @include hyperlink-styles();
+
+            @include hyperlink-styles();
         }
     }
+
     .fl-module-fl-post-info {
         .fl-post-info-terms {
-          
+
             a {
                 min-height: 29px;
                 // font-size: 13px;
@@ -228,17 +250,20 @@
                 display: inline-flex;
                 align-items: center;
                 text-align: center;
+
                 &:hover {
                     text-decoration: none;
                     color: $primary-text-clr
                 }
+
                 &:not(:last-child) {
                     position: relative;
+
                     &:after {
                         content: '|';
                         display: inline-flex;
                         right: 0;
-                        padding:0 5px;
+                        padding: 0 5px;
                         font-size: 20px;
                         font-weight: 100;
                         color: $primary-text-clr-light;

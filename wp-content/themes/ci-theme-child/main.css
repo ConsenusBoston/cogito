@@ -1810,13 +1810,24 @@ a {
   font-size: 16px;
   font-weight: 400; }
 
+.mega--menu .fl-node-5f9747e701704 {
+  position: relative; }
+  .mega--menu .fl-node-5f9747e701704:after {
+    position: absolute;
+    top: 12px;
+    right: 40px;
+    width: 1px;
+    height: 230px;
+    content: '';
+    background-color: #979797; }
+
 @media (min-width: 1024px) {
   .mega--menu .fl-builder-content-511 {
     padding-left: 200px; } }
 
 .mega--menu .fl-builder-content-511 .fl-row-content-wrap {
   padding-top: 50px;
-  padding-left: 50px; }
+  padding-left: 145px; }
 
 .mega--menu .fl-builder-content-511 .fl-row-bg-color {
   box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
@@ -1824,7 +1835,8 @@ a {
 .mega--menu .fl-builder-content-511 .fl-module-content .fl-rich-text p {
   margin-bottom: 30px; }
 
-.mega--menu .fl-builder-content-511 .fl-node-5f97481fce16d h4 {
+.mega--menu .fl-builder-content-511 .fl-node-5f97481fce16d h4,
+.mega--menu .fl-builder-content-511 .fl-node-5f9747ec7db0c h4 {
   font-weight: 600;
   text-decoration: underline; }
 
@@ -2159,7 +2171,7 @@ a {
         flex-wrap: wrap;
         margin-bottom: 25px; } }
   #lever-jobs-filter .select2.select2-container {
-    max-width: 100%;
+    max-width: 220px;
     overflow: hidden; }
   #lever-jobs-filter .select2-selection__arrow b {
     border: solid #31606E;
@@ -2238,6 +2250,10 @@ a {
       #lever-jobs-container .lever-department .lever-team .lever-job a:hover {
         color: #31606E;
         text-decoration: none; }
+
+.select2-container--open .select2-dropdown {
+  padding: 3px !important;
+  width: 200px !important; }
 
 .select2-dropdown.select2-dropdown--below {
   border: 0;
@@ -2403,6 +2419,11 @@ a {
         height: 100%;
         object-fit: cover;
         border-radius: 50%; }
+      .event--post .event--post-speakers .speaker.is-registered-user {
+        position: relative;
+        left: 10px; }
+      .event--post .event--post-speakers .speaker.is-custom-speaker {
+        z-index: 1; }
   .event--post .event--post-details {
     width: 100%;
     padding: 15px 15px;
@@ -3415,12 +3436,15 @@ ul.post-categories {
   object-fit: cover; }
 
 .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content {
-  margin-left: 5px;
-  display: flex;
-  flex-direction: row; }
+  margin-left: 5px; }
+  @media (min-width: 992px) {
+    .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content {
+      display: flex;
+      flex-direction: row; } }
   .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content .fl-author-bio-name {
     padding-right: 5px; }
-  .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content .fl-author-bio-name, .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content .fl-author-bio-text {
+  .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content .fl-author-bio-name,
+  .blog-single-post-detail .fl-module-fl-author-bio .fl-author-bio-content .fl-author-bio-text {
     font-family: "Roboto";
     font-size: 16px;
     font-weight: normal;
@@ -3451,7 +3475,12 @@ ul.post-categories {
 .blog-single-post-detail .fl-module-fl-post-content .fl-module-content img {
   max-width: 100%; }
 
-.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h1, .blog-single-post-detail .fl-module-fl-post-content .fl-module-content h2, .blog-single-post-detail .fl-module-fl-post-content .fl-module-content h3, .blog-single-post-detail .fl-module-fl-post-content .fl-module-content h4, .blog-single-post-detail .fl-module-fl-post-content .fl-module-content h5, .blog-single-post-detail .fl-module-fl-post-content .fl-module-content h6 {
+.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h1,
+.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h2,
+.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h3,
+.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h4,
+.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h5,
+.blog-single-post-detail .fl-module-fl-post-content .fl-module-content h6 {
   margin-bottom: 45px; }
 
 .blog-single-post-detail .fl-module-fl-post-content .fl-module-content a {
