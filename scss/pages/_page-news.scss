@@ -25,8 +25,10 @@
             border-bottom: 2px solid $primary-color;
         }
     }
-    
-}// .news_categories
+
+}
+
+// .news_categories
 
 .news--filter-date {
 
@@ -59,35 +61,201 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    &.is-awards {
+        justify-content: flex-start;
+    }
+
+    &.is-press-releases {
+        justify-content: flex-start;
+
+        .news--post-image {
+            display: none;
+        }
+    }
+
+
     .news--post-image {
         min-height: 272px;
     }
-    
+
     .is-featured-post {
         width: 100%;
+        padding-top: 65px;
         margin-bottom: 150px;
 
         .news--post-image {
-            float: left;
+            background-position: center center;
             width: 100%;
-            max-width: 670px;
+            min-height: 425px;
             margin-right: 50px;
+            margin-bottom: 20px;
+
+            @include breakpoint(lg) {
+                max-width: 670px;
+                float: left;
+                margin-bottom: 0;
+            }
         }
 
         .news--post-details {
-            float: left;
-            width: 33%;
+            @include breakpoint(lg) {
+                float: left;
+                width: 33%;
+            }
+
+            h1 {
+                @include breakpoint(lg) {
+                    font-size: 50px;
+                    line-height: 65px;
+                }
+            }
+        }
+
+        .news--post-category {
+            margin-bottom: 30px;
+
+            span {
+                min-width: 140px;
+                display: inline-block;
+                padding: 7px 15px;
+                border-radius: 25px;
+                background: $palepink;
+                color: $white;
+                font-family: $primary-font-stack;
+                font-size: 16px;
+                font-weight: bold;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+            }
+
+        }
+
+        .news--post-permalink {
+            a {
+                @include cogito-text-cta();
+            }
         }
     }
 
 
 }
 
+
+
+
+
 .news--post {
-    width: 31.33%;
+    @include breakpoint(md) {
+        width: 49%;
+
+    }
+
+    @include breakpoint(lg) {
+        width: 31%;
+
+    }
+
+    &.in-the-news {
+        margin-bottom: 80px;
+        padding-bottom: 50px;
+        border-bottom: 2px solid #D8D8D8;
+
+        .news--post-details {
+            min-height: 260px;
+            height: auto;
+        }
+
+        .news--post-title {
+            flex: 1;
+            margin-bottom: 40px;
+        }
+
+        .post--news-date {
+            display: none;
+        }
+    }
+
+    &.awards {
+        margin-right: 25px;
+        padding-top: 20px;
+        // border-top: 2px solid #D8D8D8;
+
+        .news--post-permalink {
+            display: none;
+        }
+    }
+
+    &.press-releases {
+        margin-right: 25px;
+        margin-bottom: 70px;
+        padding-top: 20px;
+        border-top: 2px solid #D8D8D8;
+
+        .news--post-title {
+            flex: 1;
+            margin-bottom: 45px;
+        }
+
+        .news--post-excerpt {
+            display: none;
+        }
+
+        .post--news-date {
+            margin-bottom: 15px;
+        }
+    }
+
+
 
     h1 {
-         font-size: 24px;
-         font-weight: 800;
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .news--post-image {
+        min-height: 272px;
+        max-height: 275px;
+        margin-bottom: 35px;
+        background-position: center center;
+    }
+
+    .news--post-details {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+
+    .news--post-permalink {
+        a {
+            @include cogito-text-cta();
+        }
+    }
+}
+
+.facetwp-facet-news_loader {
+    text-align: center;
+
+
+    .facetwp-load-more {
+        color: $white;
+        background-color: transparent;
+        font-size: 18px;
+        border: 2px solid $primary-text-clr;
+        max-width: 180px;
+        height: 55px;
+        width: 100%;
+        font-family: "Poppins";
+        font-weight: bold;
+        color: $primary-text-clr;
+        border-radius: 0;
+
+        &:hover {
+            border-color: $primary-text-clr;
+            color: $primary-text-clr;
+            box-shadow: none;
+        }
     }
 }
