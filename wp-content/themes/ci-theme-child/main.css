@@ -2121,6 +2121,9 @@ a {
         opacity: 1;
         margin-left: 10px !important; }
 
+#fl-main-content .instagram-feed a {
+  border-bottom: none !important; }
+
 .careers--open-jobs .lever-job-title {
   color: #47879C !important;
   text-decoration: none !important; }
@@ -2293,21 +2296,25 @@ a {
       background-image: none;
       border-bottom: 2px solid #31606E; }
 
-.news--filter-date .facetwp-facet-title {
-  font-size: 16px;
-  font-weight: 300;
-  float: left;
-  margin-top: 2px;
-  margin-right: 5px; }
-
-.news--filter-date .facetwp-dropdown {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  color: #31606E;
-  background: none;
-  border: none;
-  outline: none; }
+.news--filter-date {
+  display: none; }
+  @media (min-width: 1200px) {
+    .news--filter-date {
+      display: block; } }
+  .news--filter-date .facetwp-facet-title {
+    font-size: 16px;
+    font-weight: 300;
+    float: left;
+    margin-top: 2px;
+    margin-right: 5px; }
+  .news--filter-date .facetwp-dropdown {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #31606E;
+    background: none;
+    border: none;
+    outline: none; }
 
 .news--container {
   display: flex;

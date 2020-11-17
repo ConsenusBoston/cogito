@@ -31,6 +31,11 @@
 // .news_categories
 
 .news--filter-date {
+    display: none;
+
+    @include breakpoint(lg) {
+        display: block;
+    }
 
     .facetwp-facet-title {
         font-size: 16px;
