@@ -1,5 +1,5 @@
-// @ Author: Bryan Barrera
-// @ Author URI: BryanBarrera.com
+// @ Author: Consensus Interactive
+// @ Author URI: ConsensusInteractive.com
 // @ Description: _mixin.scss file
 
 // Transition Mixin
@@ -13,7 +13,6 @@
 }
 
 
-
 // @ App button
 @mixin app-button {
   display: inline-block;
@@ -23,6 +22,34 @@
   padding: 10px 25px;
   text-decoration: none;
   font-size: 12px;
+}
+
+
+@mixin cogito-text-cta {
+   color: $primary-color-light;
+   font-family: $secondary-font-stack;
+   font-size: 16px;
+   font-weight: 900;
+   letter-spacing: 0.2px;
+   border-bottom: 2px solid transparent;
+   text-decoration: none;
+   @include transition(all .02s ease-out);
+
+   i {
+     margin-left: 0;
+     width: 0 !important;
+     opacity: 0;
+     @include transition(all .2s ease-out);
+   }
+
+   &:hover {
+     border-bottom: 2px solid $primary-color-light;
+
+     i {
+       opacity: 1;
+       margin-left: 10px !important;
+     }
+   }
 }
 
 @mixin hyperlink-styles {

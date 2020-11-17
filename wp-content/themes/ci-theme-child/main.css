@@ -2008,30 +2008,37 @@ a {
   order: 1; }
 
 .resource--featured-post .fl-post-feed-more {
-  color: #31606E;
+  color: #5989A6;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: 900;
-  letter-spacing: 0.2;
+  letter-spacing: 0.2px;
   border-bottom: 2px solid transparent;
   text-decoration: none;
-  -webkit-transition: all 0.25s ease-in-out;
-  -moz-transition: all 0.25s ease-in-out;
-  -ms-transition: all 0.25s ease-in-out;
-  -o-transition: all 0.25s ease-in-out;
-  transition: all 0.25s ease-in-out; }
+  -webkit-transition: all 0.02s ease-out;
+  -moz-transition: all 0.02s ease-out;
+  -ms-transition: all 0.02s ease-out;
+  -o-transition: all 0.02s ease-out;
+  transition: all 0.02s ease-out; }
   .resource--featured-post .fl-post-feed-more i {
-    display: none;
-    opacity: 0; }
+    margin-left: 0;
+    width: 0 !important;
+    opacity: 0;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    -ms-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out; }
   .resource--featured-post .fl-post-feed-more:hover {
     border-bottom: 2px solid #5989A6; }
     .resource--featured-post .fl-post-feed-more:hover i {
-      display: inline-block;
-      opacity: 1; }
+      opacity: 1;
+      margin-left: 10px !important; }
 
 .resource--featured-post .fl-post-feed-terms {
   margin-bottom: 15px; }
   .resource--featured-post .fl-post-feed-terms a {
+    min-width: 140px;
     display: inline-block;
     padding: 5px 15px;
     border-radius: 25px;
@@ -2041,7 +2048,8 @@ a {
     font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
-    text-decoration: none; }
+    text-decoration: none;
+    text-align: center; }
 
 .resource--featured-post .fl-post-feed-image-beside {
   max-width: 100%; }
@@ -2086,26 +2094,32 @@ a {
     text-decoration: none; }
   .resource--posts .fl-post-grid-more {
     margin-top: 30px;
-    color: #5989A6 !important;
+    color: #5989A6;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     font-weight: 900;
-    letter-spacing: 0.2;
+    letter-spacing: 0.2px;
     border-bottom: 2px solid transparent;
     text-decoration: none;
-    -webkit-transition: all 0.25s ease-in-out;
-    -moz-transition: all 0.25s ease-in-out;
-    -ms-transition: all 0.25s ease-in-out;
-    -o-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out; }
+    -webkit-transition: all 0.02s ease-out;
+    -moz-transition: all 0.02s ease-out;
+    -ms-transition: all 0.02s ease-out;
+    -o-transition: all 0.02s ease-out;
+    transition: all 0.02s ease-out; }
     .resource--posts .fl-post-grid-more i {
-      display: none;
-      opacity: 0; }
+      margin-left: 0;
+      width: 0 !important;
+      opacity: 0;
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -ms-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
     .resource--posts .fl-post-grid-more:hover {
       border-bottom: 2px solid #5989A6; }
       .resource--posts .fl-post-grid-more:hover i {
-        display: inline-block;
-        opacity: 1; }
+        opacity: 1;
+        margin-left: 10px !important; }
 
 .careers--open-jobs .lever-job-title {
   color: #47879C !important;
@@ -3239,9 +3253,10 @@ ul.post-categories {
   .post-author__img {
     width: 35px;
     height: 35px;
-    background-color: red;
+    background-color: #e9e9e9;
     border-radius: 50%;
-    margin-right: 5px; }
+    margin-right: 5px;
+    overflow: hidden; }
     .post-author__img img {
       object-fit: cover;
       width: 100%;
