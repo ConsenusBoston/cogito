@@ -57,8 +57,8 @@ add_filter('body_class', 'custom_classes');
 
 // Reorders News Post Facet
 add_filter('facetwp_facet_orderby', function ($orderby, $facet) {
-	if ('in_the_news' == $facet['name']) {
-		$orderby = 'FIELD(f.facet_display_value, "awards", "in-the-news", "press-releases")';
+	if ('news_categories' == $facet['name']) {
+		$orderby = 'FIELD(f.facet_display_value, "in-the-news", "press-releases", "awards" )';
 	}
 	return $orderby;
 },10, 2 );
