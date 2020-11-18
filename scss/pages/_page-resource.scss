@@ -16,7 +16,7 @@
     }
 
     .fl-post-feed-more {
-       @include cogito-text-cta();
+        @include cogito-text-cta();
     }
 
     .fl-post-feed-terms {
@@ -40,36 +40,83 @@
 
     .fl-post-feed-image-beside {
         max-width: 100%;
-    } // .fl-post-feed-image-beside
+    }
+
+    // .fl-post-feed-image-beside
 }
 
 // .resource--featured-post
 
-.resource--list-post .fl-post-column:nth-child(1),
-.resource--list-post .fl-post-column:nth-child(4n) {
-    .fl-post-grid-terms {
-        a {
-            background: #277F57;
-        }
+
+.resource--list-post .fl-post-grid-terms {
+
+    .case-study a {
+        background-color: #F4783B;
     }
+
+    .ebook a {
+        background-color: #690F0F;
+    }
+
+    .featured a {
+        background-color: #F26B6C;
+    }
+
+    .infographic a {
+        background-color: #793E5D;
+    }
+
+    .presentation a {
+        background-color: #17402B;
+    }
+
+    .product-brochure a {
+        background-color: #B74726;
+    }
+
+    .research a {
+        background-color: #BF84A4;
+    }
+
+    .video a {
+        background-color: #287F57;
+    }
+
+    .webinar a {
+        background-color: #793E5D;
+    }
+
+    .whitepaper a {
+        background-color: #5988A6;
+    }
+
 }
 
-.resource--list-post .fl-post-column:nth-child(5n),
-.resource--list-post .fl-post-column:nth-child(2) {
-    .fl-post-grid-terms {
-        a {
-            background: #F26B6C;
-        }
-    }
-}
+// .resource--list-post .fl-post-column:nth-child(1),
+// .resource--list-post .fl-post-column:nth-child(4n) {
+//     .fl-post-grid-terms {
+//         a {
+//             background: #277F57;
+//         }
+//     }
+// }
 
-.resource--list-post .fl-post-column:nth-child(3n) {
-    .fl-post-grid-terms {
-        a {
-            background: #C084A3;
-        }
-    }
-}
+// .resource--list-post .fl-post-column:nth-child(5n),
+// .resource--list-post .fl-post-column:nth-child(2) {
+//     .fl-post-grid-terms {
+//         a {
+//             background: #F26B6C;
+//         }
+//     }
+// }
+
+// .resource--list-post .fl-post-column:nth-child(3n) {
+//     .fl-post-grid-terms {
+//         a {
+//             background: #C084A3;
+//         }
+//     }
+// }
 
 
 
@@ -108,7 +155,7 @@
             display: inline-block;
             padding: 5px 15px;
             border-radius: 25px;
-            background: #333;
+            background: $primary-color;
             color: $white;
             font-family: $primary-font-stack;
             font-size: 16px;
@@ -120,7 +167,7 @@
 
     .fl-post-grid-more {
         margin-top: 30px;
-         @include cogito-text-cta();
+        @include cogito-text-cta();
     }
 
 }

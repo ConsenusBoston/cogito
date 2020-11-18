@@ -104,6 +104,15 @@
 
 .bb-the-latest-posts {
 
+    .fl-row-content-wrap {
+        padding-right: 0;
+    }
+
+    &--posts>.fl-col-content {
+        max-width: 380px;
+    }
+
+
     .fl-module-post-grid,
     .fl-module-content,
     .fl-post-grid,
@@ -155,27 +164,9 @@
         }
 
         .fl-post-grid-more {
-            color: $primary-color-light !important;
-            font-weight: bold;
             margin-top: auto;
             margin-bottom: 20px;
-            border-bottom: 2px solid transparent;
-            @include transition(all 0.2s ease-out);
-
-            &:focus,
-            &:hover {
-                border-bottom: 2px solid $primary-color-light;
-
-                i {
-                    opacity: 1;
-                    margin-left: 10px;
-                }
-            }
-
-            i {
-                opacity: 0;
-                margin-left: 0;
-            }
+            @include cogito-text-cta();
         }
     }
 

@@ -339,14 +339,22 @@ class FLPostGridModule extends FLBuilderModule {
 			}
 			
 			$term_list = get_the_term_list( get_the_ID(), $name, '', $terms_separator, '' );
+
+			$terms_class = get_the_terms(get_the_ID(), $name);
+
+			foreach ($terms_class as $term) {
+				
+			 
+
 			
 			if ( ! empty( $term_list ) ) {
 				if ($single_taxonomy) {
 					$terms_list[] = explode(",", $term_list)[0];
 				} else {
-					$terms_list[] = $term_list;
+					$terms_list[] = '<span class="'. $term->slug .'">'.$term_list .'</span>';
 				}
 			}
+			 }
 		}
 
 		if ( count( $terms_list ) > 0 ) {
