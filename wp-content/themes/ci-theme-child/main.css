@@ -1556,7 +1556,8 @@ a {
 .button-group .button:first-child {
   margin-right: 20px; }
 
-.button {
+.button,
+.btn-primary {
   display: inline-block;
   background-color: #31606E;
   color: #ffffff;
@@ -1565,8 +1566,10 @@ a {
   font-weight: 700;
   padding: 15px 30px;
   min-height: 52px;
-  border: 2px solid #31606E !important; }
-  .button:hover {
+  border: 2px solid #31606E !important;
+  border-radius: 0 !important; }
+  .button:hover,
+  .btn-primary:hover {
     text-decoration: none; }
 
 .white--button,
@@ -2120,6 +2123,11 @@ a {
       .resource--posts .fl-post-grid-more:hover i {
         opacity: 1;
         margin-left: 10px !important; }
+
+#fl-main-content .instagram-feed .sbi_no_avatar .sbi_header_img {
+  background-color: #BEDAD9; }
+  #fl-main-content .instagram-feed .sbi_no_avatar .sbi_header_img path {
+    fill: #31606E; }
 
 #fl-main-content .instagram-feed a {
   border-bottom: none !important; }

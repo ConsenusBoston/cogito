@@ -8,7 +8,8 @@
     }
 }
 
-.button {
+.button,
+.btn-primary {
     display: inline-block;
     background-color: $primary-color;
     color: $white;
@@ -18,6 +19,7 @@
     padding: 15px 30px;
     min-height: 52px;
     border: 2px solid $primary-color !important;
+    border-radius: 0 !important;
     
     &:hover {
         text-decoration: none;
