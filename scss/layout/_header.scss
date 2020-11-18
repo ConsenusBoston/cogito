@@ -285,9 +285,58 @@
     // .brex-mega-menu
 
 
+    // @ i want too dropdown
+    .fl-builder-content-3295 {
+        @media (min-width: 1024px) {
+            padding-left: 60px;
+        }
+
+        .fl-row-content-wrap {
+            padding-top: 38px;
+            padding-left: 50px;
+        }
+
+        .fl-row-bg-color {
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+        }
+
+
+        .fl-rich-text {
+            p {
+                line-height: 21px;
+                margin-bottom: 10px;
+            }
+        }
+
+        a {
+            font-size: 14px;
+            text-decoration: none;
+
+            strong {
+                font-size: 16px;
+                font-weight: 500 !important;
+            }
+
+            &:hover {
+                color: $primary-text-clr-light !important;
+
+                strong {
+                    color: $primary-text-clr-light !important;
+                }
+            }
+        }
+
+        strong {
+            font-family: $secondary-font-stack;
+            font-size: 16px;
+            font-weight: 400;
+        }
+    }
+
+
 
     // @ i want too dropdown
-    .fl-builder-content-479 {
+    .fl-builder-content-479{
         @media (min-width: 1024px) {
             padding-left: 60px;
         }
