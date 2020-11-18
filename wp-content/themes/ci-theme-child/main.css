@@ -1783,6 +1783,37 @@ a {
     z-index: 1000; }
 
 @media (min-width: 1024px) {
+  .mega--menu .fl-builder-content-3295 {
+    padding-left: 60px; } }
+
+.mega--menu .fl-builder-content-3295 .fl-row-content-wrap {
+  padding-top: 38px;
+  padding-left: 50px; }
+
+.mega--menu .fl-builder-content-3295 .fl-row-bg-color {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4); }
+
+.mega--menu .fl-builder-content-3295 .fl-rich-text p {
+  line-height: 21px;
+  margin-bottom: 10px; }
+
+.mega--menu .fl-builder-content-3295 a {
+  font-size: 14px;
+  text-decoration: none; }
+  .mega--menu .fl-builder-content-3295 a strong {
+    font-size: 16px;
+    font-weight: 500 !important; }
+  .mega--menu .fl-builder-content-3295 a:hover {
+    color: #47879C !important; }
+    .mega--menu .fl-builder-content-3295 a:hover strong {
+      color: #47879C !important; }
+
+.mega--menu .fl-builder-content-3295 strong {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 400; }
+
+@media (min-width: 1024px) {
   .mega--menu .fl-builder-content-479 {
     padding-left: 60px; } }
 
@@ -2014,7 +2045,7 @@ a {
   color: #5989A6;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.2px;
   border-bottom: 2px solid transparent;
   text-decoration: none;
@@ -2057,16 +2088,35 @@ a {
 .resource--featured-post .fl-post-feed-image-beside {
   max-width: 100%; }
 
-.resource--list-post .fl-post-column:nth-child(1) .fl-post-grid-terms a,
-.resource--list-post .fl-post-column:nth-child(4n) .fl-post-grid-terms a {
-  background: #277F57; }
+.resource--list-post .fl-post-grid-terms .case-study a {
+  background-color: #F4783B; }
 
-.resource--list-post .fl-post-column:nth-child(5n) .fl-post-grid-terms a,
-.resource--list-post .fl-post-column:nth-child(2) .fl-post-grid-terms a {
-  background: #F26B6C; }
+.resource--list-post .fl-post-grid-terms .ebook a {
+  background-color: #690F0F; }
 
-.resource--list-post .fl-post-column:nth-child(3n) .fl-post-grid-terms a {
-  background: #C084A3; }
+.resource--list-post .fl-post-grid-terms .featured a {
+  background-color: #F26B6C; }
+
+.resource--list-post .fl-post-grid-terms .infographic a {
+  background-color: #793E5D; }
+
+.resource--list-post .fl-post-grid-terms .presentation a {
+  background-color: #17402B; }
+
+.resource--list-post .fl-post-grid-terms .product-brochure a {
+  background-color: #B74726; }
+
+.resource--list-post .fl-post-grid-terms .research a {
+  background-color: #BF84A4; }
+
+.resource--list-post .fl-post-grid-terms .video a {
+  background-color: #287F57; }
+
+.resource--list-post .fl-post-grid-terms .webinar a {
+  background-color: #793E5D; }
+
+.resource--list-post .fl-post-grid-terms .whitepaper a {
+  background-color: #5988A6; }
 
 .resource--posts {
   padding-bottom: 60px; }
@@ -2088,7 +2138,7 @@ a {
     display: inline-block;
     padding: 5px 15px;
     border-radius: 25px;
-    background: #333;
+    background: #31606E;
     color: #ffffff;
     font-family: "Poppins", sans-serif;
     font-size: 16px;
@@ -2100,7 +2150,7 @@ a {
     color: #5989A6;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-weight: 900;
+    font-weight: 700;
     letter-spacing: 0.2px;
     border-bottom: 2px solid transparent;
     text-decoration: none;
@@ -2379,7 +2429,7 @@ a {
       color: #5989A6;
       font-family: "Roboto", sans-serif;
       font-size: 16px;
-      font-weight: 900;
+      font-weight: 700;
       letter-spacing: 0.2px;
       border-bottom: 2px solid transparent;
       text-decoration: none;
@@ -2463,7 +2513,7 @@ a {
   color: #5989A6;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
   letter-spacing: 0.2px;
   border-bottom: 2px solid transparent;
   text-decoration: none;
@@ -2922,6 +2972,12 @@ a {
       opacity: 0;
       margin-left: 0; }
 
+.bb-the-latest-posts .fl-row-content-wrap {
+  padding-right: 0; }
+
+.bb-the-latest-posts--posts > .fl-col-content {
+  max-width: 380px; }
+
 .bb-the-latest-posts .fl-module-post-grid,
 .bb-the-latest-posts .fl-module-content,
 .bb-the-latest-posts .fl-post-grid,
@@ -2956,24 +3012,34 @@ a {
   .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-content {
     padding-bottom: 50px; }
   .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more {
-    color: #5989A6 !important;
-    font-weight: bold;
     margin-top: auto;
     margin-bottom: 20px;
+    color: #5989A6;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
     border-bottom: 2px solid transparent;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out; }
-    .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more:focus, .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more:hover {
-      border-bottom: 2px solid #5989A6; }
-      .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more:focus i, .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more:hover i {
-        opacity: 1;
-        margin-left: 10px; }
+    text-decoration: none;
+    -webkit-transition: all 0.02s ease-out;
+    -moz-transition: all 0.02s ease-out;
+    -ms-transition: all 0.02s ease-out;
+    -o-transition: all 0.02s ease-out;
+    transition: all 0.02s ease-out; }
     .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more i {
+      margin-left: 0;
+      width: 0 !important;
       opacity: 0;
-      margin-left: 0; }
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -ms-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+    .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more:hover {
+      border-bottom: 2px solid #5989A6; }
+      .bb-the-latest-posts .fl-post-grid-text .fl-post-grid-more:hover i {
+        opacity: 1;
+        margin-left: 10px !important; }
 
 @media (max-width: 1199px) {
   .bb-the-latest-posts .fl-node-5f929d68957fe,
