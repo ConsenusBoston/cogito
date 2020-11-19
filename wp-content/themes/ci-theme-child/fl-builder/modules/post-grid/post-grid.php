@@ -342,19 +342,41 @@ class FLPostGridModule extends FLBuilderModule {
 
 			$terms_class = get_the_terms(get_the_ID(), $name);
 
+			// foreach ($terms_class as $term) {
+
+			// $terms = get_the_terms($post->ID, 'category');
+
+			$cat_terms = array();
+
 			foreach ($terms_class as $term) {
-				
-			 
+				$cat_terms[] = $term->term_id;
+				$term_name = get_term($term->term_id)->name;
+				$term_slug = get_term($term->term_id)->slug;
+				$abc =  '<span class="'. $term_slug.' category--topics">'.$term_name.'</span>';
+			}
+
+			// $abc = $cat_terms[0];
+
+			
+
+			// $values = array_values($cat_terms);
 
 			
 			if ( ! empty( $term_list ) ) {
 				if ($single_taxonomy) {
-					$terms_list[] = explode(",", $term_list)[0];
+					// $terms_list[] = explode(",", $term_list)[0];
+					// print_r($terms_list);
+					// $abc = $cat_terms;
+					// print_r($term_name);
+					echo $abc;
+					// print_r($abc);
 				} else {
-					$terms_list[] = '<span class="'. $term->slug .'">'.$term_list .'</span>';
+					// $terms_list[] = '<span class="'. $term->slug .'">'.$term_list .'</span>';
+					$terms_list[] = $term_list;
+					
 				}
 			}
-			 }
+			//  }
 		}
 
 		if ( count( $terms_list ) > 0 ) {
