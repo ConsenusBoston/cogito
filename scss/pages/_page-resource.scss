@@ -50,75 +50,62 @@
 
 .resource--list-post .fl-post-grid-terms {
 
-    .case-study a {
+    .category--topics {
+        min-width: 140px;
+        display: inline-block;
+        padding: 5px 15px;
+        border-radius: 25px;
+        background: $palepink;
+        color: $white;
+        font-family: $primary-font-stack;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+    }
+
+    .case-study {
         background-color: #F4783B;
     }
 
-    .ebook a {
+    .ebook {
         background-color: #690F0F;
     }
 
-    .featured a {
+    .featured {
         background-color: #F26B6C;
     }
 
-    .infographic a {
+    .infographic {
         background-color: #793E5D;
     }
 
-    .presentation a {
+    .presentation {
         background-color: #17402B;
     }
 
-    .product-brochure a {
+    .product-brochure {
         background-color: #B74726;
     }
 
-    .research a {
+    .research {
         background-color: #BF84A4;
     }
 
-    .video a {
+    .video {
         background-color: #287F57;
     }
 
-    .webinar a {
+    .webinar {
         background-color: #793E5D;
     }
 
-    .whitepaper a {
+    .whitepaper {
         background-color: #5988A6;
     }
 
-}
-
-// .resource--list-post .fl-post-column:nth-child(1),
-// .resource--list-post .fl-post-column:nth-child(4n) {
-//     .fl-post-grid-terms {
-//         a {
-//             background: #277F57;
-//         }
-//     }
-// }
-
-// .resource--list-post .fl-post-column:nth-child(5n),
-// .resource--list-post .fl-post-column:nth-child(2) {
-//     .fl-post-grid-terms {
-//         a {
-//             background: #F26B6C;
-//         }
-//     }
-// }
-
-// .resource--list-post .fl-post-column:nth-child(3n) {
-//     .fl-post-grid-terms {
-//         a {
-//             background: #C084A3;
-//         }
-//     }
-// }
-
-
+} 
 
 
 .resource--posts {

@@ -2088,34 +2088,48 @@ a {
 .resource--featured-post .fl-post-feed-image-beside {
   max-width: 100%; }
 
-.resource--list-post .fl-post-grid-terms .case-study a {
+.resource--list-post .fl-post-grid-terms .category--topics {
+  min-width: 140px;
+  display: inline-block;
+  padding: 5px 15px;
+  border-radius: 25px;
+  background: #C084A3;
+  color: #ffffff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center; }
+
+.resource--list-post .fl-post-grid-terms .case-study {
   background-color: #F4783B; }
 
-.resource--list-post .fl-post-grid-terms .ebook a {
+.resource--list-post .fl-post-grid-terms .ebook {
   background-color: #690F0F; }
 
-.resource--list-post .fl-post-grid-terms .featured a {
+.resource--list-post .fl-post-grid-terms .featured {
   background-color: #F26B6C; }
 
-.resource--list-post .fl-post-grid-terms .infographic a {
+.resource--list-post .fl-post-grid-terms .infographic {
   background-color: #793E5D; }
 
-.resource--list-post .fl-post-grid-terms .presentation a {
+.resource--list-post .fl-post-grid-terms .presentation {
   background-color: #17402B; }
 
-.resource--list-post .fl-post-grid-terms .product-brochure a {
+.resource--list-post .fl-post-grid-terms .product-brochure {
   background-color: #B74726; }
 
-.resource--list-post .fl-post-grid-terms .research a {
+.resource--list-post .fl-post-grid-terms .research {
   background-color: #BF84A4; }
 
-.resource--list-post .fl-post-grid-terms .video a {
+.resource--list-post .fl-post-grid-terms .video {
   background-color: #287F57; }
 
-.resource--list-post .fl-post-grid-terms .webinar a {
+.resource--list-post .fl-post-grid-terms .webinar {
   background-color: #793E5D; }
 
-.resource--list-post .fl-post-grid-terms .whitepaper a {
+.resource--list-post .fl-post-grid-terms .whitepaper {
   background-color: #5988A6; }
 
 .resource--posts {
