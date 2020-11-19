@@ -58,12 +58,40 @@ window.addEventListener('leverJobsRendered', function () {
 
   hideFilterResults();
 
-  jQuery('#lever-jobs-filter select').change(function () {
-
+  jQuery('#lever-jobs-filter select').change(function (e) {
+    var select = e.currentTarget
+    var clearBtn = jQuery('.lever-filter-breadcrumbs-clear');
     var selectedFilters = {
       location: jQuery('#lever-jobs-filter select.lever-jobs-filter-locations').val(),
       department: jQuery('#lever-jobs-filter select.lever-jobs-filter-departments').val(),
     }
+
+    function addLiToBreadcrumbs (query, fieldName) {
+      if (select.className.includes(query)) {
+        var departmentsLi = jQuery(`.lever-filter-breadcrumbs-${query}`);
+        clearBtn.addClass('hover')
+        departmentsLi.addClass('visible')
+        departmentsLi.html(`
+          <span>></span>${selectedFilters[fieldName]}
+        `)
+      }
+    }
+
+    // function addLiToBreadcrumbs (query, fieldName) {
+    //   if (select.className.includes(query)) {
+    //     var departmentsLi = jQuery(`.lever-filter-breadcrumbs-${query}`);
+    //     clearBtn.addClass('hover')
+    //     if (departmentsLi.length) {
+    //       departmentsLi.text(selectedFilters[fieldName])
+    //     } else {
+    //       // ulFilter.append(`<li class="lever-filter-breadcrumbs-${query} hover">${selectedFilters[fieldName]}</li>`)
+    //       jQuery(``).after(`<li class="lever-filter-breadcrumbs-${query} hover">${selectedFilters[fieldName]}</li>`)
+    //     }
+    //   }
+    // }
+
+    addLiToBreadcrumbs('departments', 'department')
+    addLiToBreadcrumbs('locations', 'location')
 
     //Filter the list
     jobList.filter(function (item) {
@@ -85,13 +113,17 @@ window.addEventListener('leverJobsRendered', function () {
     else {
       jQuery('#lever-no-results').show();
     }
-    jQuery('#lever-clear-filters').show();
+    // jQuery('#lever-clear-filters').show();
     showFilterResults();
 
   });
 
+  function clearBreadcrumbsLi (query) {
+    jQuery(`.lever-filter-breadcrumbs-${query}`).html(`<span></span>`)
+    jQuery(`.lever-filter-breadcrumbs-${query}`).removeClass('visible')
+  }
 
-  jQuery('.careers--open-jobs').on('click', '#lever-clear-filters', function () {
+  jQuery('.careers--open-jobs').on('click', '.lever-filter-breadcrumbs-clear', function (e) {
     jobList.filter();
     if (jobList.filtered == false) {
       hideFilterResults();
@@ -100,8 +132,12 @@ window.addEventListener('leverJobsRendered', function () {
     jQuery(".lever-jobs-filter-departments").val("").trigger('change');
     jQuery(".lever-jobs-filter-locations").val("").trigger('change');
     jQuery('#lever-no-results').hide();
-    jQuery('#lever-clear-filters').hide();
+
+    clearBreadcrumbsLi('departments')
+    clearBreadcrumbsLi('locations')
+
     hideFilterResults();
+    jQuery('.lever-filter-breadcrumbs-clear').removeClass('hover');
   });
 
   setTimeout(function () {

@@ -2188,6 +2188,47 @@ a {
 #fl-main-content .instagram-feed a {
   border-bottom: none !important; }
 
+.careers--open-jobs .lever-filter-breadcrumbs {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0;
+  margin: 0; }
+  .careers--open-jobs .lever-filter-breadcrumbs li {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.2px;
+    font-weight: bold;
+    color: #47879C; }
+    .careers--open-jobs .lever-filter-breadcrumbs li:first-child {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute; }
+    .careers--open-jobs .lever-filter-breadcrumbs li:not(:first-child) {
+      visibility: hidden;
+      opacity: 0;
+      position: absolute;
+      transition: .2s ease-in-out;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      .careers--open-jobs .lever-filter-breadcrumbs li:not(:first-child).visible {
+        visibility: visible;
+        position: relative;
+        opacity: 1; }
+    .careers--open-jobs .lever-filter-breadcrumbs li:first-child.hover {
+      visibility: visible;
+      position: relative;
+      opacity: 1; }
+      .careers--open-jobs .lever-filter-breadcrumbs li:first-child.hover:hover {
+        cursor: pointer; }
+    .careers--open-jobs .lever-filter-breadcrumbs li span {
+      content: ">";
+      display: inline-block;
+      padding: 0 7px; }
+
 .careers--open-jobs .lever-job-title {
   color: #47879C !important;
   text-decoration: none !important; }
