@@ -108,7 +108,7 @@ $posts_query = new WP_Query($query_args_one);
                             </div>
 
                             <div class="event--post-details">
-                                
+
                                 <div class="event--post-title">
                                     <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                                 </div>
@@ -155,7 +155,7 @@ $posts_query = new WP_Query($query_args_one);
                     <div class="event--post">
                         <?php if (has_post_thumbnail()) {
                             $img = get_the_post_thumbnail_url();
-                        // } else {
+                            // } else {
                             $img = get_stylesheet_directory_uri() . '/assets/images/placeholder-600x320.png';
                         } ?>
 
@@ -275,11 +275,28 @@ $posts_query = new WP_Query($query_args_one);
 <!-- blog-content--sm-scroll -->
 <div class="<?php FLLayout::container_class(); ?>">
     <main class="fl-content event-content">
-        
+
         <h2>Additional webinars</h2>
+
+        <div class="events--top-pager"></div>
         <?php echo do_shortcode('[facetwp template="event_additional"]'); ?>
         <?php echo do_shortcode('[facetwp facet="event_additional_webinars_pager"]'); ?>
 
+
+        <script>
+            (function($) {
+                $(document).on('facetwp-loaded', function() {
+
+                    var first = $('.facetwp-pager .facetwp-page.first').html(),
+                        active = $('.facetwp-pager .facetwp-page.active').html(),
+                        last = $('.facetwp-pager .facetwp-page.last').html(),
+                        html = active + ' of ' + last;
+
+
+                        $('.events--top-pager').html(html);
+                });
+            })(jQuery);
+        </script>
     </main>
 
 </div>

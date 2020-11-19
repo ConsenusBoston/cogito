@@ -2581,13 +2581,25 @@ a {
     padding-left: 0; }
 
 .event-content {
-  width: 1200px;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px; }
   .event-content h2 {
     font-size: 30px;
     line-height: 38px;
     margin-bottom: 60px; }
+  .event-content .events--top-pager {
+    position: absolute;
+    top: 2px;
+    right: 0;
+    color: #31606E;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 38px; }
 
 .event--container {
   width: 1200px;
