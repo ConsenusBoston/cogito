@@ -8,6 +8,7 @@
     .fl-post-feed-header {
         display: flex;
         flex-direction: column;
+        align-items: flex-start;
         padding-top: 70px;
     }
 
@@ -48,64 +49,64 @@
 // .resource--featured-post
 
 
-.resource--list-post .fl-post-grid-terms {
 
-    .category--topics {
-        min-width: 140px;
-        display: inline-block;
-        padding: 5px 15px;
-        border-radius: 25px;
-        background: $palepink;
-        color: $white;
-        font-family: $primary-font-stack;
-        font-size: 16px;
-        font-weight: bold;
-        text-transform: uppercase;
-        text-decoration: none;
-        text-align: center;
-    }
+.category--topics {
+    min-width: 140px;
+    display: inline-block;
+    padding: 5px 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    background: $palepink;
+    color: $white;
+    font-family: $primary-font-stack;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
 
-    .case-study {
+
+    &.case-study {
         background-color: #F4783B;
     }
 
-    .ebook {
+    &.ebook {
         background-color: #690F0F;
     }
 
-    .featured {
+    &.featured {
         background-color: #F26B6C;
     }
 
-    .infographic {
+    &.infographic {
         background-color: #793E5D;
     }
 
-    .presentation {
+    &.presentation {
         background-color: #17402B;
     }
 
-    .product-brochure {
+    &.product-brochure {
         background-color: #B74726;
     }
 
-    .research {
+    &.research {
         background-color: #BF84A4;
     }
 
-    .video {
+    &.video {
         background-color: #287F57;
     }
 
-    .webinar {
+    &.webinar {
         background-color: #793E5D;
     }
 
-    .whitepaper {
+    &.whitepaper {
         background-color: #5988A6;
     }
 
-} 
+}
 
 
 .resource--posts {

@@ -372,7 +372,8 @@ class FLPostGridModule extends FLBuilderModule {
 					// print_r($abc);
 				} else {
 					// $terms_list[] = '<span class="'. $term->slug .'">'.$term_list .'</span>';
-					$terms_list[] = $term_list;
+					// $terms_list[] = $term_list;
+					echo $abc;
 					
 				}
 			}
