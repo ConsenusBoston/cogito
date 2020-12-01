@@ -47,3 +47,65 @@
 }
 
 // .resource-single-post-detail
+
+
+.resource--form-container {
+    width: 95%;
+    background-color: $primary-color;
+    color: $white;
+
+    .ninja-forms-req-symbol,
+    .nf-error-msg {
+        color: $white !important;
+    }
+
+    .nf-form-fields-required {
+         font-family: $primary-font-stack;
+         font-size: 32px;
+         font-weight: 700; 
+         line-height: 42px;
+         text-align: center;
+    }
+
+    .hidden-container { display: none;}
+
+    .submit-wrap {
+        input[type="button"] {
+            font-size: 20px !important;
+            font-weight: 700;
+            width: 100%;
+            background-color: #F26B6C !important;;
+            color: $white !important;
+            padding: 10px 0 !important;
+            height: 60px !important;
+        }
+    }
+}
+
+
+.resource--content-container {
+    .fl-post__speakers {
+        margin-bottom: 30px; 
+    }
+
+    .resource--post-categories {
+        font-family: $secondary-font-stack;
+        font-size: 14px;
+        line-height: 19px;
+        padding-bottom: 15px;
+        margin-bottom: 75px;
+
+
+        a {
+            font-weight: 400;
+            display: inline-block;
+            margin-right: 15px;
+            color: $primary-text-clr-light;
+            border-bottom: 1px solid $primary-color;
+        }
+    }
+}
+.resource--post-categories {
+
+}
+

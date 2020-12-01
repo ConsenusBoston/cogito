@@ -39,7 +39,7 @@
             font-family: $secondary-font-stack;
             font-size: 18px;
             line-height: 29px;
-            
+
             @include hyperlink-styles();
         }
 
@@ -47,55 +47,6 @@
             margin-bottom: 50px;
         }
 
-        &__speakers {
-            clear: both;
-            overflow: hidden;
-            margin-bottom: 88px;
-
-
-            h3 {
-                font-family: $secondary-font-stack;
-                font-size: 18px;
-                line-height: 24px;
-                margin-bottom: 22px;
-            }
-
-            .fl-post__speaker {
-                width: 100%;
-                overflow: hidden;
-                margin: 0 auto 15px auto;
-
-                @include breakpoint(md) {
-                     float: left;
-                     width: 50%;
-                     margin: 0;
-                }
-            }
-
-            .fl-post__speaker-image {
-                margin-right: 10px;
-                float: left;
-                border-radius: 70px;
-                width: 71px;
-                height: 71px;
-                overflow: hidden;
-            }
-
-            .fl-post__speaker-name,
-            .fl-post__speaker-description {
-                display: block;
-                font-family: $secondary-font-stack;
-                font-size: 14px;
-                line-height: 19px;
-            }
-
-            .fl-post__speaker-name {
-                padding-top: 10px;
-                font-weight: 600;
-            }
-        }
-
-        // .__speakers
 
         &__categories {
             font-family: $secondary-font-stack;
@@ -127,5 +78,52 @@
 
     li {
         margin-bottom: 5px;
+    }
+}
+
+.fl-post__speakers {
+    clear: both;
+    overflow: hidden;
+    margin-bottom: 88px;
+
+    h3 {
+        font-family: $secondary-font-stack;
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 22px;
+    }
+
+    .fl-post__speaker {
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto 15px auto;
+
+        @include breakpoint(md) {
+            float: left;
+            width: 50%;
+            margin: 0;
+        }
+    }
+
+    .fl-post__speaker-image {
+        margin-right: 10px;
+        float: left;
+        border-radius: 70px;
+        width: 71px;
+        height: 71px;
+        overflow: hidden;
+    }
+
+    .fl-post__speaker-name,
+    .fl-post__speaker-description {
+        display: block;
+        font-family: $secondary-font-stack;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .fl-post__speaker-name {
+        padding-top: 10px;
+        font-weight: 600;
     }
 }

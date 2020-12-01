@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="row justify-content-md-center">
-        <div class="fl-content resource-single-post-detail col-lg-9">
+        <div class="fl-content resource-single-post-detail col-lg-12">
             <?php
             if (have_posts()) :
                 while (have_posts()) :

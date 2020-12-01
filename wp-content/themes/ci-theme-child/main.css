@@ -3858,41 +3858,6 @@ ul.post-categories {
 .event-single-post-detail .fl-post__description-body {
   margin-bottom: 50px; }
 
-.event-single-post-detail .fl-post__speakers {
-  clear: both;
-  overflow: hidden;
-  margin-bottom: 88px; }
-  .event-single-post-detail .fl-post__speakers h3 {
-    font-family: "Roboto", sans-serif;
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 22px; }
-  .event-single-post-detail .fl-post__speakers .fl-post__speaker {
-    width: 100%;
-    overflow: hidden;
-    margin: 0 auto 15px auto; }
-    @media (min-width: 992px) {
-      .event-single-post-detail .fl-post__speakers .fl-post__speaker {
-        float: left;
-        width: 50%;
-        margin: 0; } }
-  .event-single-post-detail .fl-post__speakers .fl-post__speaker-image {
-    margin-right: 10px;
-    float: left;
-    border-radius: 70px;
-    width: 71px;
-    height: 71px;
-    overflow: hidden; }
-  .event-single-post-detail .fl-post__speakers .fl-post__speaker-name,
-  .event-single-post-detail .fl-post__speakers .fl-post__speaker-description {
-    display: block;
-    font-family: "Roboto", sans-serif;
-    font-size: 14px;
-    line-height: 19px; }
-  .event-single-post-detail .fl-post__speakers .fl-post__speaker-name {
-    padding-top: 10px;
-    font-weight: 600; }
-
 .event-single-post-detail .fl-post__categories {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -3911,6 +3876,41 @@ ul.post-categories {
   color: #31606E; }
   .event-detail--cta-box li {
     margin-bottom: 5px; }
+
+.fl-post__speakers {
+  clear: both;
+  overflow: hidden;
+  margin-bottom: 88px; }
+  .fl-post__speakers h3 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 22px; }
+  .fl-post__speakers .fl-post__speaker {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto 15px auto; }
+    @media (min-width: 992px) {
+      .fl-post__speakers .fl-post__speaker {
+        float: left;
+        width: 50%;
+        margin: 0; } }
+  .fl-post__speakers .fl-post__speaker-image {
+    margin-right: 10px;
+    float: left;
+    border-radius: 70px;
+    width: 71px;
+    height: 71px;
+    overflow: hidden; }
+  .fl-post__speakers .fl-post__speaker-name,
+  .fl-post__speakers .fl-post__speaker-description {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    line-height: 19px; }
+  .fl-post__speakers .fl-post__speaker-name {
+    padding-top: 10px;
+    font-weight: 600; }
 
 .resource-single-post-detail {
   padding-top: 50px; }
@@ -3935,6 +3935,46 @@ ul.post-categories {
         .resource-single-post-detail .fl-post .fl-post__title h1 {
           font-size: 44px;
           line-height: 66px; } }
+
+.resource--form-container {
+  width: 95%;
+  background-color: #31606E;
+  color: #ffffff; }
+  .resource--form-container .ninja-forms-req-symbol,
+  .resource--form-container .nf-error-msg {
+    color: #ffffff !important; }
+  .resource--form-container .nf-form-fields-required {
+    font-family: "Poppins", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 42px;
+    text-align: center; }
+  .resource--form-container .hidden-container {
+    display: none; }
+  .resource--form-container .submit-wrap input[type="button"] {
+    font-size: 20px !important;
+    font-weight: 700;
+    width: 100%;
+    background-color: #F26B6C !important;
+    color: #ffffff !important;
+    padding: 10px 0 !important;
+    height: 60px !important; }
+
+.resource--content-container .fl-post__speakers {
+  margin-bottom: 30px; }
+
+.resource--content-container .resource--post-categories {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  padding-bottom: 15px;
+  margin-bottom: 75px; }
+  .resource--content-container .resource--post-categories a {
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 15px;
+    color: #47879C;
+    border-bottom: 1px solid #31606E; }
 
 .fl-post__description__body--sidebar {
   display: flex;
