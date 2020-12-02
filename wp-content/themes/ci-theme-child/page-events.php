@@ -219,10 +219,10 @@ $posts_query = new WP_Query($query_args_one);
                             <div class="event--post-category">
                             <?php
                                 $categories = get_the_terms($post->ID, 'event_category');
-                                $director = $categories[0];
+                                $term = $categories[0];
 
                             
-                                echo '<a href="' . get_term_link($director->slug, 'event_category') . '">' . $director->name . '</a>';
+                                echo '<a href="' . get_term_link($term->slug, 'event_category') . '">' . $term->name . '</a>';
 
                                 ?> 
 
