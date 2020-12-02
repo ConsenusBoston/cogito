@@ -49,63 +49,78 @@
 // .resource--featured-post
 
 
-
 .category--topics {
-    min-width: 140px;
+    // min-width: 140px;
     display: inline-block;
-    padding: 5px 15px;
+    padding: 10px 0 10px 0;
     margin-bottom: 15px;
-    border-radius: 25px;
-    background: $palepink;
-    color: $white;
+    color: $primary-color;
     font-family: $primary-font-stack;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
+}
+
+.resource--list-post {
+    .category--topics {
+        min-width: 140px;
+        display: inline-block;
+        padding: 5px 15px;
+        margin-bottom: 15px;
+        border-radius: 25px;
+        background: $palepink;
+        color: $white;
+        font-family: $primary-font-stack;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
 
 
-    &.case-study {
-        background-color: #F4783B;
+        &.case-study {
+            background-color: #F4783B;
+        }
+
+        &.ebook {
+            background-color: #690F0F;
+        }
+
+        &.featured {
+            background-color: #F26B6C;
+        }
+
+        &.infographic {
+            background-color: #793E5D;
+        }
+
+        &.presentation {
+            background-color: #17402B;
+        }
+
+        &.product-brochure {
+            background-color: #B74726;
+        }
+
+        &.research {
+            background-color: #BF84A4;
+        }
+
+        &.video {
+            background-color: #287F57;
+        }
+
+        &.webinar {
+            background-color: #793E5D;
+        }
+
+        &.whitepaper {
+            background-color: #5988A6;
+        }
+
     }
-
-    &.ebook {
-        background-color: #690F0F;
-    }
-
-    &.featured {
-        background-color: #F26B6C;
-    }
-
-    &.infographic {
-        background-color: #793E5D;
-    }
-
-    &.presentation {
-        background-color: #17402B;
-    }
-
-    &.product-brochure {
-        background-color: #B74726;
-    }
-
-    &.research {
-        background-color: #BF84A4;
-    }
-
-    &.video {
-        background-color: #287F57;
-    }
-
-    &.webinar {
-        background-color: #793E5D;
-    }
-
-    &.whitepaper {
-        background-color: #5988A6;
-    }
-
 }
 
 
