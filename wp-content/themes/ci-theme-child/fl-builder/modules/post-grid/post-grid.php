@@ -348,7 +348,7 @@ class FLPostGridModule extends FLBuilderModule {
 
 			$cat_terms = array();
 
-			foreach ($terms_class as $term) {
+			foreach ((array) $terms_class as $term) {
 				$cat_terms[] = $term->term_id;
 				$term_name = get_term($term->term_id)->name;
 				$term_slug = get_term($term->term_id)->slug;
