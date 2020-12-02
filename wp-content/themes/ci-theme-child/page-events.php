@@ -217,18 +217,15 @@ $posts_query = new WP_Query($query_args_one);
 
                         <div class="event--post-details">
                             <div class="event--post-category">
-                            <?php
+                                <?php
                                 $categories = get_the_terms($post->ID, 'event_category');
                                 $term = $categories[0];
-
-                            
-                                echo '<a href="' . get_term_link($term->slug, 'event_category') . '">' . $term->name . '</a>';
-
-                                ?> 
+                                ?>
+                                <a href="<?php get_term_link($term->slug, 'event_category'); ?>"><?php echo $term->name ?></a>
 
                             </div>
                             <div class=" event--post-title">
-                                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                                <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                             </div>
                             <div class="event--post-date">
                                 <?php
