@@ -217,25 +217,18 @@ $posts_query = new WP_Query($query_args_one);
 
                         <div class="event--post-details">
                             <div class="event--post-category">
-                                <?php $entry_terms = '';
-                                $terms = wp_get_post_terms(get_the_ID(), array('event_category'));
+                            <?php
+                                $categories = get_the_terms($post->ID, 'event_category');
+                                $director = $categories[0];
 
-                                if (!empty($terms)) {
-                                    $cat_count = 1;
-                                    foreach ($terms as $term) {
-                                        $entry_terms .= $term->name . ', ';
-                                        if ($cat_count >= 1) {
-                                            break;
-                                        }
-                                        $cat_count++;
-                                    }
-                                    $entry_terms = rtrim($entry_terms, ', ');
-                                } ?>
-                                <span><?php echo $entry_terms; ?></span>
+                            
+                                echo '<a href="' . get_term_link($director->slug, 'event_category') . '">' . $director->name . '</a>';
+
+                                ?> 
 
                             </div>
-                            <div class="event--post-title">
-                                <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
+                            <div class=" event--post-title">
+                                        <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
                             </div>
                             <div class="event--post-date">
                                 <?php
@@ -293,7 +286,7 @@ $posts_query = new WP_Query($query_args_one);
                         html = active + ' of ' + last;
 
 
-                        $('.events--top-pager').html(html);
+                    $('.events--top-pager').html(html);
                 });
             })(jQuery);
         </script>
