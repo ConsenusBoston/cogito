@@ -86,3 +86,19 @@ add_filter( 'facetwp_index_row', function( $params, $class ) {
 	}
 	return $params;
 }, 10, 2 );
+
+
+/**
+ * Populate hidden input with ACF values
+ */
+function nf_hidden_field_values( $value, $field_type, $field_settings ) {
+    global $post;
+	$value = '';
+	
+    if ( $field_settings['key'] == 'thank_you_page_1606947352648' ) {
+        $value =  get_field('thank_you_page', $post->ID);
+	}
+	
+    return $value;
+}
+add_filter( 'ninja_forms_render_default_value', 'nf_hidden_field_values', 10, 3 );
