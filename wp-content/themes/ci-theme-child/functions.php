@@ -102,3 +102,4 @@ function nf_hidden_field_values( $value, $field_type, $field_settings ) {
     return $value;
 }
 add_filter( 'ninja_forms_render_default_value', 'nf_hidden_field_values', 10, 3 );
+

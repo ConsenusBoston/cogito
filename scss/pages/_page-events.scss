@@ -1,3 +1,7 @@
+//	@ Author: Consensus Interactive
+//	@ Author URI: ConsensusInteractive.com
+//	@ Description: Event Detail Page styles
+
 .additional-webinars {
     &--column {
         margin-bottom: 80px;
@@ -9,6 +13,10 @@
         margin-bottom: 0;
         height: 100%;
         padding-bottom: 0;
+
+        a {
+            width: 100%;
+        }
 
         .event--post-image {
             width: 100%;
@@ -22,7 +30,7 @@
             padding-left: 0;
         }
     }
-}
+}// .additional-webinars 
 
 .event {
     &-content {
@@ -68,7 +76,6 @@
         align-items: flex-start;
         margin-bottom: 80px;
         position: relative;
-
         min-height: 273px;
 
         @include breakpoint(sm) {
@@ -90,6 +97,15 @@
             background-color: #3F3F3F;
         }
 
+        a {
+            display: block;
+            width: 100%;
+
+            @include breakpoint(sm) {
+                width: auto;
+            }
+        }
+
         .event--post-image {
             width: 100%;
             align-self: stretch;
@@ -99,11 +115,11 @@
             background-position: center;
 
             @include breakpoint(sm) {
-                height: auto;
-                width: 50%;
+                // height: auto;
+                width: 298px;
             }
 
-            a {
+            span {
                 font-family: $primary-font-stack;
                 font-size: 16px;
                 font-weight: bold;
@@ -243,6 +259,12 @@
             }
 
             .event--post-image {
+               
+
+                @include breakpoint(lg) {
+                    min-width: 600px;
+                     min-height: 318px;
+                }
                 a {
                     font-size: 18px;
                     padding: 10px 30px
