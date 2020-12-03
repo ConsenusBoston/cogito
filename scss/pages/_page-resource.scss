@@ -63,7 +63,8 @@
     text-align: center;
 }
 
-.resource--list-post {
+.resource--list-post,
+.resource--featured-post {
     .category--topics {
         min-width: 140px;
         display: inline-block;

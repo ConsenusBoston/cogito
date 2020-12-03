@@ -2114,7 +2114,8 @@ a {
   text-decoration: none;
   text-align: center; }
 
-.resource--list-post .category--topics {
+.resource--list-post .category--topics,
+.resource--featured-post .category--topics {
   min-width: 140px;
   display: inline-block;
   padding: 5px 15px;
@@ -2128,25 +2129,35 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center; }
-  .resource--list-post .category--topics.case-study {
+  .resource--list-post .category--topics.case-study,
+  .resource--featured-post .category--topics.case-study {
     background-color: #F4783B; }
-  .resource--list-post .category--topics.ebook {
+  .resource--list-post .category--topics.ebook,
+  .resource--featured-post .category--topics.ebook {
     background-color: #690F0F; }
-  .resource--list-post .category--topics.featured {
+  .resource--list-post .category--topics.featured,
+  .resource--featured-post .category--topics.featured {
     background-color: #F26B6C; }
-  .resource--list-post .category--topics.infographic {
+  .resource--list-post .category--topics.infographic,
+  .resource--featured-post .category--topics.infographic {
     background-color: #793E5D; }
-  .resource--list-post .category--topics.presentation {
+  .resource--list-post .category--topics.presentation,
+  .resource--featured-post .category--topics.presentation {
     background-color: #17402B; }
-  .resource--list-post .category--topics.product-brochure {
+  .resource--list-post .category--topics.product-brochure,
+  .resource--featured-post .category--topics.product-brochure {
     background-color: #B74726; }
-  .resource--list-post .category--topics.research {
+  .resource--list-post .category--topics.research,
+  .resource--featured-post .category--topics.research {
     background-color: #BF84A4; }
-  .resource--list-post .category--topics.video {
+  .resource--list-post .category--topics.video,
+  .resource--featured-post .category--topics.video {
     background-color: #287F57; }
-  .resource--list-post .category--topics.webinar {
+  .resource--list-post .category--topics.webinar,
+  .resource--featured-post .category--topics.webinar {
     background-color: #793E5D; }
-  .resource--list-post .category--topics.whitepaper {
+  .resource--list-post .category--topics.whitepaper,
+  .resource--featured-post .category--topics.whitepaper {
     background-color: #5988A6; }
 
 .resource--posts {
