@@ -62,7 +62,8 @@
                     // otherwise it will use the ACF speaker fields
 
                     // Load Author/Image sub fields
-                    $user = get_sub_field('author');
+                    $speaker = get_sub_field('author');
+                    $speaker_title = get_field('employee_title', 'user_' .  $speaker['ID']); 
                     $image = get_sub_field('speaker_image');
 
                     // Image variables.
@@ -75,16 +76,22 @@
                     $width = $image['sizes'][$size . '-width'];
                     $height = $image['sizes'][$size . '-height'];
 
+                   
+
                     if (get_sub_field('is_registered')) { ?>
 
 
+<?php
+                        // $author_id = get_the_author_meta();
+                      ?>
                         <div class="fl-post__speaker is-registered-user">
                             <div class="fl-post__speaker-image">
-                                <?php echo $user['user_avatar']; ?>
+                                <?php echo $speaker['user_avatar']; ?>
                             </div>
                             <div class="fl-post__speaker-bio">
-                                <span class="fl-post__speaker-name"><?php echo $user['display_name']; ?></span>
-                                <span class="fl-post__speaker-description"> <?php echo $user['user_description']; ?></span>
+                                <span class="fl-post__speaker-name"><?php echo $speaker['display_name']; ?></span>
+                                <span class="fl-post__speaker-description"> <?php echo $speaker['employee_title']; ?></span>
+                                <span class="fl-post__speaker-description"> <?php echo $speaker_title; ?></span>
                             </div>
                         </div>
 
