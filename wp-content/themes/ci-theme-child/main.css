@@ -1672,6 +1672,9 @@ a {
   margin: 0;
   padding: 0; }
 
+.resource-page #menu-top .sub-menu a {
+  color: #31606E; }
+
 #menu-top #menu-item-68 {
   min-width: 100px; }
 
