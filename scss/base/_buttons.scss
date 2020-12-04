@@ -46,3 +46,9 @@
         //  border: none !important;
      }
 }
+
+.fl-button-group-buttons {
+    .fl-button {
+        min-width: 150px;
+    }
+}

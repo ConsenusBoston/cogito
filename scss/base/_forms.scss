@@ -35,16 +35,16 @@
         height: 45px !important;
 
         &:after {
-             content: "\f078" !important;
-             font-family: "Font Awesome 5 Pro" !important;
-             top: -3px;
+            content: "\f078" !important;
+            font-family: "Font Awesome 5 Pro" !important;
+            top: -3px;
         }
     }
 
     .submit-wrap {
         text-align: right;
     }
-    
+
     button,
     input[type=button],
     input[type=submit] {
@@ -62,3 +62,86 @@
         height: 44px !important;
     }
 }
+
+// Contact form
+.contact--form {
+
+    .nf-form-content {
+        background-color: $primary-color;
+        margin: 0 auto;
+        padding: 40px 35px 0 35px;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    label {
+        color: $white;
+    }
+
+    nf-field {
+        width: 50%;
+        float: left;
+        margin-bottom: 10px;
+    }
+
+    nf-field:nth-child(7) {
+        width: 100%;
+    }
+
+    nf-field:nth-child(8) {
+        float: right;
+    }
+
+    // Error message fix
+    .nf-after-field {
+        position: absolute;
+        font-size: 12px;
+    }
+
+    .nf-form-cont .nf-error.field-wrap .nf-field-element:after {
+        height: 54px !important;
+    }
+
+
+    input:not([type=button]),
+    textarea {
+        background-color: $white !important;
+        border-radius: 3px !important;
+        border: 1px solid rgba($black, .25) !important;
+        height: 55px !important;
+    }
+
+    // Adjusts select
+    select,
+    .list-select-wrap .nf-field-element>div {
+        height: 55px !important;
+
+    }
+
+    .list-select-wrap .nf-field-element>div:after {
+        top: 0;
+    }
+
+    // Adjusts spacing on input
+    .form--first-field input,
+    .form--company-field input,
+    .form--email-field input {
+        width: 90%;
+    }
+
+    textarea {
+        height: 200px !important;
+        margin-bottom: 25px !important;
+    }
+
+    .submit-wrap input {
+        background-color: #F26B6C !important;;
+        height: 60px !important;
+        width: 500px !important;
+    }
+
+
+}
+
+// .contact--form

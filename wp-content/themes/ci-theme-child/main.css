@@ -1553,6 +1553,63 @@ a {
 .nf-form-cont .nf-error.field-wrap .nf-field-element:after {
   height: 44px !important; }
 
+.contact--form .nf-form-content {
+  background-color: #31606E;
+  margin: 0 auto;
+  padding: 40px 35px 0 35px;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden; }
+
+.contact--form label {
+  color: #ffffff; }
+
+.contact--form nf-field {
+  width: 50%;
+  float: left;
+  margin-bottom: 10px; }
+
+.contact--form nf-field:nth-child(7) {
+  width: 100%; }
+
+.contact--form nf-field:nth-child(8) {
+  float: right; }
+
+.contact--form .nf-after-field {
+  position: absolute;
+  font-size: 12px; }
+
+.contact--form .nf-form-cont .nf-error.field-wrap .nf-field-element:after {
+  height: 54px !important; }
+
+.contact--form input:not([type=button]),
+.contact--form textarea {
+  background-color: #ffffff !important;
+  border-radius: 3px !important;
+  border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  height: 55px !important; }
+
+.contact--form select,
+.contact--form .list-select-wrap .nf-field-element > div {
+  height: 55px !important; }
+
+.contact--form .list-select-wrap .nf-field-element > div:after {
+  top: 0; }
+
+.contact--form .form--first-field input,
+.contact--form .form--company-field input,
+.contact--form .form--email-field input {
+  width: 90%; }
+
+.contact--form textarea {
+  height: 200px !important;
+  margin-bottom: 25px !important; }
+
+.contact--form .submit-wrap input {
+  background-color: #F26B6C !important;
+  height: 60px !important;
+  width: 500px !important; }
+
 .button-group .button:first-child {
   margin-right: 20px; }
 
@@ -1590,6 +1647,9 @@ a {
   .button-white:hover,
   .white-button:hover {
     text-decoration: none; }
+
+.fl-button-group-buttons .fl-button {
+  min-width: 150px; }
 
 @media (min-width: largepx) {
   .fl-full-width .fl-page-content .container {
@@ -2113,6 +2173,10 @@ a {
   text-transform: uppercase;
   text-decoration: none;
   text-align: center; }
+  .category--topics + .category--topics {
+    display: none !important; }
+  .category--topics + .category--topics + .category--topics {
+    display: none !important; }
 
 .resource--list-post .category--topics,
 .resource--featured-post .category--topics {
@@ -2777,6 +2841,12 @@ a {
         color: #47879C;
         font-size: 14px;
         line-height: 19px; }
+      .event--post .event--post-details .event--post-category a {
+        font-size: 13px;
+        font-family: "Roboto", sans-serif;
+        font-weight: 400;
+        color: #47879C;
+        text-decoration: none; }
     .event--post .event--post-details .event--post-title {
       font-family: "Poppins", sans-serif;
       margin-bottom: 30px; }

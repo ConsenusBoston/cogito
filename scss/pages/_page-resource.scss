@@ -61,6 +61,14 @@
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
+
+    +.category--topics {
+        display: none !important;
+    }
+
+     +.category--topics + .category--topics {
+         display: none !important;
+     }
 }
 
 .resource--list-post,
