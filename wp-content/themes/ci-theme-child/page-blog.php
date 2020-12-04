@@ -108,7 +108,8 @@ $posts_counter = 0;
 				
 			</div> -->
 
-			<?php echo do_shortcode('[ajax_load_more post_type="post" loading_style="white" posts_per_page="7" scroll="false" button_label="Load more"]'); ?>
+			<?php echo do_shortcode('[facetwp template="blog"]'); ?>
+			<?php echo do_shortcode('[facetwp facet="event_additional_webinars_pager"]'); ?>
 
 		</main>
 

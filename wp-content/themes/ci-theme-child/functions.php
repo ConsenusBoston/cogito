@@ -188,3 +188,38 @@ function featured_speakers_shortcode($atts)
 	return ob_get_clean();
 }
 add_shortcode('featured-speakers', 'featured_speakers_shortcode');
+
+// Admin Stylesheets
+
+function admin_role_class($classes)
+{
+	global $current_user;
+	foreach ($current_user->roles as $role)
+		$classes .= ' role-' . $role;
+	return trim($classes);
+}
+add_filter('admin_body_class', 'admin_role_class');
+
+function admin_role_styles()
+{
+	$user = wp_get_current_user();
+	if (in_array('cogito', (array) $user->roles)) {
+		echo '<style>
+
+		.role-cogito .toplevel_page_cptui_main_menu,
+		.role-cogito .toplevel_page_ajax-load-more,
+		.role-cogito .toplevel_page_capsman,
+		.role-cogito .toplevel_page_loginpress-settings,
+		.role-cogito #toplevel_page_edit-post_type-acf-field-group,
+		.role-cogito .menu-icon-appearance,
+		.role-cogito .menu-icon-plugins {
+			display: none !important;
+		}
+		
+		
+		</style>';
+	} else {
+		// What Everyone Else Gets
+	}
+}
+add_action('admin_head', 'admin_role_styles');
