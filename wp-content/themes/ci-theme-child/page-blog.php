@@ -104,12 +104,9 @@ $posts_counter = 0;
 <div style="background-color:#FDD9C8;">
 	<div class="<?php FLLayout::container_class(); ?>">
 		<main class="fl-content blog-content">
-			<!-- <div class=" <?php FLLayout::row_class(); ?>" <?php FLTheme::print_schema(' itemscope="itemscope" itemtype="https://schema.org/Blog"'); ?>>
-				
-			</div> -->
 
 			<?php echo do_shortcode('[facetwp template="blog"]'); ?>
-			<?php echo do_shortcode('[facetwp facet="event_additional_webinars_pager"]'); ?>
+			<?php echo do_shortcode('[facetwp facet="blog_pager"]'); ?>
 
 		</main>
 

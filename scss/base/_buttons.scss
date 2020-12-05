@@ -47,8 +47,36 @@
      }
 }
 
+// Fl Group Button Module
 .fl-button-group-buttons {
     .fl-button {
         min-width: 150px;
     }
+} // .fl-button-group-buttons
+
+// FL Pagination Load More Module
+.fl-builder-pagination-load-more {
+
+    .fl-button {
+        background-color: $white !important;
+        max-width: 180px;
+        height: 55px;
+        width: 100%;
+        font-size: 18px !important;
+        line-height: 27px !important;
+        color: $primary-text-clr !important;
+        border: 2px solid $primary-text-clr !important;
+
+        &:hover {
+            border-color: $primary-text-clr;
+            color: $primary-text-clr;
+            box-shadow: none;
+        }
+
+        span {
+            color: $primary-text-clr !important;
+        }
+    }
 }
+// .fl-builder-pagination-load-more
+
