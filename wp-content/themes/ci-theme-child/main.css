@@ -1847,7 +1847,7 @@ a {
   left: -60px; }
   .brex-mega-menu > li.drop-down ul.drop-down-ul a {
     font-family: "Roboto", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     text-align: center;
     padding-bottom: 15px !important; }
 
@@ -3121,76 +3121,84 @@ a {
       width: 100%;
       object-fit: cover; }
 
-.section--additional-resources .section--additional-resources-container {
-  width: 100% !important; }
-
-.section--additional-resources .fl-col-content {
-  margin-right: 0; }
-
-.section--additional-resources .fl-post-column {
-  width: 100% !important;
-  margin: 0; }
-
-.section--additional-resources .fl-post-grid {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  overflow: scroll; }
-  .section--additional-resources .fl-post-grid .fl-post-grid-post {
-    width: 350px !important; }
-
-.section--additional-resources .fl-module-post-grid,
-.section--additional-resources .fl-module-content,
-.section--additional-resources .fl-post-grid,
-.section--additional-resources .fl-post-column,
-.section--additional-resources .fl-post-grid-post,
-.section--additional-resources .fl-post-grid-text {
-  height: 100% !important; }
-
-.section--additional-resources .fl-post-grid-terms {
-  margin-bottom: 15px; }
-  .section--additional-resources .fl-post-grid-terms span.fl-terms-label + div {
+.section--additional-resources {
+  overflow: hidden; }
+  .section--additional-resources .section--additional-resources-container {
+    width: 100% !important; }
+  .section--additional-resources .fl-col-content {
+    margin-right: 0; }
+  .section--additional-resources .fl-post-column {
+    width: 100% !important;
+    margin: 0; }
+  .section--additional-resources .fl-post-grid {
     display: flex;
-    align-items: center; }
-    .section--additional-resources .fl-post-grid-terms span.fl-terms-label + div .fl-post-grid-terms-acf-thumbnail {
-      margin-right: 9px; }
-  .section--additional-resources .fl-post-grid-terms a {
-    font-family: "Poppins";
-    font-weight: 700;
-    color: #31606E;
-    font-size: 14px;
-    text-transform: uppercase; }
-
-.section--additional-resources .fl-post-grid-title a {
-  transition: 0.25s ease-in; }
-  .section--additional-resources .fl-post-grid-title a:hover {
-    color: #5989A6; }
-
-.section--additional-resources .fl-post-grid-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start; }
-  .section--additional-resources .fl-post-grid-text .fl-post-grid-content {
-    padding-bottom: 50px; }
-  .section--additional-resources .fl-post-grid-text .fl-post-grid-more {
-    color: #5989A6 !important;
-    font-weight: bold;
-    margin-top: auto;
-    margin-bottom: 20px;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: all 0.2s ease-out;
-    -moz-transition: all 0.2s ease-out;
-    -ms-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out; }
-    .section--additional-resources .fl-post-grid-text .fl-post-grid-more:focus, .section--additional-resources .fl-post-grid-text .fl-post-grid-more:hover {
-      border-bottom: 2px solid #5989A6; }
-      .section--additional-resources .fl-post-grid-text .fl-post-grid-more:focus i, .section--additional-resources .fl-post-grid-text .fl-post-grid-more:hover i {
-        opacity: 1;
-        margin-left: 10px; }
-    .section--additional-resources .fl-post-grid-text .fl-post-grid-more i {
-      opacity: 0;
-      margin-left: 0; }
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto !important;
+    /*
+ *  STYLE 11
+ */ }
+    .section--additional-resources .fl-post-grid::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #F5F5F5;
+      border-radius: 10px; }
+    .section--additional-resources .fl-post-grid::-webkit-scrollbar {
+      width: 10px;
+      background-color: #F5F5F5; }
+    .section--additional-resources .fl-post-grid::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 10px; }
+    .section--additional-resources .fl-post-grid .fl-post-grid-post {
+      width: 350px !important; }
+  .section--additional-resources .fl-module-post-grid,
+  .section--additional-resources .fl-module-content,
+  .section--additional-resources .fl-post-grid,
+  .section--additional-resources .fl-post-column,
+  .section--additional-resources .fl-post-grid-post,
+  .section--additional-resources .fl-post-grid-text {
+    height: 100% !important; }
+  .section--additional-resources .fl-post-grid-terms {
+    margin-bottom: 15px; }
+    .section--additional-resources .fl-post-grid-terms span.fl-terms-label + div {
+      display: flex;
+      align-items: center; }
+      .section--additional-resources .fl-post-grid-terms span.fl-terms-label + div .fl-post-grid-terms-acf-thumbnail {
+        margin-right: 9px; }
+    .section--additional-resources .fl-post-grid-terms a {
+      font-family: "Poppins";
+      font-weight: 700;
+      color: #31606E;
+      font-size: 14px;
+      text-transform: uppercase; }
+  .section--additional-resources .fl-post-grid-title a {
+    transition: 0.25s ease-in; }
+    .section--additional-resources .fl-post-grid-title a:hover {
+      color: #5989A6; }
+  .section--additional-resources .fl-post-grid-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+    .section--additional-resources .fl-post-grid-text .fl-post-grid-content {
+      padding-bottom: 50px; }
+    .section--additional-resources .fl-post-grid-text .fl-post-grid-more {
+      color: #5989A6 !important;
+      font-weight: bold;
+      margin-top: auto;
+      margin-bottom: 20px;
+      border-bottom: 2px solid transparent;
+      -webkit-transition: all 0.2s ease-out;
+      -moz-transition: all 0.2s ease-out;
+      -ms-transition: all 0.2s ease-out;
+      -o-transition: all 0.2s ease-out;
+      transition: all 0.2s ease-out; }
+      .section--additional-resources .fl-post-grid-text .fl-post-grid-more:focus, .section--additional-resources .fl-post-grid-text .fl-post-grid-more:hover {
+        border-bottom: 2px solid #5989A6; }
+        .section--additional-resources .fl-post-grid-text .fl-post-grid-more:focus i, .section--additional-resources .fl-post-grid-text .fl-post-grid-more:hover i {
+          opacity: 1;
+          margin-left: 10px; }
+      .section--additional-resources .fl-post-grid-text .fl-post-grid-more i {
+        opacity: 0;
+        margin-left: 0; }
 
 .bb-the-latest-posts .fl-row-content-wrap {
   padding-right: 0; }
@@ -3267,7 +3275,20 @@ a {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    overflow: scroll; }
+    overflow-x: scroll; }
+    .bb-the-latest-posts .fl-node-5f929d68957fe::-webkit-scrollbar-track,
+    .bb-the-latest-posts .fl-node-5fabb50d1eaa8::-webkit-scrollbar-track {
+      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #F5F5F5;
+      border-radius: 10px; }
+    .bb-the-latest-posts .fl-node-5f929d68957fe::-webkit-scrollbar,
+    .bb-the-latest-posts .fl-node-5fabb50d1eaa8::-webkit-scrollbar {
+      width: 10px;
+      background-color: #F5F5F5; }
+    .bb-the-latest-posts .fl-node-5f929d68957fe::-webkit-scrollbar-thumb,
+    .bb-the-latest-posts .fl-node-5fabb50d1eaa8::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 10px; }
     .bb-the-latest-posts .fl-node-5f929d68957fe .fl-col,
     .bb-the-latest-posts .fl-node-5fabb50d1eaa8 .fl-col {
       width: 350px !important; }
@@ -3522,7 +3543,7 @@ a {
           padding: 0 0px 0px 60px;
           width: 45.5%; } }
       .leadership-details .modal-body__description h6 {
-        font-family: "Roboto";
+        font-family: "Roboto", sans-serif;
         font-weight: normal;
         font-size: 20px;
         margin-bottom: 32px; }
@@ -3539,10 +3560,10 @@ a {
           .leadership-details .modal-body__description h3 {
             font-size: 50px; } }
       .leadership-details .modal-body__description__content {
-        font-family: "Roboto";
+        font-family: "Roboto", sans-serif;
         font-size: 16px;
         overflow-y: scroll;
-        height: 500px;
+        height: 450px;
         padding-right: 10px; }
         .leadership-details .modal-body__description__content::-webkit-scrollbar {
           width: 2px; }

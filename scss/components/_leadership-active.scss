@@ -104,7 +104,7 @@
                 width: 45.5%;
             }
             h6 {
-                font-family: "Roboto";
+                font-family: $secondary-font-stack;
                 font-weight: normal;
                 font-size: 20px;
                 margin-bottom: 32px;
@@ -123,10 +123,10 @@
                 }
             }
             &__content {
-                font-family: "Roboto";
+                font-family: $secondary-font-stack;
                 font-size: 16px;
                 overflow-y: scroll;
-                height: 500px;
+                height: 450px;
                 padding-right: 10px;
 
                 &::-webkit-scrollbar {
