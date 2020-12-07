@@ -146,10 +146,6 @@
 
 }
 
-
-
-
-
 .news--post {
     @include breakpoint(md) {
         width: 49%;
@@ -160,58 +156,6 @@
         width: 31%;
 
     }
-
-    &.in-the-news {
-        margin-bottom: 80px;
-        padding-bottom: 50px;
-        border-bottom: 2px solid #D8D8D8;
-
-        .news--post-details {
-            min-height: 260px;
-            height: auto;
-        }
-
-        .news--post-title {
-            flex: 1;
-            margin-bottom: 40px;
-        }
-
-        .post--news-date {
-            display: none;
-        }
-    }
-
-    &.awards {
-        margin-right: 25px;
-        padding-top: 20px;
-        // border-top: 2px solid #D8D8D8;
-
-        .news--post-permalink {
-            display: none;
-        }
-    }
-
-    &.press-releases {
-        margin-right: 25px;
-        margin-bottom: 70px;
-        padding-top: 20px;
-        border-top: 2px solid #D8D8D8;
-
-        .news--post-title {
-            flex: 1;
-            margin-bottom: 45px;
-        }
-
-        .news--post-excerpt {
-            display: none;
-        }
-
-        .post--news-date {
-            margin-bottom: 15px;
-        }
-    }
-
-
 
     h1 {
         font-size: 24px;
@@ -240,6 +184,74 @@
     }
 }
 
+
+
+// Specific styles for each layout
+.is-default,
+.is-in-the-news {
+    .news--post {
+        margin-bottom: 80px;
+        padding-bottom: 50px;
+        border-bottom: 2px solid #D8D8D8;
+
+        .news--post-details {
+            min-height: 260px;
+            height: auto;
+        }
+
+        .news--post-title {
+            flex: 1;
+            margin-bottom: 40px;
+        }
+
+        .post--news-date {
+            display: none;
+        }
+    }
+}
+
+.is-press-releases {
+    .news--post {
+        margin-right: 25px;
+        margin-bottom: 70px;
+        padding-top: 30px;
+        border-top: 2px solid #D8D8D8;
+
+        .news--post-title {
+            flex: 1;
+            margin-bottom: 45px;
+        }
+
+        .news--post-excerpt {
+            display: none;
+        }
+
+        .post--news-date {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// .is-press-releases
+
+.is-awards {
+    .news--post {
+        margin-right: 25px;
+        margin-bottom: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 2px solid #D8D8D8;
+
+        .news--post-permalink {
+            display: none;
+        }
+    }
+}
+
+// .is-awards
+
+
+// Facet Styles
 .facetwp-facet-news_loader {
     text-align: center;
 

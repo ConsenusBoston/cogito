@@ -2627,38 +2627,6 @@ a {
   .news--post {
     width: 31%; } }
 
-.news--post.in-the-news {
-  margin-bottom: 80px;
-  padding-bottom: 50px;
-  border-bottom: 2px solid #D8D8D8; }
-  .news--post.in-the-news .news--post-details {
-    min-height: 260px;
-    height: auto; }
-  .news--post.in-the-news .news--post-title {
-    flex: 1;
-    margin-bottom: 40px; }
-  .news--post.in-the-news .post--news-date {
-    display: none; }
-
-.news--post.awards {
-  margin-right: 25px;
-  padding-top: 20px; }
-  .news--post.awards .news--post-permalink {
-    display: none; }
-
-.news--post.press-releases {
-  margin-right: 25px;
-  margin-bottom: 70px;
-  padding-top: 20px;
-  border-top: 2px solid #D8D8D8; }
-  .news--post.press-releases .news--post-title {
-    flex: 1;
-    margin-bottom: 45px; }
-  .news--post.press-releases .news--post-excerpt {
-    display: none; }
-  .news--post.press-releases .post--news-date {
-    margin-bottom: 15px; }
-
 .news--post h1 {
   font-size: 24px;
   font-weight: 800; }
@@ -2702,6 +2670,45 @@ a {
     .news--post .news--post-permalink a:hover i {
       opacity: 1;
       margin-left: 10px !important; }
+
+.is-default .news--post,
+.is-in-the-news .news--post {
+  margin-bottom: 80px;
+  padding-bottom: 50px;
+  border-bottom: 2px solid #D8D8D8; }
+  .is-default .news--post .news--post-details,
+  .is-in-the-news .news--post .news--post-details {
+    min-height: 260px;
+    height: auto; }
+  .is-default .news--post .news--post-title,
+  .is-in-the-news .news--post .news--post-title {
+    flex: 1;
+    margin-bottom: 40px; }
+  .is-default .news--post .post--news-date,
+  .is-in-the-news .news--post .post--news-date {
+    display: none; }
+
+.is-press-releases .news--post {
+  margin-right: 25px;
+  margin-bottom: 70px;
+  padding-top: 30px;
+  border-top: 2px solid #D8D8D8; }
+  .is-press-releases .news--post .news--post-title {
+    flex: 1;
+    margin-bottom: 45px; }
+  .is-press-releases .news--post .news--post-excerpt {
+    display: none; }
+  .is-press-releases .news--post .post--news-date {
+    margin-bottom: 15px; }
+
+.is-awards .news--post {
+  margin-right: 25px;
+  margin-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #D8D8D8; }
+  .is-awards .news--post .news--post-permalink {
+    display: none; }
 
 .facetwp-facet-news_loader {
   text-align: center; }

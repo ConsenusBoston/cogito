@@ -67,7 +67,7 @@ add_filter('facetwp_facet_orderby', function ($orderby, $facet) {
 
 // Preselects Facet on News Page
 add_filter('facetwp_preload_url_vars', function ($url_vars) {
-	if ('in-the-news' == FWP()->helper->get_uri()) {
+	if ('news' == FWP()->helper->get_uri()) {
 		if (empty($url_vars['news_categories'])) {
 			$url_vars['news_categories'] = ['in-the-news'];
 			$url_vars['news_post_date'] = ['2020'];
