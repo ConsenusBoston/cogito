@@ -75,7 +75,7 @@
 
     // Get Started nav Button
 
-    .mega--menu li:last-child,
+    .mega--menu .brex-mega-menu > li:last-child,
     .get-started--btn {
         position: relative;
         margin-right: 0 !important;
@@ -121,6 +121,7 @@
     #menu-item-68 {
         min-width: 80px;
     }
+
     #menu-item-69 {
         min-width: 85px;
         text-align: center;
@@ -246,6 +247,29 @@
 
 // .fl-builder-content-2478
 
+.brex-mega-menu>li.drop-down {
+
+    >a {
+        position: relative;
+        height: 85px;
+        align-items: center;
+        display: flex;
+    }
+
+    ul.drop-down-ul {
+        top: 85px !important;
+        left: -60px;
+ 
+
+        a {
+            font-family: $secondary-font-stack;
+            font-weight: 400;
+            text-align: center;
+            padding-bottom: 15px !important
+        }
+    }
+}
+
 // @ Mega menu styles
 .mega--menu {
     .mega-menu-saved-row-container {
@@ -356,7 +380,7 @@
 
 
     // @ i want too dropdown
-    .fl-builder-content-479{
+    .fl-builder-content-479 {
         @media (min-width: 1024px) {
             padding-left: 60px;
         }

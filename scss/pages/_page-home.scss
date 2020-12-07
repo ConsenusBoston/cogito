@@ -6,7 +6,7 @@
 
 .home--featured-hero {
     .fl-button-contact-us {
-        position: absolute;
+        position: fixed;
         bottom: 8.5%;
         right: 10%;
         z-index: 20;
@@ -27,4 +27,17 @@
             }
         }
     }
-}// .home--featured-hero
+}
+
+// .home--featured-hero
+
+
+// Carousel adjustment 
+
+.fl-content-slider {
+
+    .fl-slide-photo-wrap .fl-slide-photo img {
+        height: auto !important;
+    }
+
+}
