@@ -96,7 +96,7 @@ add_filter('facetwp_index_row', function ($params, $class) {
 function nf_hidden_field_values($value, $field_type, $field_settings)
 {
 	global $post;
-	$value = '';
+	// $value = '';
 
 	if ($field_settings['key'] == 'thank_you_page_1606947352648') {
 		$value =  get_field('thank_you_page', $post->ID);
