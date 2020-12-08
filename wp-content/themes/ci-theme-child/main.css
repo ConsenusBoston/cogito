@@ -1565,15 +1565,19 @@ a {
   color: #ffffff; }
 
 .contact--form nf-field {
-  width: 50%;
+  width: 100%;
   float: left;
   margin-bottom: 10px; }
+  @media (min-width: 992px) {
+    .contact--form nf-field {
+      width: 50%; } }
 
 .contact--form nf-field:nth-child(7) {
   width: 100%; }
 
-.contact--form nf-field:nth-child(8) {
-  float: right; }
+@media (min-width: 992px) {
+  .contact--form nf-field:nth-child(8) {
+    float: right; } }
 
 .contact--form .nf-after-field {
   position: absolute;
@@ -1599,7 +1603,12 @@ a {
 .contact--form .form--first-field input,
 .contact--form .form--company-field input,
 .contact--form .form--email-field input {
-  width: 90%; }
+  width: 100%; }
+  @media (min-width: 992px) {
+    .contact--form .form--first-field input,
+    .contact--form .form--company-field input,
+    .contact--form .form--email-field input {
+      width: 90%; } }
 
 .contact--form textarea {
   height: 200px !important;
@@ -1608,7 +1617,10 @@ a {
 .contact--form .submit-wrap input {
   background-color: #F26B6C !important;
   height: 60px !important;
-  width: 500px !important; }
+  width: 100% !important; }
+  @media (min-width: 992px) {
+    .contact--form .submit-wrap input {
+      width: 500px; } }
 
 .fl-subscribe-form .fl-form-success-message {
   color: #BDDCD9; }

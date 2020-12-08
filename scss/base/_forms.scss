@@ -73,6 +73,7 @@
         width: 100%;
         max-width: 100%;
         overflow: hidden;
+        
     }
 
     label {
@@ -80,9 +81,13 @@
     }
 
     nf-field {
-        width: 50%;
+        width: 100%;
         float: left;
         margin-bottom: 10px;
+
+        @include breakpoint(md) {
+            width: 50%;
+        }
     }
 
     nf-field:nth-child(7) {
@@ -90,7 +95,9 @@
     }
 
     nf-field:nth-child(8) {
-        float: right;
+          @include breakpoint(md) {
+             float: right;
+          }
     }
 
     // Error message fix
@@ -127,7 +134,11 @@
     .form--first-field input,
     .form--company-field input,
     .form--email-field input {
-        width: 90%;
+        width: 100%;
+
+          @include breakpoint(md) {
+              width: 90%;
+          }
     }
 
     textarea {
@@ -138,7 +149,11 @@
     .submit-wrap input {
         background-color: #F26B6C !important;;
         height: 60px !important;
-        width: 500px !important;
+        width: 100% !important;
+        
+          @include breakpoint(md) {
+              width: 500px;
+          }
     }
 
 
