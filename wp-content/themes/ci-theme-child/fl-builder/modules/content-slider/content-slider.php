@@ -575,7 +575,6 @@ FLBuilder::register_settings_form('content_slider_slide', array(
 								),
 								'photo_only' => array(
 									'fields'   => array( 'fg_photo'),
-									// 'sections' => array('text'),
 								),
 							),
 						),

@@ -260,7 +260,7 @@ $posts_query = new WP_Query($query_args_one);
                                     $categories = get_the_terms($post->ID, 'event_category');
                                     $term = $categories[0];
                                     ?>
-                                    <a href="/event_category/<?php echo $term->slug ?>"><?php echo $term->name ?></a>
+                                    <a href="/event-category/<?php echo $term->slug ?>"><?php echo $term->name ?></a>
                                 </div>
                                 <div class=" event--post-title">
                                     <h1>
