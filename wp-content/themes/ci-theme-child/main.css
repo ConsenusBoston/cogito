@@ -1613,6 +1613,9 @@ a {
 .fl-subscribe-form .fl-form-success-message {
   color: #BDDCD9; }
 
+.hidden-container {
+  display: none; }
+
 .button-group .button:first-child {
   margin-right: 20px; }
 
@@ -1754,6 +1757,12 @@ a {
 .resource-page #menu-top .sub-menu a {
   color: #31606E; }
 
+.resource-page .brex-mega-menu-desktop li.drop-down .drop-down-ul {
+  background-color: #ffffff; }
+  .resource-page .brex-mega-menu-desktop li.drop-down .drop-down-ul a {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500; }
+
 #menu-top #menu-item-68 {
   min-width: 80px; }
 
@@ -1761,8 +1770,8 @@ a {
   min-width: 85px;
   text-align: center; }
 
-#menu-top #menu-item-70 {
-  min-width: 60px; }
+#menu-top #menu-item-3886 {
+  min-width: 90px; }
 
 #menu-top a {
   font-weight: 300; }
@@ -1811,7 +1820,7 @@ a {
     background-color: transparent !important;
     padding: 7px 26px !important;
     margin: 0;
-    color: #ffffff !important;
+    color: #ffffff;
     border: 2px solid #ffffff; }
   @media (max-width: 790px) {
     .fl-builder-content-2478:not(.fl-theme-builder-header-shrink) .mega--menu li:last-child,

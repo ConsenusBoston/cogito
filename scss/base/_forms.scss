@@ -149,3 +149,8 @@
 .fl-subscribe-form .fl-form-success-message {
     color: #BDDCD9;
 }
+
+// removes extra fields that are hidden from ui
+.hidden-container {
+    display: none;
+}//

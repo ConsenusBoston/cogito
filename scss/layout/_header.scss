@@ -114,6 +114,18 @@
             color: $primary-color;
         }
     }
+
+    .brex-mega-menu-desktop li.drop-down {
+        .drop-down-ul {
+            background-color: $white;
+
+            a {
+                // color: $primary-color;
+                font-family: $secondary-font-stack;
+                font-weight: 500;
+            }
+        }
+    }
 }
 
 #menu-top {
@@ -127,8 +139,8 @@
         text-align: center;
     }
 
-    #menu-item-70 {
-        min-width: 60px;
+    #menu-item-3886 {
+        min-width: 90px;
     }
 
     a {
@@ -200,7 +212,7 @@
                 background-color: transparent !important;
                 padding: 7px 26px !important;
                 margin: 0;
-                color: $white !important;
+                color: $white;
                 border: 2px solid $white;
             }
 
