@@ -212,7 +212,7 @@
                 font-size: 18px;
                 line-height: 29px;
                 font-weight: 300;
-                margin-bottom: 45px;
+                margin-bottom: 25px;
             }
 
             blockquote {
@@ -223,14 +223,14 @@
                 max-width: 100%;
             }
 
-            h1,
-            h2,
-            h3,
-            h4,
-            h5,
-            h6 {
-                margin-bottom: 45px;
-            }
+            // h1,
+            // h2,
+            // h3,
+            // h4,
+            // h5,
+            // h6 {
+            //     margin-bottom: 45px;
+            // }
 
             @include hyperlink-styles();
         }
