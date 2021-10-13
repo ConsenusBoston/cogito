@@ -10,7 +10,7 @@
 
 .facetwp-flyout-open {
   padding: 10px 50px;
-  background: $primary-color;
+  background: #F26B6C;
   border: 1px #d3d3d3 solid;
   color: $white;
   border-radius: 25px;
@@ -26,6 +26,31 @@
   & > .fl-module-content.fl-node-content {
     position: relative;
     height: 42px;
+
+    .facetwp-bb-module {
+      display: inline-block;
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+        width: 2px;
+        height: 2px;
+      }
+
+      &::-webkit-scrollbar-track {
+        background-clip: padding-box;
+        -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+        border-left: 15px solid transparent;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: #333;
+        background-clip: padding-box;
+        border-left: 15px solid transparent;
+      }
+    }
   }
 
   & .facetwp-border {
@@ -38,32 +63,6 @@
     border-radius: 25px;
   }
 
-  & .facetwp-bb-module {
-    display: inline-block;
-    position: relative;
-    overflow: hidden;
-    overflow-x: auto;
-    overflow-y: hidden;
-
-    &::-webkit-scrollbar {
-      display: none;
-      width: 2px;
-      height: 2px;
-    }
-
-    &::-webkit-scrollbar-track {
-      background-clip: padding-box;
-      -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-      border-left: 15px solid transparent;
-    }
-
-    &::-webkit-scrollbar-thumb {
-      background-color: #333;
-      background-clip: padding-box;
-      border-left: 15px solid transparent;
-    }
-  }
-
   & .facetwp-view-more-button {
     position: absolute;
     top: 1px;
@@ -71,7 +70,7 @@
     height: 40px;
     /*padding: 10px 20px 0px 20px;*/
     background: #f5f6f8;
-    color: $black;
+    color: #3F3F3F;
     border-radius: 25px;
 
     & > i.fa-chevron-left {
@@ -95,7 +94,7 @@
     white-space: nowrap;
 
     & > .facetwp-radio {
-      color: $black;
+      color: #3F3F3F;
       display: inline-block;
       margin: 0px;
       height: 40px;
@@ -114,7 +113,7 @@
       &.checked {
         padding: 10px 50px 0px 50px;
         color: $white;
-        background: $primary-color;
+        background: #F26B6C;
         border-radius: 25px;
       }
 
@@ -155,7 +154,7 @@
       appearance: none;
       -moz-appearance: none;
       -webkit-appearance: none;
-      margin-top: 10px;
+      margin-top: 8px;
       margin-left: auto;
       margin-right: auto;
       padding-right: 15px;
@@ -167,7 +166,7 @@
       font-family: "Font Awesome 5 Pro";
       font-weight: 700;
       content: "\f078";
-      color: $black;
+      color: #3F3F3F;
     }
   }
 }
