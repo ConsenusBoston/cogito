@@ -67,6 +67,10 @@
         color: $primary-text-clr !important;
         border: 2px solid $primary-text-clr !important;
 
+        &.facetwp-load-more {
+          font-weight: bold;
+        }
+
         &:hover {
             border-color: $primary-text-clr;
             color: $primary-text-clr;

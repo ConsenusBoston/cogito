@@ -57,6 +57,44 @@ function custom_classes($classes)
 add_filter('body_class', 'custom_classes');
 
 
+// https://facetwp.com/documentation/developers/output/facetwp_sort_options/
+add_filter('facetwp_sort_options', function ($options, $params) {
+  //if ($params['template_name'] == 'featured_and_popular_documents') {
+    $options = [
+      'default' => [
+        'label' => 'Newest',
+        'query_args' => [
+          'orderby' => 'date',
+          'order' => 'DESC'
+        ]
+      ],
+      'date_desc' => [
+        'label' => 'Oldest',
+        'query_args' => [
+          'orderby' => 'date',
+          'order' => 'ASC'
+        ]
+      ],
+      'title_asc' => [
+        'label' => 'Title (A-Z)',
+        'query_args' => [
+          'orderby' => 'title',
+          'order' => 'ASC',
+        ]
+      ],
+      'title_desc' => [
+        'label' => 'Title (Z-A)',
+        'query_args' => [
+          'orderby' => 'title',
+          'order' => 'DESC',
+        ]
+      ]
+    ];
+  //}
+
+  return ($options);
+}, 10, 2);
+
 // Reorders News Post Facet
 add_filter('facetwp_facet_orderby', function ($orderby, $facet) {
 	if ('news_categories' == $facet['name']) {
@@ -70,13 +108,31 @@ add_filter('facetwp_preload_url_vars', function ($url_vars) {
 	if ('news' == FWP()->helper->get_uri()) {
 		if (empty($url_vars['news_categories'])) {
 			$url_vars['news_categories'] = ['in-the-news'];
-			$url_vars['news_post_date'] = ['2020'];
+			// 			$url_vars['news_post_date'] = ['2021'];
 		}
 	}
 	return $url_vars;
 });
 
 
+
+// Inverts the Post Date Years
+add_filter('facetwp_facet_orderby', function ($orderby, $facet) {
+	if ('news_post_date' == $facet['name']) { // Change "year" to your facet's name
+		$orderby = 'f.facet_value+0 DESC';
+	}
+	return $orderby;
+}, 10, 2);
+
+
+
+/** ignore query added by GDPR Cookie Consent **/
+add_filter('facetwp_is_main_query', function ($is_main_query, $query) {
+	if ('cookielawinfo' == $query->get('post_type')) {
+		$is_main_query = false;
+	}
+	return $is_main_query;
+}, 10, 2);
 /**
  * This updates the filter to format the date to be yearly to match design
  */
@@ -116,73 +172,73 @@ function featured_speakers_shortcode($atts)
 	), $atts);
 
 	ob_start();
- 
+
 ?>
-<div class="fl-post__speakers">
-	<?php
-	// Check rows exists.
-	if (have_rows('speakers')) : ?>
-		<h3>Featured speakers</h3>
+	<div class="fl-post__speakers">
+		<?php
+		// Check rows exists.
+		if (have_rows('speakers')) : ?>
+			<h3>Featured speakers</h3>
+
+			<?php
+			// Loop through rows.
+			while (have_rows('speakers')) : the_row();
+
+				// We need to check if the post is using a registered user for the speakers.
+				// If is_registered is selected it will use user/author object
+				// otherwise it will use the ACF speaker fields
+
+				// Load Author/Image sub fields
+				$speaker = get_sub_field('author');
+				$speaker_title = get_field('employee_title', 'user_' .  $speaker['ID']);
+				$image = get_sub_field('speaker_image');
+
+				// Image variables.
+				$url = $image['url'];
+				$title = $image['title'];
+				$alt = $image['alt'];
+				// Thumbnail size attributes.
+				$size = 'thumbnail';
+				$thumb = $image['sizes'][$size];
+				$width = $image['sizes'][$size . '-width'];
+				$height = $image['sizes'][$size . '-height'];
+
+
+				if (get_sub_field('is_registered')) { ?>
+
+					<div class="fl-post__speaker is-registered-user">
+						<div class="fl-post__speaker-image">
+							<?php echo $speaker['user_avatar']; ?>
+						</div>
+						<div class="fl-post__speaker-bio">
+							<span class="fl-post__speaker-name"><?php echo $speaker['display_name']; ?></span>
+							<span class="fl-post__speaker-description"> <?php echo $speaker['employee_title']; ?></span>
+							<span class="fl-post__speaker-description"> <?php echo $speaker_title; ?></span>
+						</div>
+					</div>
+
+				<?php } else { ?>
+					<div class="fl-post__speaker is-custom-speaker">
+						<div class="fl-post__speaker-image">
+							<img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" />
+						</div>
+						<div class="fl-post__speaker-bio">
+							<span class="fl-post__speaker-name"><?php the_sub_field('speaker_name'); ?></span>
+							<span class="fl-post__speaker-description"><?php the_sub_field('speaker_title'); ?></span>
+						</div>
+					</div>
+				<?php }  ?>
 
 		<?php
-		// Loop through rows.
-		while (have_rows('speakers')) : the_row();
+			// End loop.
+			endwhile;
 
-			// We need to check if the post is using a registered user for the speakers.
-			// If is_registered is selected it will use user/author object
-			// otherwise it will use the ACF speaker fields
+		// No value.
+		else :
+		// Do something...
+		endif; ?>
+	</div><!-- eo // .fl-post__speakers -->
 
-			// Load Author/Image sub fields
-			$speaker = get_sub_field('author');
-			$speaker_title = get_field('employee_title', 'user_' .  $speaker['ID']);
-			$image = get_sub_field('speaker_image');
-
-			// Image variables.
-			$url = $image['url'];
-			$title = $image['title'];
-			$alt = $image['alt'];
-			// Thumbnail size attributes.
-			$size = 'thumbnail';
-			$thumb = $image['sizes'][$size];
-			$width = $image['sizes'][$size . '-width'];
-			$height = $image['sizes'][$size . '-height'];
-
-
-			if (get_sub_field('is_registered')) { ?>
- 
-				<div class="fl-post__speaker is-registered-user">
-					<div class="fl-post__speaker-image">
-						<?php echo $speaker['user_avatar']; ?>
-					</div>
-					<div class="fl-post__speaker-bio">
-						<span class="fl-post__speaker-name"><?php echo $speaker['display_name']; ?></span>
-						<span class="fl-post__speaker-description"> <?php echo $speaker['employee_title']; ?></span>
-						<span class="fl-post__speaker-description"> <?php echo $speaker_title; ?></span>
-					</div>
-				</div>
-
-			<?php } else { ?>
-				<div class="fl-post__speaker is-custom-speaker">
-					<div class="fl-post__speaker-image">
-						<img src="<?php echo esc_url($thumb); ?>" alt="<?php echo esc_attr($alt); ?>" />
-					</div>
-					<div class="fl-post__speaker-bio">
-						<span class="fl-post__speaker-name"><?php the_sub_field('speaker_name'); ?></span>
-						<span class="fl-post__speaker-description"><?php the_sub_field('speaker_title'); ?></span>
-					</div>
-				</div>
-			<?php }  ?>
-
-	<?php
-		// End loop.
-		endwhile;
-
-	// No value.
-	else :
-	// Do something...
-	endif; ?>
-</div><!-- eo // .fl-post__speakers -->
- 
 <?php
 
 	return ob_get_clean();
@@ -223,3 +279,25 @@ function admin_role_styles()
 	}
 }
 add_action('admin_head', 'admin_role_styles');
+
+
+add_filter('fl_builder_loop_query_args', function ($args) {
+
+// 	if (is_page(43)) {
+	if(isset($_POST['post_id']) && $_POST['post_id'] == 43) {
+		if (isset($args['s'])) {
+			$args['post_type'] = array('resource');
+			$args['tax_query'] = array(
+				array(
+					'taxonomy' => 'resource_tag',
+					'field'    => 'term_id',
+					'terms'    => array(80),
+					'operator' => 'NOT IN',
+				)
+			);
+		}
+	}
+
+
+	return $args;
+});

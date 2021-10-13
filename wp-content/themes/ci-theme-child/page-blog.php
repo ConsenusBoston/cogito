@@ -71,13 +71,13 @@ $posts_counter = 0;
 										</div>
 									</div>
 
-									<small class="post-comments-count">
+									<!--small class="post-comments-count">
 										<svg xmlns="http://www.w3.org/2000/svg" height="17" viewBox="0 0 24 24" width="17">
 											<path d="M0 0h24v24H0V0z" fill="none" />
 											<path fill="#31606E" d="M20 17.17L18.83 16H4V4h16v13.17zM20 2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h14l4 4V4c0-1.1-.9-2-2-2z" />
 										</svg>
 										<span><?php echo get_comments_number(); ?></span>
-									</small>
+									</small -->
 								</div>
 							</div>
 
@@ -101,7 +101,38 @@ $posts_counter = 0;
 	</div>
 </div>
 <!-- blog-content--sm-scroll -->
-<div style="background-color:#FDD9C8;">
+<div style="background-color:rgb(242 107 108 / 20%);">
+	<div class="<?php FLLayout::container_class(); ?> blog-categories-and-sorter-container">
+    <div class="fl-col-group fl-col-group-nested fl-col-group-equal-height fl-col-group-align-center fl-col-group-custom-width">
+      <div class="fl-col fl-col-left" style="width:80%;">
+        <div class="fl-col-content fl-node-content">
+          <div class="fl-module fl-module-html fl-visible-mobile">
+            <div class="fl-module-content fl-node-content">
+              <div class="fl-html">
+                <button class="facetwp-flyout-open">Filter</button>
+              </div>
+            </div>
+          </div>
+          <div class="fl-module fl-module-class-facet fl-visible-desktop-medium blog-categories">
+            <div class="fl-module-content fl-node-content">
+              <div class="facetwp-bb-module">
+                <?php echo facetwp_display( 'facet', 'blog_categories' ); ?>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fl-col fl-col-small fl-col-right" style="width:20%;">
+        <div class="fl-col-content fl-node-content">
+          <div class="fl-module fl-module-class-sort blog-sorter">
+            <div class="fl-module-content fl-node-content">
+              <?php echo facetwp_display( 'sort' ); ?>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	</div>
 	<div class="<?php FLLayout::container_class(); ?>">
 		<main class="fl-content blog-content">
 
